@@ -2,6 +2,7 @@ import numpy as np
 import python_codon_tables as pct
 import util
 
+import vqe_solver, qaoa_solver, sa_solver, brute_force
 
 class CodonOptimizer:
     """
@@ -62,7 +63,7 @@ class CodonOptimizer:
 
             for seq, (op, freq) in codon.indicator_dict.items():
                 score = -np.log10(freq + epsilon)
-                h_usage += op.reduce() * round(score, 3)
+                h_usage += op * round(score, 3)
 
         return h_usage * self.w_usage * (self.n_len ** 2)
 
@@ -108,4 +109,4 @@ class CodonOptimizer:
                 self.create_repetition_term() +
                 self.create_redundant_encoding()
         )
-        return h_total.reduce()
+        return h_total.simplify()
