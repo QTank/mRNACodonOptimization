@@ -5,7 +5,10 @@ from qiskit.circuit.library import EfficientSU2
 import numpy as np
 
 
-def get_min(qubit_op, qaoa_config):
+def get_min(qubit_op, qaoa_config, sampler=None):
+    if sampler is None:
+        sampler = Sampler()
+
     optimizer = COBYLA(maxiter=qaoa_config.get('maxiter', 50))
     ansatz = EfficientSU2(
         su2_gates=['rx'],
@@ -13,7 +16,7 @@ def get_min(qubit_op, qaoa_config):
         reps=qaoa_config['ansatz'].get('reps', 2)
     )
 
-    qaoa = QAOA(sampler=Sampler(), optimizer=optimizer, reps=qaoa_config.get('reps', 2))
+    qaoa = QAOA(sampler=sampler, optimizer=optimizer, reps=qaoa_config.get('reps', 2))
     qaoa.ansatz = ansatz
     result = qaoa.compute_minimum_eigenvalue(qubit_op)
 
