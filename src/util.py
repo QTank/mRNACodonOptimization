@@ -2,6 +2,7 @@ import numpy as np
 from typing import Set
 from qiskit.opflow import PauliOp, I, Z
 import python_codon_tables as pct
+from qiskit.quantum_info import SparsePauliOp
 
 
 def build_full_identity(num_qubits: int) -> PauliOp:
@@ -80,8 +81,7 @@ def decode_bitstring(protein_sequence, bitstring, table_name='e_coli_316407'):
                 mRNA_sequence += codon_list[loc]
     except:
         print(f"the bitstring {bitstring} is invalid!")
-        return False
-    
+
     return mRNA_sequence.replace("T", "U")
 
 
@@ -105,9 +105,10 @@ def decode_one_hot_bitstring(protein_sequence, bitstring, table_name='e_coli_316
             start_index += encoding_len
     except:
         print(f"the bitstring {bitstring} is invalid!")
-        return False
-    
+
     return mRNA_sequence.replace("T", "U")
+
+
 
 
 def split_sequence_from_file(filename, chunk_size):
@@ -153,3 +154,30 @@ def parse_fasta(file_path):
 
 def convert_rna_to_dna(rna_sequence):
     return rna_sequence.replace("U", "T")
+
+
+def evaluate_energy(qubit_op, bitstring):
+    energy = 0
+    n = len(bitstring)
+    qubit_op = normalize_operator(qubit_op)
+
+    for pauli, coef in zip(qubit_op.paulis, qubit_op.coeffs):
+        z_index = np.where(pauli.z)[0]
+        parity = 1.0
+
+        for idx in z_index:
+            val = -1 if bitstring[n - 1 - idx] == '1' else 1
+            parity *= val
+
+        energy += coef.real * parity
+    return energy
+
+
+def normalize_operator(qubit_op):
+    if isinstance(qubit_op, SparsePauliOp):
+        return qubit_op
+
+    try:
+        return qubit_op.primitive
+    except Exception:
+        raise RuntimeError("Failed to convert qubit_op to SparsePauliOp.")
