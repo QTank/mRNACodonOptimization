@@ -10,7 +10,6 @@ Acts as a drop-in classical replacement for VQE / QAOA solvers.
 from __future__ import annotations
 
 import numpy as np
-from sko.SA import SA
 
 # ---------------------------------------------------------------------------
 # Bitstring Utilities
