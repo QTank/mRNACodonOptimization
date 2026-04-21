@@ -1,0 +1,32 @@
+{
+  "optimization": {
+    "alpha": 0.1,
+    "maxiter": 50
+  },
+  "weights": {
+    "usage": 0.3,
+    "target_gc": 0.9,
+    "repeated_nucleotides": 1.0,
+    "redundant_encoding": 13000
+  },
+  "metadata": {
+    "table_name": "e_coli_316407",
+    "gc_content": 0.5
+  },
+  "vqe_settings": {
+    "alpha": 0.1,
+    "maxiter": 50,
+    "ansatz": {
+      "reps": 2,
+      "entanglement": "circular"
+    }
+  },
+  "qaoa_settings": {
+    "maxiter": 50,
+    "reps": 2,
+    "ansatz": {
+      "reps": 2,
+      "entanglement": "circular"
+    }
+  }
+}
