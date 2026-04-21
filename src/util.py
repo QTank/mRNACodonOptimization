@@ -1,18 +1,19 @@
 import numpy as np
 from typing import Set
-from qiskit.opflow import PauliOp, I, Z
 import python_codon_tables as pct
 from qiskit.quantum_info import SparsePauliOp
 
+Z = SparsePauliOp.from_list([("Z", 1.0)])
+I = SparsePauliOp.from_list([("I", 1.0)])
 
-def build_full_identity(num_qubits: int) -> PauliOp:
+def build_full_identity(num_qubits: int) -> SparsePauliOp:
     full_identity = I
     for _ in range(1, num_qubits):
         full_identity = I ^ full_identity
     return full_identity
 
 
-def build_pauli_z_op(num_qubits: int, pauli_z_indices: Set[int]) -> PauliOp:
+def build_pauli_z_op(num_qubits: int, pauli_z_indices: Set[int]) -> SparsePauliOp:
     if 0 in pauli_z_indices:
         operator = Z
     else:
@@ -26,7 +27,7 @@ def build_pauli_z_op(num_qubits: int, pauli_z_indices: Set[int]) -> PauliOp:
     return operator
 
 
-def build_indicator_qubit(qubit_len: int, pauli_z_index: int) -> PauliOp:
+def build_indicator_qubit(qubit_len: int, pauli_z_index: int) -> SparsePauliOp:
     return 0.5 * build_full_identity(qubit_len) - 0.5 * build_pauli_z_op(qubit_len, {pauli_z_index})
 
 
