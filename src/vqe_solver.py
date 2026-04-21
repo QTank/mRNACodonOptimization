@@ -5,7 +5,6 @@ from qiskit.circuit.library import EfficientSU2
 
 
 def get_min(qubit_op, vqe_config, sampler=None):
-
     if sampler is None:
         sampler = Sampler()
 
