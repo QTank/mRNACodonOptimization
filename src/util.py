@@ -6,6 +6,7 @@ from qiskit.quantum_info import SparsePauliOp
 Z = SparsePauliOp.from_list([("Z", 1.0)])
 I = SparsePauliOp.from_list([("I", 1.0)])
 
+
 def build_full_identity(num_qubits: int) -> SparsePauliOp:
     full_identity = I
     for _ in range(1, num_qubits):
@@ -110,8 +111,6 @@ def decode_one_hot_bitstring(protein_sequence, bitstring, table_name='e_coli_316
     return mRNA_sequence.replace("T", "U")
 
 
-
-
 def split_sequence_from_file(filename, chunk_size):
     with open(filename, "r") as f:
         sequence = f.read().strip()
@@ -119,7 +118,7 @@ def split_sequence_from_file(filename, chunk_size):
     sequence = sequence.replace("\n", "")
 
     chunks = [
-        sequence[i:i+chunk_size]
+        sequence[i:i + chunk_size]
         for i in range(0, len(sequence), chunk_size)
     ]
 

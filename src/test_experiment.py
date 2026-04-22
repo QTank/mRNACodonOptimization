@@ -117,7 +117,7 @@ def codon_optimization_experiment():
     chunk_size = config["metadata"]["chunk_size"]
     sequences = util.split_sequence_from_file(data_file, chunk_size)
 
-    solver_list = ["vqe", "sa", "brute"]
+    solver_list = ["vqe", "sa", 'brute']
     all_results = []
     final_rna = {solver: "" for solver in solver_list}
 
