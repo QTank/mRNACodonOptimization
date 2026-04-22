@@ -18,8 +18,6 @@ This project implements a hybrid quantum–classical approach for mRNA codon opt
 
 ## Pipeline
 
-![pipeline](figures/pipeline.png)
-
 1. Encode amino acids into qubits (dense encoding)  
 2. Construct Hamiltonian with constraints  
 3. Run VQE with classical optimizer  
@@ -30,6 +28,6 @@ This project implements a hybrid quantum–classical approach for mRNA codon opt
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/quantum-mrna-codon-optimization.git
-cd quantum-mrna-codon-optimization
+git clone https://github.com/QTank/mRNACodonOptimization.git
+cd mRNACodonOptimization
 pip install -r requirements.txt
