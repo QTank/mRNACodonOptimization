@@ -3,7 +3,7 @@
     "table_name": "e_coli_316407",
     "gc_content": 0.5,
     "data_file": "../data/data",
-    "chunk_size": 4
+    "chunk_size": 3
   },
 
   "weights": {

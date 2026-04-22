@@ -8,7 +8,7 @@ Acts as a drop-in classical replacement for VQE / QAOA solvers.
 """
 
 from __future__ import annotations
-
+import util
 import numpy as np
 
 # ---------------------------------------------------------------------------
@@ -33,70 +33,6 @@ def bitstring_to_array(bitstring: str) -> np.ndarray:
         '0110' -> [0,1,1,0]
     """
     return np.array([float(b) for b in bitstring], dtype=float)
-
-
-# ---------------------------------------------------------------------------
-# Energy Evaluation
-# ---------------------------------------------------------------------------
-
-def evaluate_energy(qubit_op, bitstring: str) -> float:
-    """
-    Evaluate energy of a computational basis state.
-
-    Assumes Hamiltonian is diagonal in Z-basis.
-    Works with SparsePauliOp.
-
-    Parameters
-    ----------
-    qubit_op : SparsePauliOp
-        Hamiltonian operator.
-    bitstring : str
-        Binary string state.
-
-    Returns
-    -------
-    float
-        Energy value.
-    """
-    n = len(bitstring)
-
-    energy = 0.0
-
-    for pauli, coef in zip(
-        qubit_op.paulis,
-        qubit_op.coeffs
-    ):
-
-        # Indices where Z acts
-        z_indices = np.where(pauli.z)[0]
-        parity = 1.0
-
-        for idx in z_indices:
-            val = 1 if bitstring[n - 1 - idx] == '1' else -1
-            parity *= val
-
-        energy += coef.real * parity
-
-    return energy
-
-
-def normalize_operator(qubit_op):
-    """
-    Ensure operator is SparsePauliOp.
-    """
-
-    from qiskit.quantum_info import SparsePauliOp
-
-    if isinstance(qubit_op, SparsePauliOp):
-        return qubit_op
-
-    try:
-        return qubit_op.primitive
-    except Exception as exc:
-        raise RuntimeError(
-            "Failed to convert qubit_op to SparsePauliOp."
-        ) from exc
-
 
 # ---------------------------------------------------------------------------
 # Simulated Annealing Solver
@@ -139,8 +75,6 @@ def get_min(
     if sa_config:
         config.update(sa_config)
 
-    sparse_op = normalize_operator(qubit_op)
-
     # Objective function
     groups = []
     idx = 0
@@ -153,7 +87,19 @@ def get_min(
         """Initialize with a valid one-hot state per group."""
         bits = [0] * qubit_len
         for start, end in groups:
-            chosen = start if end - start == 1 else np.random.randint(start, end)
+
+            # Fix invalid group bounds
+            start = max(0, start)
+            end = min(qubit_len, end)
+
+            if start >= qubit_len:
+                continue  # skip invalid group
+
+            if end - start <= 1:
+                chosen = start
+            else:
+                chosen = np.random.randint(start, end)
+
             bits[chosen] = 1
         return bits
 
@@ -174,7 +120,7 @@ def get_min(
 
     current = random_valid_state()
     current_bs = "".join(map(str, current))
-    current_energy = evaluate_energy(sparse_op, current_bs)
+    current_energy = util.evaluate_energy(qubit_op, current_bs)
     best, best_energy = list(current), current_energy
 
     T = config["T_max"]
@@ -186,7 +132,7 @@ def get_min(
         for _ in range(qubit_len):
             nbr = neighbour(current)
             nbr_bs = "".join(map(str, nbr))
-            e = evaluate_energy(sparse_op, nbr_bs)
+            e = util.evaluate_energy(qubit_op, nbr_bs)
             delta = e - current_energy
             if delta < 0 or np.random.rand() < np.exp(-delta / T):
                 current, current_energy = nbr, e
