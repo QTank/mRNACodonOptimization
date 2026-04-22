@@ -2,7 +2,7 @@ import vqe_solver
 import qaoa_solver
 from denseCodon import DenseCodon
 from oneHotCodon import OneHotCodon
-import util
+import util, qiskit_util
 import time, json
 from hamiltonian import CodonOptimizer
 import sa_solver
@@ -16,7 +16,8 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="dense"):
         print("Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...\n")
         codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
         qubit_op = codon_opt.create_qubit_op()
-        bitstring, energy = vqe_solver.get_min(qubit_op, config['vqe_settings'])
+        backend = qiskit_util.get_backend(inject_noise=True)
+        bitstring, energy = vqe_solver.get_min(qubit_op, config['vqe_settings'], sampler=backend)
         final_mRNA_sequence = util.decode_bitstring(sequence, bitstring,
                                                     table_name=config['metadata']['table_name'])
 
@@ -48,13 +49,13 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="dense"):
         if encoding_type == "dense":
             codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
             qubit_op = codon_opt.create_qubit_op()
-            bitstring, energy = brute_force.get_min(qubit_op, codon_opt.codon_list)
+            bitstring, energy = brute_force.brute_force_search(qubit_op, codon_opt.qubit_len)
             final_mRNA_sequence = util.decode_bitstring(sequence, bitstring,
                                                         table_name=config['metadata']['table_name'])
         else:
             codon_opt = CodonOptimizer(sequence, config, OneHotCodon, "one-hot")
             qubit_op = codon_opt.create_qubit_op()
-            bitstring, energy = brute_force.get_min(qubit_op, codon_opt.codon_list)
+            bitstring, energy = brute_force.brute_force_search(qubit_op, codon_opt.qubit_len)
             final_mRNA_sequence = util.decode_one_hot_bitstring(sequence, bitstring,
                                                             table_name=config['metadata']['table_name'])
 
@@ -164,7 +165,7 @@ def compare_solvers(sequence, config):
 
 
 def codon_optimization_experiment():
-    with open("config.json", "r") as f:
+    with open("../config.json", "r") as f:
         config = json.load(f)
 
     data_file_name = config['metadata']['data_file']

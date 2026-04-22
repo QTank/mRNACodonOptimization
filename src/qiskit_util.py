@@ -1,12 +1,10 @@
 import warnings
-from qiskit_aer import AerSimulator
 from qiskit_aer.noise import NoiseModel
-from qiskit.providers.fake_provider import FakeManila, FakeSydney, FakeSherbrooke, FakeOslo, FakeTokyo
-from qiskit.primitives import Sampler
-from qiskit.primitives import BackendSampler
+from qiskit_ibm_runtime.fake_provider import FakeSherbrooke, FakeManila, FakeSydney, FakeOslo, FakeTokyo
+from qiskit_aer.primitives import Sampler
 from qiskit import transpile
 warnings.filterwarnings("ignore", category=UserWarning)
-
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 _FAKE_BACKENDS = {
     "FakeManila": FakeManila,
@@ -25,8 +23,14 @@ def get_backend(backend_name='FakeOslo', inject_noise=False):
 
     if inject_noise:
         noise_model = NoiseModel.from_backend(fake_backend)
-        backend = AerSimulator(noise_model=noise_model)
-        sampler = BackendSampler(backend)
+        sampler = Sampler(
+            backend_options={
+                "noise_model": noise_model
+            },
+            run_options={
+                "shots": 1024
+            }
+        )
     else:
         sampler = Sampler()
     return sampler

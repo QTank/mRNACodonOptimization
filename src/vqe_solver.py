@@ -1,5 +1,5 @@
-from qiskit.algorithms.optimizers import COBYLA
-from qiskit.algorithms.minimum_eigensolvers import SamplingVQE
+from qiskit_algorithms.optimizers import COBYLA
+from qiskit_algorithms.minimum_eigensolvers import SamplingVQE
 from qiskit.primitives import Sampler
 from qiskit.circuit.library import EfficientSU2
 

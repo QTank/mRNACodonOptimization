@@ -2,7 +2,7 @@
   "metadata": {
     "table_name": "e_coli_316407",
     "gc_content": 0.5,
-    "data_file": "data/data",
+    "data_file": "../data/data",
     "chunk_size": 4
   },
 
