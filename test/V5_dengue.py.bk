@@ -1,0 +1,48 @@
+import requests
+from textwrap import wrap
+
+# --------------------------
+# 1. fetch Dengue E protein
+# --------------------------
+
+uid = "P33478"
+
+def fetch_fasta(uid):
+    url = f"https://rest.uniprot.org/uniprotkb/{uid}.fasta"
+    return requests.get(url).text
+
+def get_seq(fasta):
+    return "".join([l for l in fasta.split("\n") if not l.startswith(">")])
+
+seq = get_seq(fetch_fasta(uid))
+
+# --------------------------
+# 2. remove transmembrane region
+# --------------------------
+
+ectodomain = seq[:-50]  # TM region removal
+
+# --------------------------
+# 3. extract EDIII domain (safe vaccine target ⭐)
+# --------------------------
+
+ediii = ectodomain[int(len(ectodomain)*0.6):int(len(ectodomain)*0.8)]
+
+# --------------------------
+# 4. choose vaccine antigen
+# --------------------------
+
+vaccine_antigen = ediii  # safest option
+
+# --------------------------
+# 5. save FASTA
+# --------------------------
+
+def save(name, s):
+    with open(name, "w") as f:
+        f.write(">Dengue_Envelope_EDIII_vaccine_antigen\n")
+        f.write("\n".join(wrap(s, 60)))
+
+save("../data/05-dengue_envelope_vaccine.fasta", vaccine_antigen)
+
+print("Saved Dengue mRNA vaccine sequence")

@@ -9,7 +9,7 @@ import sa_solver
 import brute_force
 import numpy as np
 import qiskit_util
-
+import sequence_process_util
 
 def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
     start_time = time.time()
@@ -119,20 +119,19 @@ def compare_solvers(sequence, config, solver_list):
     return results
 
 
-def codon_optimization_experiment():
+def codon_optimization_experiment(data_file_name, fix_length=True):
     with open("../config.json", "r") as f:
         config = json.load(f)
 
-    print(config['metadata']['data_file'])
-    data_file_name = config['metadata']['data_file']
     chunk_size = config['metadata']['chunk_size']
-    sequences = util.split_sequence_from_file(data_file_name, chunk_size)
-
+    data = util.parse_sequence_from_file(data_file_name)
+    sequences = util.split_sequence(data, chunk_size)
     all_results = []
-    solver_list = ['vqe', 'sa', 'brute']
+    solver_list = ['vqe', 'qaoa', 'brute']
     final_rna_strings = {solver: "" for solver in solver_list}
 
     for i, seq in enumerate(sequences):
+        if i < 11: continue
         print(f"\n{'#' * 60}")
         print(f"Sequence {i + 1}/{len(sequences)}")
         results = compare_solvers(seq, config, solver_list)
@@ -164,4 +163,4 @@ def codon_optimization_experiment():
 
 
 if __name__ == '__main__':
-    codon_optimization_experiment()
+    codon_optimization_experiment("../data/03-influenza_ha_vaccine.fasta", True)

@@ -1,0 +1,372 @@
+
+############################################################
+Sequence 1/169
+============================================================
+Sequence: MKT
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : MKT
+  - Qubits    : 7
+  - Bitstring : 1010100
+  - mRNA      : AUGAAGACC
+  - Energy    : 20.8314
+  - Time      : 3.91s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : MKT
+  - Qubits    : 3
+  - Bitstring : 101
+  - mRNA      : AUGAAGACC
+  - Energy    : 20.8314
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       AUGAAGACC                      20.8314          ✓   3.91s
+BRUTE      AUGAAGACC                      20.8314          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 2/169
+============================================================
+Sequence: IIA
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : IIA
+  - Qubits    : 10
+  - Bitstring : 0010010010
+  - mRNA      : AUUAUUGCG
+  - Energy    : 23.6763
+  - Time      : 18.11s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IIA
+  - Qubits    : 6
+  - Bitstring : 101010
+  - mRNA      : AUUAUUGCG
+  - Energy    : 23.6763
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       AUUAUUGCG                      23.6763          ✓  18.11s
+BRUTE      AUUAUUGCG                      23.6763          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 3/169
+============================================================
+Sequence: LSY
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : LSY
+  - Qubits    : 14
+  - Bitstring : 00100010000001
+  - mRNA      : CUGAGCUAU
+  - Energy    : 23.2857
+  - Time      : 531.81s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LSY
+  - Qubits    : 7
+  - Bitstring : 0100001
+  - mRNA      : CUGAGCUAU
+  - Energy    : 23.2857
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       CUGAGCUAU                      23.2857          ✓ 531.81s
+BRUTE      CUGAGCUAU                      23.2857          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 4/169
+============================================================
+Sequence: IFC
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : IFC
+  - Qubits    : 7
+  - Bitstring : 0101010
+  - mRNA      : AUCUUCUGC
+  - Energy    : 21.1716
+  - Time      : 4.19s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IFC
+  - Qubits    : 4
+  - Bitstring : 0100
+  - mRNA      : AUCUUCUGC
+  - Energy    : 21.1716
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       AUCUUCUGC                      21.1716          ✓   4.19s
+BRUTE      AUCUUCUGC                      21.1716          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 5/169
+============================================================
+Sequence: LAL
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : LAL
+  - Qubits    : 16
+  - Bitstring : 0001001000001000
+  - mRNA      : CUUGCACUG
+  - Energy    : 40.7817
+  - Time      : 2548.40s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LAL
+  - Qubits    : 8
+  - Bitstring : 10010010
+  - mRNA      : UUAGCGCUG
+  - Energy    : 34.0506
+  - Time      : 0.04s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       CUUGCACUG                      40.7817      +6.73 2548.40s
+BRUTE      UUAGCGCUG                      34.0506          ✓   0.04s
+============================================================
+
+############################################################
+Sequence 6/169
+============================================================
+Sequence: GQD
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : GQD
+  - Qubits    : 8
+  - Bitstring : 00011001
+  - mRNA      : GGUCAAGAU
+  - Energy    : 23.8932
+  - Time      : 7.53s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : GQD
+  - Qubits    : 4
+  - Bitstring : 1101
+  - mRNA      : GGUCAAGAU
+  - Energy    : 23.8932
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       GGUCAAGAU                      23.8932          ✓   7.53s
+BRUTE      GGUCAAGAU                      23.8932          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 7/169
+============================================================
+Sequence: LPG
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : LPG
+  - Qubits    : 14
+  - Bitstring : 00100010000001
+  - mRNA      : CUGCCAGGU
+  - Energy    : 33.3477
+  - Time      : 694.80s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LPG
+  - Qubits    : 7
+  - Bitstring : 0100011
+  - mRNA      : CUGCCAGGU
+  - Energy    : 33.3477
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       CUGCCAGGU                      33.3477          ✓ 694.80s
+BRUTE      CUGCCAGGU                      33.3477          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 8/169
+============================================================
+Sequence: NDN
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : NDN
+  - Qubits    : 6
+  - Bitstring : 100110
+  - mRNA      : AACGAUAAC
+  - Energy    : 16.8723
+  - Time      : 4.06s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NDN
+  - Qubits    : 3
+  - Bitstring : 010
+  - mRNA      : AACGAUAAC
+  - Energy    : 16.8723
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       AACGAUAAC                      16.8723          ✓   4.06s
+BRUTE      AACGAUAAC                      16.8723          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 9/169
+============================================================
+Sequence: STA
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : STA
+  - Qubits    : 14
+  - Bitstring : 10000001000010
+  - mRNA      : AGCACCGCG
+  - Energy    : 34.2504
+  - Time      : 724.62s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : STA
+  - Qubits    : 7
+  - Bitstring : 0000110
+  - mRNA      : AGCACCGCG
+  - Energy    : 34.2504
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       AGCACCGCG                      34.2504          ✓ 724.62s
+BRUTE      AGCACCGCG                      34.2504          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 10/169
+============================================================
+Sequence: TLC
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TLC
+  - Qubits    : 12
+  - Bitstring : 001000100010
+  - mRNA      : ACGCUGUGC
+  - Energy    : 25.5960
+  - Time      : 130.62s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TLC
+  - Qubits    : 6
+  - Bitstring : 100100
+  - mRNA      : ACGCUGUGC
+  - Energy    : 25.5960
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       ACGCUGUGC                      25.5960          ✓ 130.62s
+BRUTE      ACGCUGUGC                      25.5960          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 11/169
+============================================================
+Sequence: LGH
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : LGH
+  - Qubits    : 12
+  - Bitstring : 000010000101
+  - mRNA      : UUAGGUCAU
+  - Energy    : 35.1216
+  - Time      : 142.40s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LGH
+  - Qubits    : 6
+  - Bitstring : 100111
+  - mRNA      : UUAGGUCAU
+  - Energy    : 35.1216
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+QAOA       UUAGGUCAU                      35.1216          ✓ 142.40s
+BRUTE      UUAGGUCAU                      35.1216          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 12/169
+============================================================
+Sequence: HAV
+============================================================
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+

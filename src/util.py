@@ -111,18 +111,23 @@ def decode_one_hot_bitstring(protein_sequence, bitstring, table_name='e_coli_316
     return mRNA_sequence.replace("T", "U")
 
 
-def split_sequence_from_file(filename, chunk_size):
+def parse_sequence_from_file(filename):
     with open(filename, "r") as f:
-        sequence = f.read().strip()
+        text = f.read().strip()
+    lines = text.splitlines()
+    return "".join(line.strip() for line in lines if not line.startswith(">"))
 
+
+def split_sequence(sequence, chunk_size):
     sequence = sequence.replace("\n", "")
-
-    chunks = [
+    return [
         sequence[i:i + chunk_size]
         for i in range(0, len(sequence), chunk_size)
     ]
 
-    return chunks
+
+def split_sequence_from_file(filename, chunk_size):
+    return split_sequence(parse_sequence_from_file(filename), chunk_size)
 
 
 def parse_fasta(file_path):
@@ -181,3 +186,4 @@ def normalize_operator(qubit_op):
         return qubit_op.primitive
     except Exception:
         raise RuntimeError("Failed to convert qubit_op to SparsePauliOp.")
+

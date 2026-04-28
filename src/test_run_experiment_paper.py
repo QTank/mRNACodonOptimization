@@ -7,15 +7,16 @@ import time, json
 from hamiltonian import CodonOptimizer
 import sa_solver
 import brute_force
-import numpy as np
 import qiskit_util
+from datetime import datetime
+import numpy as np
 
 
 def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
     start_time = time.time()
 
     if type_opt == "vqe":
-        print("Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...\n")
+        write_text("Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...\n")
         codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
         qubit_op = codon_opt.create_qubit_op()
         sampler = qiskit_util.get_backend(inject_noise=True)
@@ -24,7 +25,7 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
                                                     table_name=config['metadata']['table_name'])
 
     elif type_opt == "qaoa":
-        print("Starting QAOA on a Quantum Simulator...\n")
+        write_text("Starting QAOA on a Quantum Simulator...\n")
         codon_opt = CodonOptimizer(sequence, config, OneHotCodon, "one-hot")
         qubit_op = codon_opt.create_qubit_op()
         sampler = qiskit_util.get_backend(inject_noise=True)
@@ -34,7 +35,7 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
                                                             table_name=config['metadata']['table_name'])
 
     elif type_opt == "sa":
-        print("Starting Simulated Annealing optimization...\n")
+        write_text("Starting Simulated Annealing optimization...\n")
         if encoding_type == "dense":
             codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
             qubit_op = codon_opt.create_qubit_op()
@@ -51,7 +52,7 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
                                                                 table_name=config['metadata']['table_name'])
 
     elif type_opt == "brute":
-        print("Starting Brute Force optimization...\n")
+        write_text("Starting Brute Force optimization...\n")
         if encoding_type == "dense":
             codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
             qubit_op = codon_opt.create_qubit_op()
@@ -70,34 +71,26 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
 
     elapsed = time.time() - start_time
 
-    print(f"  - Sequence  : {sequence}")
-    print(f"  - Qubits    : {codon_opt.qubit_len}")
-    print(f"  - Bitstring : {bitstring}")
-    print(f"  - mRNA      : {final_mRNA_sequence}")
-    print(f"  - Energy    : {energy:.4f}")
-    print(f"  - Time      : {elapsed:.2f}s\n")
-
-    if False:
-        final_string_index = 0
-        for index in range(len(sequence)):
-            amino_acid = sequence[index]
-            chunk = bitstring[final_string_index:final_string_index + codon_opt.codon_list[index].encoding_qubit_len]
-            codon = final_mRNA_sequence[index * 3: (index + 1) * 3] if final_mRNA_sequence else "???"
-            print(f"    {amino_acid} → {chunk} → {codon}")
-            final_string_index += codon_opt.codon_list[index].encoding_qubit_len
+    write_text(f"  - Sequence  : {sequence}")
+    if type_opt in ['vqe', 'qaoa']:
+        write_text(f"  - Qubits    : {codon_opt.qubit_len}")
+    write_text(f"  - Bitstring : {bitstring}")
+    write_text(f"  - mRNA      : {final_mRNA_sequence}")
+    write_text(f"  - Energy    : {energy:.4f}")
+    write_text(f"  - Time      : {elapsed:.2f}s\n")
 
     return final_mRNA_sequence, energy, elapsed
 
 
-def compare_solvers(sequence, config, solver_list):
+def compare_solvers(sequence, config, solver_list, f):
     """Run VQE, SA, and Brute Force on the same sequence and compare energy."""
-    print("=" * 60)
-    print(f"Sequence: {sequence}")
-    print("=" * 60)
+    write_text("=" * 60, f)
+    write_text(f"Sequence: {sequence}", f)
+    write_text("=" * 60, f)
 
     results = {}
     for solver in solver_list:
-        print(f"[{solver.upper()}]")
+        write_text(f"[{solver.upper()}]", f)
         if solver == 'brute':
             mRNA, energy, elapsed = run_optimization(sequence, config, type_opt=solver, encoding_type='dense')
         else:
@@ -106,51 +99,54 @@ def compare_solvers(sequence, config, solver_list):
 
     reference_energy = results["brute"]["energy"]
 
-    print("=" * 60)
-    print("SUMMARY")
-    print(f"{'Solver':<10} {'mRNA':<25} {'Energy':>12} {'Gap':>10} {'Time':>8}")
-    print("-" * 70)
+    write_text("=" * 60, f)
+    write_text("SUMMARY", f)
+    write_text(f"{'Solver':<10} {'mRNA':<25} {'Energy':>12} {'Gap':>10} {'Time':>8}", f)
+    write_text("-" * 70, f)
     for solver, res in results.items():
         gap = res["energy"] - reference_energy
         match = "✓" if abs(gap) < 1e-6 else f"+{gap:.2f}"
-        print(f"{solver.upper():<10} {str(res['mRNA']):<25} {res['energy']:>12.4f} {match:>10} {res['time']:>6.2f}s")
-    print("=" * 60)
+        write_text(
+            f"{solver.upper():<10} {str(res['mRNA']):<25} {res['energy']:>12.4f} {match:>10} {res['time']:>6.2f}s")
+    write_text("=" * 60)
 
     return results
 
 
-def codon_optimization_experiment():
+def codon_optimization_experiment(data_file_name):
     with open("../config.json", "r") as f:
         config = json.load(f)
 
-    data_file_name = config['metadata']['dataset']
+    output_path = config['metadata']['output_path']
     chunk_size = config['metadata']['chunk_size']
-    dataset_seq = util.parse_fasta(data_file_name)
-    for k, seq in dataset_seq.items():
-        if k != "V17_HepatitisB_Surface": continue
-        print(f"start optimizing {k}, splite into fragments with the length of {chunk_size}")
-        sequences = [seq[i:i + chunk_size] for i in range(0, len(seq), chunk_size)]
-        output_name = seq + ".txt"
-        codon_optimization_sequences(sequences, config, output_name)
+    data = util.parse_sequence_from_file(data_file_name)
+    sequences = util.split_sequence(data, chunk_size)
+    for i, seq in enumerate(sequences):
+        print(i+1, seq)
+        if False:
+            sequences = [seq[i:i + chunk_size] for i in range(0, len(seq), chunk_size)]
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            output_name = f"{output_path}test_{data_file_name}_{timestamp}.txt"
+            codon_optimization_sequences(sequences, config, output_name)
 
 
 def codon_optimization_sequences(sequences, config, output_name):
     all_results = []
     solver_list = ['vqe', 'sa', 'brute']
     final_rna_strings = {solver: "" for solver in solver_list}
-
-    for i, seq in enumerate(sequences):
-        print(f"\n{'#' * 60}")
-        print(f"Sequence {i + 1}/{len(sequences)}")
-        results = compare_solvers(seq, config, solver_list)
-        all_results.append({"sequence": seq, **results})
-
-        for solver in solver_list:
-            final_rna_strings[solver] += results[solver]["mRNA"]
-
     with open(output_name, "w") as f:
+        for i, seq in enumerate(sequences):
+            write_text(f"\n{'#' * 60}")
+            write_text(f"Sequence {i + 1}/{len(sequences)}")
+            results = compare_solvers(seq, config, solver_list, f)
+            all_results.append({"sequence": seq, **results})
+
+            for solver in solver_list:
+                final_rna_strings[solver] += results[solver]["mRNA"]
+
         # Aggregate
         n = len(all_results)
+        write_text(f"The length of fragment: {len(sequences[0])}", f)
         write_text("\n" + "=" * 60, f)
         write_text("AGGREGATE RESULTS", f)
         write_text("=" * 60, f)
@@ -178,4 +174,4 @@ def write_text(text, file):
 
 
 if __name__ == '__main__':
-    codon_optimization_experiment()
+    codon_optimization_experiment("../data/02-sars2_n_vaccine.fasta")

@@ -3,6 +3,8 @@
     "table_name": "e_coli_316407",
     "gc_content": 0.5,
     "data_file": "../data/data",
+    "dataset": "../data/dataset.txt",
+    "output_path": "../data/",
     "chunk_size": 3
   },
 

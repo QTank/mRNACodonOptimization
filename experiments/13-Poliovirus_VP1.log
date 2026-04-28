@@ -1,0 +1,2220 @@
+############################################################
+Sequence 1/50
+============================================================
+Sequence: IDDSFT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : IDDSFT
+  - Qubits    : 10
+  - Bitstring : 1011000101
+  - mRNA      : AUUGAUGAUAGCUUUACC
+  - Energy    : 162.1620
+  - Time      : 19.23s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : IDDSFT
+  - Qubits    : 19
+  - Bitstring : 0010101100000010100
+  - mRNA      : AUUGAUGAUAGCUUUACC
+  - Energy    : 162.1620
+  - Time      : 0.70s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IDDSFT
+  - Qubits    : 10
+  - Bitstring : 1011000101
+  - mRNA      : AUUGAUGAUAGCUUUACC
+  - Energy    : 162.1620
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUUGAUGAUAGCUUUACC            162.1620          ✓  19.23s
+SA         AUUGAUGAUAGCUUUACC            162.1620          ✓   0.70s
+BRUTE      AUUGAUGAUAGCUUUACC            162.1620          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 2/50
+============================================================
+Sequence: EGGYIS
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : EGGYIS
+  - Qubits    : 11
+  - Bitstring : 00101110000
+  - mRNA      : GAAGGCGGCUAUAUUAGC
+  - Energy    : 169.7112
+  - Time      : 27.96s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : EGGYIS
+  - Qubits    : 21
+  - Bitstring : 100100010001001100000
+  - mRNA      : GAAGGCGGCUAUAUUAGC
+  - Energy    : 169.7112
+  - Time      : 0.92s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : EGGYIS
+  - Qubits    : 11
+  - Bitstring : 00101110000
+  - mRNA      : GAAGGCGGCUAUAUUAGC
+  - Energy    : 169.7112
+  - Time      : 0.04s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAAGGCGGCUAUAUUAGC            169.7112          ✓  27.96s
+SA         GAAGGCGGCUAUAUUAGC            169.7112          ✓   0.92s
+BRUTE      GAAGGCGGCUAUAUUAGC            169.7112          ✓   0.04s
+============================================================
+
+############################################################
+Sequence 3/50
+============================================================
+Sequence: VFYQTR
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VFYQTR
+  - Qubits    : 10
+  - Bitstring : 1001110011
+  - mRNA      : GUGUUCUAUCAGACGCGC
+  - Energy    : 185.6772
+  - Time      : 15.10s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : VFYQTR
+  - Qubits    : 20
+  - Bitstring : 00101001010010000100
+  - mRNA      : GUGUUCUAUCAGACGCGC
+  - Energy    : 185.6772
+  - Time      : 0.89s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VFYQTR
+  - Qubits    : 10
+  - Bitstring : 1001110011
+  - mRNA      : GUGUUCUAUCAGACGCGC
+  - Energy    : 185.6772
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUGUUCUAUCAGACGCGC            185.6772          ✓  15.10s
+SA         GUGUUCUAUCAGACGCGC            185.6772          ✓   0.89s
+BRUTE      GUGUUCUAUCAGACGCGC            185.6772          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 4/50
+============================================================
+Sequence: IVVPLS
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : IVVPLS
+  - Qubits    : 14
+  - Bitstring : 10111010010000
+  - mRNA      : AUUGUUGUGCCGCUGAGC
+  - Energy    : 206.5752
+  - Time      : 290.94s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : IVVPLS
+  - Qubits    : 27
+  - Bitstring : 001000100100010001000100000
+  - mRNA      : AUUGUUGUGCCGCUGAGC
+  - Energy    : 206.5752
+  - Time      : 2.37s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IVVPLS
+  - Qubits    : 14
+  - Bitstring : 10111010010000
+  - mRNA      : AUUGUUGUGCCGCUGAGC
+  - Energy    : 206.5752
+  - Time      : 0.42s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUUGUUGUGCCGCUGAGC            206.5752          ✓ 290.94s
+SA         AUUGUUGUGCCGCUGAGC            206.5752          ✓   2.37s
+BRUTE      AUUGUUGUGCCGCUGAGC            206.5752          ✓   0.42s
+============================================================
+
+############################################################
+Sequence 5/50
+============================================================
+Sequence: TPREMD
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TPREMD
+  - Qubits    : 9
+  - Bitstring : 101010111
+  - mRNA      : ACGCCGCGUGAGAUGGAU
+  - Energy    : 817.8120
+  - Time      : 5.87s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : TPREMD
+  - Qubits    : 19
+  - Bitstring : 0010001000000101101
+  - mRNA      : ACGCCGCGUGAGAUGGAU
+  - Energy    : 817.8120
+  - Time      : 1.02s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TPREMD
+  - Qubits    : 9
+  - Bitstring : 101010111
+  - mRNA      : ACGCCGCGUGAGAUGGAU
+  - Energy    : 817.8120
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACGCCGCGUGAGAUGGAU            817.8120          ✓   5.87s
+SA         ACGCCGCGUGAGAUGGAU            817.8120          ✓   1.02s
+BRUTE      ACGCCGCGUGAGAUGGAU            817.8120          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 6/50
+============================================================
+Sequence: ILGFVS
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : ILGFVS
+  - Qubits    : 13
+  - Bitstring : 1000101110000
+  - mRNA      : AUUCUCGGCUUUGUGAGC
+  - Energy    : 240.9588
+  - Time      : 143.85s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : ILGFVS
+  - Qubits    : 25
+  - Bitstring : 0100000100100010010100000
+  - mRNA      : AUCUUAGGCUUUGUGAGC
+  - Energy    : 241.5672
+  - Time      : 1.80s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : ILGFVS
+  - Qubits    : 13
+  - Bitstring : 1000101110000
+  - mRNA      : AUUCUCGGCUUUGUGAGC
+  - Energy    : 240.9588
+  - Time      : 0.24s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUUCUCGGCUUUGUGAGC            240.9588          ✓ 143.85s
+SA         AUCUUAGGCUUUGUGAGC            241.5672      +0.61   1.80s
+BRUTE      AUUCUCGGCUUUGUGAGC            240.9588          ✓   0.24s
+============================================================
+
+############################################################
+Sequence 7/50
+============================================================
+Sequence: ACNDFS
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : ACNDFS
+  - Qubits    : 9
+  - Bitstring : 100001000
+  - mRNA      : GCGUGCAACGACUUUAGC
+  - Energy    : 184.6080
+  - Time      : 5.84s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : ACNDFS
+  - Qubits    : 18
+  - Bitstring : 001010101001100000
+  - mRNA      : GCGUGCAACGACUUUAGC
+  - Energy    : 184.6080
+  - Time      : 0.76s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : ACNDFS
+  - Qubits    : 9
+  - Bitstring : 100001000
+  - mRNA      : GCGUGCAACGACUUUAGC
+  - Energy    : 184.6080
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GCGUGCAACGACUUUAGC            184.6080          ✓   5.84s
+SA         GCGUGCAACGACUUUAGC            184.6080          ✓   0.76s
+BRUTE      GCGUGCAACGACUUUAGC            184.6080          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 8/50
+============================================================
+Sequence: VRLLRD
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VRLLRD
+  - Qubits    : 15
+  - Bitstring : 101010100101011
+  - mRNA      : GUGCGUCUGCUGCGUGAU
+  - Energy    : 178.3656
+  - Time      : 354.76s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : VRLLRD
+  - Qubits    : 30
+  - Bitstring : 001000000100100000100000000101
+  - mRNA      : GUGCGUCUGCUGCGUGAU
+  - Energy    : 178.3656
+  - Time      : 3.70s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VRLLRD
+  - Qubits    : 15
+  - Bitstring : 101010100101011
+  - mRNA      : GUGCGUCUGCUGCGUGAU
+  - Energy    : 178.3656
+  - Time      : 1.64s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUGCGUCUGCUGCGUGAU            178.3656          ✓ 354.76s
+SA         GUGCGUCUGCUGCGUGAU            178.3656          ✓   3.70s
+BRUTE      GUGCGUCUGCUGCGUGAU            178.3656          ✓   1.64s
+============================================================
+
+############################################################
+Sequence 9/50
+============================================================
+Sequence: TTHIEQ
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TTHIEQ
+  - Qubits    : 9
+  - Bitstring : 011011001
+  - mRNA      : ACCACGCAUAUUGAACAG
+  - Energy    : 151.6572
+  - Time      : 6.71s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : TTHIEQ
+  - Qubits    : 17
+  - Bitstring : 01000010010011001
+  - mRNA      : ACCACGCAUAUUGAACAG
+  - Energy    : 151.6572
+  - Time      : 0.55s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TTHIEQ
+  - Qubits    : 9
+  - Bitstring : 011011001
+  - mRNA      : ACCACGCAUAUUGAACAG
+  - Energy    : 151.6572
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCACGCAUAUUGAACAG            151.6572          ✓   6.71s
+SA         ACCACGCAUAUUGAACAG            151.6572          ✓   0.55s
+BRUTE      ACCACGCAUAUUGAACAG            151.6572          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 10/50
+============================================================
+Sequence: KALAQG
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KALAQG
+  - Qubits    : 11
+  - Bitstring : 01010010001
+  - mRNA      : AAAGCGUUAGCGCAAGGC
+  - Energy    : 228.9312
+  - Time      : 41.37s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : KALAQG
+  - Qubits    : 22
+  - Bitstring : 1000100000100010100100
+  - mRNA      : AAAGCGUUAGCGCAAGGC
+  - Energy    : 228.9312
+  - Time      : 1.36s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KALAQG
+  - Qubits    : 11
+  - Bitstring : 01010010001
+  - mRNA      : AAAGCGUUAGCGCAAGGC
+  - Energy    : 228.9312
+  - Time      : 0.04s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAAGCGUUAGCGCAAGGC            228.9312          ✓  41.37s
+SA         AAAGCGUUAGCGCAAGGC            228.9312          ✓   1.36s
+BRUTE      AAAGCGUUAGCGCAAGGC            228.9312          ✓   0.04s
+============================================================
+
+############################################################
+Sequence 11/50
+============================================================
+Sequence: LGQMLE
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LGQMLE
+  - Qubits    : 10
+  - Bitstring : 1001111000
+  - mRNA      : UUAGGUCAGAUGUUAGAA
+  - Energy    : 220.4820
+  - Time      : 19.77s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : LGQMLE
+  - Qubits    : 21
+  - Bitstring : 000010000101100001010
+  - mRNA      : UUAGGUCAGAUGUUAGAA
+  - Energy    : 220.4820
+  - Time      : 1.34s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LGQMLE
+  - Qubits    : 10
+  - Bitstring : 1001111000
+  - mRNA      : UUAGGUCAGAUGUUAGAA
+  - Energy    : 220.4820
+  - Time      : 0.05s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUAGGUCAGAUGUUAGAA            220.4820          ✓  19.77s
+SA         UUAGGUCAGAUGUUAGAA            220.4820          ✓   1.34s
+BRUTE      UUAGGUCAGAUGUUAGAA            220.4820          ✓   0.05s
+============================================================
+
+############################################################
+Sequence 12/50
+============================================================
+Sequence: SMIDNT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SMIDNT
+  - Qubits    : 9
+  - Bitstring : 000101001
+  - mRNA      : AGCAUGAUUGAUAACACC
+  - Energy    : 142.7904
+  - Time      : 6.16s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : SMIDNT
+  - Qubits    : 18
+  - Bitstring : 100000100101100100
+  - mRNA      : AGCAUGAUUGAUAACACC
+  - Energy    : 142.7904
+  - Time      : 0.80s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SMIDNT
+  - Qubits    : 9
+  - Bitstring : 000101001
+  - mRNA      : AGCAUGAUUGAUAACACC
+  - Energy    : 142.7904
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCAUGAUUGAUAACACC            142.7904          ✓   6.16s
+SA         AGCAUGAUUGAUAACACC            142.7904          ✓   0.80s
+BRUTE      AGCAUGAUUGAUAACACC            142.7904          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 13/50
+============================================================
+Sequence: VRETVG
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VRETVG
+  - Qubits    : 12
+  - Bitstring : 101011011101
+  - mRNA      : GUGCGUGAGACCGUUGGC
+  - Energy    : 235.9368
+  - Time      : 79.11s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : VRETVG
+  - Qubits    : 24
+  - Bitstring : 001000000101010000010100
+  - mRNA      : GUGCGUGAGACCGUUGGC
+  - Energy    : 235.9368
+  - Time      : 1.83s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VRETVG
+  - Qubits    : 12
+  - Bitstring : 101011011101
+  - mRNA      : GUGCGUGAGACCGUUGGC
+  - Energy    : 235.9368
+  - Time      : 0.07s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUGCGUGAGACCGUUGGC            235.9368          ✓  79.11s
+SA         GUGCGUGAGACCGUUGGC            235.9368          ✓   1.83s
+BRUTE      GUGCGUGAGACCGUUGGC            235.9368          ✓   0.07s
+============================================================
+
+############################################################
+Sequence 14/50
+============================================================
+Sequence: AATSRD
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : AATSRD
+  - Qubits    : 13
+  - Bitstring : 0110010011011
+  - mRNA      : GCCGCGACCAGUCGUGAU
+  - Energy    : 243.8100
+  - Time      : 157.27s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : AATSRD
+  - Qubits    : 26
+  - Bitstring : 01000010010000000100000101
+  - mRNA      : GCCGCGACCUCUCGUGAU
+  - Energy    : 243.8100
+  - Time      : 2.70s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : AATSRD
+  - Qubits    : 13
+  - Bitstring : 0110011011011
+  - mRNA      : GCCGCGACCUCUCGUGAU
+  - Energy    : 243.8100
+  - Time      : 0.21s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GCCGCGACCAGUCGUGAU            243.8100          ✓ 157.27s
+SA         GCCGCGACCUCUCGUGAU            243.8100          ✓   2.70s
+BRUTE      GCCGCGACCUCUCGUGAU            243.8100          ✓   0.21s
+============================================================
+
+############################################################
+Sequence 15/50
+============================================================
+Sequence: ALPNTE
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : ALPNTE
+  - Qubits    : 11
+  - Bitstring : 10010100010
+  - mRNA      : GCGCUGCCGAACACCGAA
+  - Energy    : 158.4684
+  - Time      : 42.50s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : ALPNTE
+  - Qubits    : 22
+  - Bitstring : 0010001000001010010010
+  - mRNA      : GCGCUGCCGAACACCGAA
+  - Energy    : 158.4684
+  - Time      : 1.44s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : ALPNTE
+  - Qubits    : 11
+  - Bitstring : 10010100010
+  - mRNA      : GCGCUGCCGAACACCGAA
+  - Energy    : 158.4684
+  - Time      : 0.05s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GCGCUGCCGAACACCGAA            158.4684          ✓  42.50s
+SA         GCGCUGCCGAACACCGAA            158.4684          ✓   1.44s
+BRUTE      GCGCUGCCGAACACCGAA            158.4684          ✓   0.05s
+============================================================
+
+############################################################
+Sequence 16/50
+============================================================
+Sequence: ASGPTH
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : ASGPTH
+  - Qubits    : 12
+  - Bitstring : 100001110101
+  - mRNA      : GCGAGCGGUCCGACGCAU
+  - Energy    : 229.8924
+  - Time      : 86.46s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : ASGPTH
+  - Qubits    : 24
+  - Bitstring : 001010000000010010001001
+  - mRNA      : GCGAGCGGUCCGACGCAU
+  - Energy    : 229.8924
+  - Time      : 1.94s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : ASGPTH
+  - Qubits    : 12
+  - Bitstring : 100001110101
+  - mRNA      : GCGAGCGGUCCGACGCAU
+  - Energy    : 229.8924
+  - Time      : 0.08s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GCGAGCGGUCCGACGCAU            229.8924          ✓  86.46s
+SA         GCGAGCGGUCCGACGCAU            229.8924          ✓   1.94s
+BRUTE      GCGAGCGGUCCGACGCAU            229.8924          ✓   0.08s
+============================================================
+
+############################################################
+Sequence 17/50
+============================================================
+Sequence: SKEIPA
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SKEIPA
+  - Qubits    : 11
+  - Bitstring : 00001100010
+  - mRNA      : AGCAAAGAGAUUCCAGCG
+  - Energy    : 221.2272
+  - Time      : 40.88s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : SKEIPA
+  - Qubits    : 21
+  - Bitstring : 100000100100110000010
+  - mRNA      : AGCAAAGAGAUUCCAGCG
+  - Energy    : 221.2272
+  - Time      : 1.11s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SKEIPA
+  - Qubits    : 11
+  - Bitstring : 00001100010
+  - mRNA      : AGCAAAGAGAUUCCAGCG
+  - Energy    : 221.2272
+  - Time      : 0.05s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCAAAGAGAUUCCAGCG            221.2272          ✓  40.88s
+SA         AGCAAAGAGAUUCCAGCG            221.2272          ✓   1.11s
+BRUTE      AGCAAAGAGAUUCCAGCG            221.2272          ✓   0.05s
+============================================================
+
+############################################################
+Sequence 18/50
+============================================================
+Sequence: LTAVET
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LTAVET
+  - Qubits    : 12
+  - Bitstring : 010010111101
+  - mRNA      : CUGACCGCCGUUGAGACC
+  - Energy    : 234.3816
+  - Time      : 78.52s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : LTAVET
+  - Qubits    : 24
+  - Bitstring : 001000010001000001010100
+  - mRNA      : CUGACCGCCGUUGAGACC
+  - Energy    : 234.3816
+  - Time      : 1.86s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LTAVET
+  - Qubits    : 12
+  - Bitstring : 010010111101
+  - mRNA      : CUGACCGCCGUUGAGACC
+  - Energy    : 234.3816
+  - Time      : 0.07s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CUGACCGCCGUUGAGACC            234.3816          ✓  78.52s
+SA         CUGACCGCCGUUGAGACC            234.3816          ✓   1.86s
+BRUTE      CUGACCGCCGUUGAGACC            234.3816          ✓   0.07s
+============================================================
+
+############################################################
+Sequence 19/50
+============================================================
+Sequence: GATNPL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : GATNPL
+  - Qubits    : 12
+  - Bitstring : 011001110010
+  - mRNA      : GGCGCGACCAAUCCGCUG
+  - Energy    : 192.4704
+  - Time      : 77.21s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : GATNPL
+  - Qubits    : 24
+  - Bitstring : 010000100100010010001000
+  - mRNA      : GGCGCGACCAAUCCGCUG
+  - Energy    : 192.4704
+  - Time      : 1.69s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : GATNPL
+  - Qubits    : 12
+  - Bitstring : 011001110010
+  - mRNA      : GGCGCGACCAAUCCGCUG
+  - Energy    : 192.4704
+  - Time      : 0.07s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GGCGCGACCAAUCCGCUG            192.4704          ✓  77.21s
+SA         GGCGCGACCAAUCCGCUG            192.4704          ✓   1.69s
+BRUTE      GGCGCGACCAAUCCGCUG            192.4704          ✓   0.07s
+============================================================
+
+############################################################
+Sequence 20/50
+============================================================
+Sequence: VPSDTV
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VPSDTV
+  - Qubits    : 12
+  - Bitstring : 101000010110
+  - mRNA      : GUGCCGAGCGAUACCGUG
+  - Energy    : 197.5428
+  - Time      : 92.20s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : VPSDTV
+  - Qubits    : 24
+  - Bitstring : 001000101000000101000010
+  - mRNA      : GUGCCGAGCGAUACCGUG
+  - Energy    : 197.5428
+  - Time      : 2.00s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VPSDTV
+  - Qubits    : 12
+  - Bitstring : 101000010110
+  - mRNA      : GUGCCGAGCGAUACCGUG
+  - Energy    : 197.5428
+  - Time      : 0.08s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUGCCGAGCGAUACCGUG            197.5428          ✓  92.20s
+SA         GUGCCGAGCGAUACCGUG            197.5428          ✓   2.00s
+BRUTE      GUGCCGAGCGAUACCGUG            197.5428          ✓   0.08s
+============================================================
+
+############################################################
+Sequence 21/50
+============================================================
+Sequence: QTRHVV
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : QTRHVV
+  - Qubits    : 11
+  - Bitstring : 11010111110
+  - mRNA      : CAGACGCGUCAUGUUGUG
+  - Energy    : 206.0892
+  - Time      : 41.22s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : QTRHVV
+  - Qubits    : 22
+  - Bitstring : 0100100000010100010010
+  - mRNA      : CAGACGCGUCAUGUUGUG
+  - Energy    : 206.0892
+  - Time      : 1.47s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : QTRHVV
+  - Qubits    : 11
+  - Bitstring : 11010111110
+  - mRNA      : CAGACGCGUCAUGUUGUG
+  - Energy    : 206.0892
+  - Time      : 0.04s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CAGACGCGUCAUGUUGUG            206.0892          ✓  41.22s
+SA         CAGACGCGUCAUGUUGUG            206.0892          ✓   1.47s
+BRUTE      CAGACGCGUCAUGUUGUG            206.0892          ✓   0.04s
+============================================================
+
+############################################################
+Sequence 22/50
+============================================================
+Sequence: QHRSRS
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : QHRSRS
+  - Qubits    : 14
+  - Bitstring : 11101001101000
+  - mRNA      : CAGCAUCGUAGUCGUAGC
+  - Energy    : 222.2244
+  - Time      : 356.71s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : QHRSRS
+  - Qubits    : 28
+  - Bitstring : 0101000001010000000001100000
+  - mRNA      : CAGCAUCGUAGUCGUAGC
+  - Energy    : 222.2244
+  - Time      : 3.52s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : QHRSRS
+  - Qubits    : 14
+  - Bitstring : 11101001101000
+  - mRNA      : CAGCAUCGUAGUCGUAGC
+  - Energy    : 222.2244
+  - Time      : 0.94s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CAGCAUCGUAGUCGUAGC            222.2244          ✓ 356.71s
+SA         CAGCAUCGUAGUCGUAGC            222.2244          ✓   3.52s
+BRUTE      CAGCAUCGUAGUCGUAGC            222.2244          ✓   0.94s
+============================================================
+
+############################################################
+Sequence 23/50
+============================================================
+Sequence: ESSIES
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : ESSIES
+  - Qubits    : 13
+  - Bitstring : 0100000100100
+  - mRNA      : GAAUCGAGCAUUGAAUCG
+  - Energy    : 233.4996
+  - Time      : 174.59s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : ESSIES
+  - Qubits    : 25
+  - Bitstring : 1000001010000000110000010
+  - mRNA      : GAAUCGAGCAUUGAAUCG
+  - Energy    : 233.4996
+  - Time      : 2.11s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : ESSIES
+  - Qubits    : 13
+  - Bitstring : 0100000100011
+  - mRNA      : GAAUCGAGCAUUGAAUCC
+  - Energy    : 233.4996
+  - Time      : 0.30s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAAUCGAGCAUUGAAUCG            233.4996          ✓ 174.59s
+SA         GAAUCGAGCAUUGAAUCG            233.4996          ✓   2.11s
+BRUTE      GAAUCGAGCAUUGAAUCC            233.4996          ✓   0.30s
+============================================================
+
+############################################################
+Sequence 24/50
+============================================================
+Sequence: FFARGA
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FFARGA
+  - Qubits    : 11
+  - Bitstring : 01101010110
+  - mRNA      : UUCUUUGCGCGUGGCGCG
+  - Energy    : 202.9860
+  - Time      : 45.54s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : FFARGA
+  - Qubits    : 22
+  - Bitstring : 1001001000000101000010
+  - mRNA      : UUCUUUGCGCGUGGCGCG
+  - Energy    : 202.9860
+  - Time      : 1.35s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FFARGA
+  - Qubits    : 11
+  - Bitstring : 01101010110
+  - mRNA      : UUCUUUGCGCGUGGCGCG
+  - Energy    : 202.9860
+  - Time      : 0.05s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUCUUUGCGCGUGGCGCG            202.9860          ✓  45.54s
+SA         UUCUUUGCGCGUGGCGCG            202.9860          ✓   1.35s
+BRUTE      UUCUUUGCGCGUGGCGCG            202.9860          ✓   0.05s
+============================================================
+
+############################################################
+Sequence 25/50
+============================================================
+Sequence: CVTIMT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : CVTIMT
+  - Qubits    : 9
+  - Bitstring : 010011001
+  - mRNA      : UGCGUGACCAUUAUGACC
+  - Energy    : 142.3008
+  - Time      : 8.18s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : CVTIMT
+  - Qubits    : 18
+  - Bitstring : 100010010000110100
+  - mRNA      : UGCGUGACCAUUAUGACC
+  - Energy    : 142.3008
+  - Time      : 0.73s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : CVTIMT
+  - Qubits    : 9
+  - Bitstring : 010011001
+  - mRNA      : UGCGUGACCAUUAUGACC
+  - Energy    : 142.3008
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UGCGUGACCAUUAUGACC            142.3008          ✓   8.18s
+SA         UGCGUGACCAUUAUGACC            142.3008          ✓   0.73s
+BRUTE      UGCGUGACCAUUAUGACC            142.3008          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 26/50
+============================================================
+Sequence: VDNPAS
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VDNPAS
+  - Qubits    : 11
+  - Bitstring : 11110010000
+  - mRNA      : GUUGAUAAUCCAGCGAGC
+  - Energy    : 239.5980
+  - Time      : 52.31s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : VDNPAS
+  - Qubits    : 22
+  - Bitstring : 0001010110000010100000
+  - mRNA      : GUUGAUAAUCCAGCGAGC
+  - Energy    : 239.5980
+  - Time      : 1.40s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VDNPAS
+  - Qubits    : 11
+  - Bitstring : 11110010000
+  - mRNA      : GUUGAUAAUCCAGCGAGC
+  - Energy    : 239.5980
+  - Time      : 0.04s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUUGAUAAUCCAGCGAGC            239.5980          ✓  52.31s
+SA         GUUGAUAAUCCAGCGAGC            239.5980          ✓   1.40s
+BRUTE      GUUGAUAAUCCAGCGAGC            239.5980          ✓   0.04s
+============================================================
+
+############################################################
+Sequence 27/50
+============================================================
+Sequence: TTNKDK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TTNKDK
+  - Qubits    : 8
+  - Bitstring : 01010010
+  - mRNA      : ACCACCAACAAAGAUAAA
+  - Energy    : 124.0596
+  - Time      : 6.62s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : TTNKDK
+  - Qubits    : 16
+  - Bitstring : 0100010010100110
+  - mRNA      : ACCACCAACAAAGAUAAA
+  - Energy    : 124.0596
+  - Time      : 0.46s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TTNKDK
+  - Qubits    : 8
+  - Bitstring : 01010010
+  - mRNA      : ACCACCAACAAAGAUAAA
+  - Energy    : 124.0596
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCACCAACAAAGAUAAA            124.0596          ✓   6.62s
+SA         ACCACCAACAAAGAUAAA            124.0596          ✓   0.46s
+BRUTE      ACCACCAACAAAGAUAAA            124.0596          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 28/50
+============================================================
+Sequence: LFAVWK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LFAVWK
+  - Qubits    : 9
+  - Bitstring : 010101100
+  - mRNA      : CUGUUUGCCGUGUGGAAA
+  - Energy    : 139.1904
+  - Time      : 7.85s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : LFAVWK
+  - Qubits    : 19
+  - Bitstring : 0010000101000010110
+  - mRNA      : CUGUUUGCCGUGUGGAAA
+  - Energy    : 139.1904
+  - Time      : 0.84s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LFAVWK
+  - Qubits    : 9
+  - Bitstring : 010101100
+  - mRNA      : CUGUUUGCCGUGUGGAAA
+  - Energy    : 139.1904
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CUGUUUGCCGUGUGGAAA            139.1904          ✓   7.85s
+SA         CUGUUUGCCGUGUGGAAA            139.1904          ✓   0.84s
+BRUTE      CUGUUUGCCGUGUGGAAA            139.1904          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 29/50
+============================================================
+Sequence: ITYKDT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : ITYKDT
+  - Qubits    : 9
+  - Bitstring : 100110101
+  - mRNA      : AUUACCUAUAAAGAUACC
+  - Energy    : 144.5508
+  - Time      : 8.98s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : ITYKDT
+  - Qubits    : 17
+  - Bitstring : 00101000110010100
+  - mRNA      : AUUACCUAUAAAGAUACC
+  - Energy    : 144.5508
+  - Time      : 0.51s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : ITYKDT
+  - Qubits    : 9
+  - Bitstring : 100110101
+  - mRNA      : AUUACCUAUAAAGAUACC
+  - Energy    : 144.5508
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUUACCUAUAAAGAUACC            144.5508          ✓   8.98s
+SA         AUUACCUAUAAAGAUACC            144.5508          ✓   0.51s
+BRUTE      AUUACCUAUAAAGAUACC            144.5508          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 30/50
+============================================================
+Sequence: VQLRRK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VQLRRK
+  - Qubits    : 13
+  - Bitstring : 1010101011010
+  - mRNA      : GUGCAGCUGCGUCGUAAA
+  - Energy    : 158.1696
+  - Time      : 196.09s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : VQLRRK
+  - Qubits    : 26
+  - Bitstring : 00100100100000000100000110
+  - mRNA      : GUGCAGCUGCGUCGUAAA
+  - Energy    : 158.1696
+  - Time      : 3.50s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VQLRRK
+  - Qubits    : 13
+  - Bitstring : 1010101011010
+  - mRNA      : GUGCAGCUGCGUCGUAAA
+  - Energy    : 158.1696
+  - Time      : 0.30s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUGCAGCUGCGUCGUAAA            158.1696          ✓ 196.09s
+SA         GUGCAGCUGCGUCGUAAA            158.1696          ✓   3.50s
+BRUTE      GUGCAGCUGCGUCGUAAA            158.1696          ✓   0.30s
+============================================================
+
+############################################################
+Sequence 31/50
+============================================================
+Sequence: LEFFTY
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LEFFTY
+  - Qubits    : 9
+  - Bitstring : 001001011
+  - mRNA      : CUCGAAUUCUUUACCUAU
+  - Energy    : 202.5000
+  - Time      : 9.35s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : LEFFTY
+  - Qubits    : 18
+  - Bitstring : 010000101001010001
+  - mRNA      : CUCGAAUUCUUUACCUAU
+  - Energy    : 202.5000
+  - Time      : 0.78s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LEFFTY
+  - Qubits    : 9
+  - Bitstring : 001001011
+  - mRNA      : CUCGAAUUCUUUACCUAU
+  - Energy    : 202.5000
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CUCGAAUUCUUUACCUAU            202.5000          ✓   9.35s
+SA         CUCGAAUUCUUUACCUAU            202.5000          ✓   0.78s
+BRUTE      CUCGAAUUCUUUACCUAU            202.5000          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 32/50
+============================================================
+Sequence: SRFDME
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SRFDME
+  - Qubits    : 9
+  - Bitstring : 100011110
+  - mRNA      : UCGCGCUUUGAUAUGGAA
+  - Energy    : 799.7544
+  - Time      : 8.19s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : SRFDME
+  - Qubits    : 19
+  - Bitstring : 0000100001000101110
+  - mRNA      : UCGCGCUUUGAUAUGGAA
+  - Energy    : 799.7544
+  - Time      : 1.18s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SRFDME
+  - Qubits    : 9
+  - Bitstring : 100011110
+  - mRNA      : UCGCGCUUUGAUAUGGAA
+  - Energy    : 799.7544
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UCGCGCUUUGAUAUGGAA            799.7544          ✓   8.19s
+SA         UCGCGCUUUGAUAUGGAA            799.7544          ✓   1.18s
+BRUTE      UCGCGCUUUGAUAUGGAA            799.7544          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 33/50
+============================================================
+Sequence: LTFVVT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LTFVVT
+  - Qubits    : 12
+  - Bitstring : 010011111001
+  - mRNA      : CUGACCUUUGUUGUGACC
+  - Energy    : 191.8728
+  - Time      : 96.16s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : LTFVVT
+  - Qubits    : 24
+  - Bitstring : 001000010001000100100100
+  - mRNA      : CUGACCUUUGUUGUGACC
+  - Energy    : 191.8728
+  - Time      : 1.72s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LTFVVT
+  - Qubits    : 12
+  - Bitstring : 010011111001
+  - mRNA      : CUGACCUUUGUUGUGACC
+  - Energy    : 191.8728
+  - Time      : 0.06s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CUGACCUUUGUUGUGACC            191.8728          ✓  96.16s
+SA         CUGACCUUUGUUGUGACC            191.8728          ✓   1.72s
+BRUTE      CUGACCUUUGUUGUGACC            191.8728          ✓   0.06s
+============================================================
+
+############################################################
+Sequence 34/50
+============================================================
+Sequence: ANFTET
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : ANFTET
+  - Qubits    : 9
+  - Bitstring : 100101101
+  - mRNA      : GCGAACUUUACCGAGACC
+  - Energy    : 183.7332
+  - Time      : 7.76s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : ANFTET
+  - Qubits    : 18
+  - Bitstring : 001010010100010100
+  - mRNA      : GCGAACUUUACCGAGACC
+  - Energy    : 183.7332
+  - Time      : 0.73s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : ANFTET
+  - Qubits    : 9
+  - Bitstring : 100101101
+  - mRNA      : GCGAACUUUACCGAGACC
+  - Energy    : 183.7332
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GCGAACUUUACCGAGACC            183.7332          ✓   7.76s
+SA         GCGAACUUUACCGAGACC            183.7332          ✓   0.73s
+BRUTE      GCGAACUUUACCGAGACC            183.7332          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 35/50
+============================================================
+Sequence: NNGHAL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NNGHAL
+  - Qubits    : 10
+  - Bitstring : 0011110010
+  - mRNA      : AACAACGGUCAUGCGCUG
+  - Energy    : 166.9176
+  - Time      : 23.38s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : NNGHAL
+  - Qubits    : 20
+  - Bitstring : 10100001010010001000
+  - mRNA      : AACAACGGUCAUGCGCUG
+  - Energy    : 166.9176
+  - Time      : 0.96s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NNGHAL
+  - Qubits    : 10
+  - Bitstring : 0011110010
+  - mRNA      : AACAACGGUCAUGCGCUG
+  - Energy    : 166.9176
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AACAACGGUCAUGCGCUG            166.9176          ✓  23.38s
+SA         AACAACGGUCAUGCGCUG            166.9176          ✓   0.96s
+BRUTE      AACAACGGUCAUGCGCUG            166.9176          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 36/50
+============================================================
+Sequence: NQVYQI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NQVYQI
+  - Qubits    : 8
+  - Bitstring : 10101110
+  - mRNA      : AAUCAAGUGUAUCAGAUU
+  - Energy    : 178.7652
+  - Time      : 4.85s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : NQVYQI
+  - Qubits    : 15
+  - Bitstring : 011000100101001
+  - mRNA      : AAUCAAGUGUAUCAGAUU
+  - Energy    : 178.7652
+  - Time      : 0.37s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NQVYQI
+  - Qubits    : 8
+  - Bitstring : 10101110
+  - mRNA      : AAUCAAGUGUAUCAGAUU
+  - Energy    : 178.7652
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAUCAAGUGUAUCAGAUU            178.7652          ✓   4.85s
+SA         AAUCAAGUGUAUCAGAUU            178.7652          ✓   0.37s
+BRUTE      AAUCAAGUGUAUCAGAUU            178.7652          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 37/50
+============================================================
+Sequence: MYVPPG
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : MYVPPG
+  - Qubits    : 9
+  - Bitstring : 110100001
+  - mRNA      : AUGUAUGUGCCGCCAGGC
+  - Energy    : 176.5188
+  - Time      : 7.59s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : MYVPPG
+  - Qubits    : 19
+  - Bitstring : 1010010001010000100
+  - mRNA      : AUGUAUGUGCCGCCAGGC
+  - Energy    : 176.5188
+  - Time      : 0.85s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : MYVPPG
+  - Qubits    : 9
+  - Bitstring : 110100001
+  - mRNA      : AUGUAUGUGCCGCCAGGC
+  - Energy    : 176.5188
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUGUAUGUGCCGCCAGGC            176.5188          ✓   7.59s
+SA         AUGUAUGUGCCGCCAGGC            176.5188          ✓   0.85s
+BRUTE      AUGUAUGUGCCGCCAGGC            176.5188          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 38/50
+============================================================
+Sequence: APVPEK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : APVPEK
+  - Qubits    : 10
+  - Bitstring : 1000100010
+  - mRNA      : GCGCCAGUGCCAGAGAAA
+  - Energy    : 250.4880
+  - Time      : 28.05s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : APVPEK
+  - Qubits    : 20
+  - Bitstring : 00101000001010000110
+  - mRNA      : GCGCCAGUGCCAGAGAAA
+  - Energy    : 250.4880
+  - Time      : 1.02s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : APVPEK
+  - Qubits    : 10
+  - Bitstring : 1000100010
+  - mRNA      : GCGCCAGUGCCAGAGAAA
+  - Energy    : 250.4880
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GCGCCAGUGCCAGAGAAA            250.4880          ✓  28.05s
+SA         GCGCCAGUGCCAGAGAAA            250.4880          ✓   1.02s
+BRUTE      GCGCCAGUGCCAGAGAAA            250.4880          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 39/50
+============================================================
+Sequence: WDDYTW
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : WDDYTW
+  - Qubits    : 5
+  - Bitstring : 10101
+  - mRNA      : UGGGAUGACUAUACCUGG
+  - Energy    : 1075.2264
+  - Time      : 3.93s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : WDDYTW
+  - Qubits    : 12
+  - Bitstring : 101100101001
+  - mRNA      : UGGGAUGACUAUACCUGG
+  - Energy    : 1075.2264
+  - Time      : 0.29s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : WDDYTW
+  - Qubits    : 5
+  - Bitstring : 10101
+  - mRNA      : UGGGAUGACUAUACCUGG
+  - Energy    : 1075.2264
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UGGGAUGACUAUACCUGG           1075.2264          ✓   3.93s
+SA         UGGGAUGACUAUACCUGG           1075.2264          ✓   0.29s
+BRUTE      UGGGAUGACUAUACCUGG           1075.2264          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 40/50
+============================================================
+Sequence: QTSSNP
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : QTSSNP
+  - Qubits    : 12
+  - Bitstring : 101000000110
+  - mRNA      : CAGACCAGCAGCAAUCCG
+  - Energy    : 194.5980
+  - Time      : 93.54s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : QTSSNP
+  - Qubits    : 24
+  - Bitstring : 010100100000100000010010
+  - mRNA      : CAGACCAGCAGCAAUCCG
+  - Energy    : 194.5980
+  - Time      : 1.93s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : QTSSNP
+  - Qubits    : 12
+  - Bitstring : 101000000110
+  - mRNA      : CAGACCAGCAGCAAUCCG
+  - Energy    : 194.5980
+  - Time      : 0.10s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CAGACCAGCAGCAAUCCG            194.5980          ✓  93.54s
+SA         CAGACCAGCAGCAAUCCG            194.5980          ✓   1.93s
+BRUTE      CAGACCAGCAGCAAUCCG            194.5980          ✓   0.10s
+============================================================
+
+############################################################
+Sequence 41/50
+============================================================
+Sequence: SIFYTY
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SIFYTY
+  - Qubits    : 10
+  - Bitstring : 0000101011
+  - mRNA      : AGCAUCUUCUAUACCUAU
+  - Energy    : 188.3088
+  - Time      : 26.05s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : SIFYTY
+  - Qubits    : 19
+  - Bitstring : 1000000101001010001
+  - mRNA      : AGCAUCUUCUAUACCUAU
+  - Energy    : 188.3088
+  - Time      : 0.85s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SIFYTY
+  - Qubits    : 10
+  - Bitstring : 0000101011
+  - mRNA      : AGCAUCUUCUAUACCUAU
+  - Energy    : 188.3088
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCAUCUUCUAUACCUAU            188.3088          ✓  26.05s
+SA         AGCAUCUUCUAUACCUAU            188.3088          ✓   0.85s
+BRUTE      AGCAUCUUCUAUACCUAU            188.3088          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 42/50
+============================================================
+Sequence: GTAPAR
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : GTAPAR
+  - Qubits    : 13
+  - Bitstring : 1101100010101
+  - mRNA      : GGUACCGCGCCAGCGCGU
+  - Energy    : 263.5560
+  - Time      : 201.96s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : GTAPAR
+  - Qubits    : 26
+  - Bitstring : 00010100001010000010000001
+  - mRNA      : GGUACCGCGCCAGCGCGU
+  - Energy    : 263.5560
+  - Time      : 2.16s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : GTAPAR
+  - Qubits    : 13
+  - Bitstring : 1101100010101
+  - mRNA      : GGUACCGCGCCAGCGCGU
+  - Energy    : 263.5560
+  - Time      : 0.11s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GGUACCGCGCCAGCGCGU            263.5560          ✓ 201.96s
+SA         GGUACCGCGCCAGCGCGU            263.5560          ✓   2.16s
+BRUTE      GGUACCGCGCCAGCGCGU            263.5560          ✓   0.11s
+============================================================
+
+############################################################
+Sequence 43/50
+============================================================
+Sequence: ISVPYV
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : ISVPYV
+  - Qubits    : 12
+  - Bitstring : 100001010110
+  - mRNA      : AUUAGCGUGCCGUAUGUG
+  - Energy    : 187.7904
+  - Time      : 96.48s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : ISVPYV
+  - Qubits    : 23
+  - Bitstring : 00110000000100010010010
+  - mRNA      : AUUAGCGUGCCGUAUGUG
+  - Energy    : 187.7904
+  - Time      : 1.52s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : ISVPYV
+  - Qubits    : 12
+  - Bitstring : 100001010110
+  - mRNA      : AUUAGCGUGCCGUAUGUG
+  - Energy    : 187.7904
+  - Time      : 0.08s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUUAGCGUGCCGUAUGUG            187.7904          ✓  96.48s
+SA         AUUAGCGUGCCGUAUGUG            187.7904          ✓   1.52s
+BRUTE      AUUAGCGUGCCGUAUGUG            187.7904          ✓   0.08s
+============================================================
+
+############################################################
+Sequence 44/50
+============================================================
+Sequence: GISNAY
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : GISNAY
+  - Qubits    : 11
+  - Bitstring : 01100000101
+  - mRNA      : GGCAUUAGCAACGCGUAU
+  - Energy    : 183.4164
+  - Time      : 52.06s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : GISNAY
+  - Qubits    : 21
+  - Bitstring : 010000110000010001001
+  - mRNA      : GGCAUUAGCAACGCGUAU
+  - Energy    : 183.4164
+  - Time      : 1.08s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : GISNAY
+  - Qubits    : 11
+  - Bitstring : 01100000101
+  - mRNA      : GGCAUUAGCAACGCGUAU
+  - Energy    : 183.4164
+  - Time      : 0.04s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GGCAUUAGCAACGCGUAU            183.4164          ✓  52.06s
+SA         GGCAUUAGCAACGCGUAU            183.4164          ✓   1.08s
+BRUTE      GGCAUUAGCAACGCGUAU            183.4164          ✓   0.04s
+============================================================
+
+############################################################
+Sequence 45/50
+============================================================
+Sequence: SHFYDG
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SHFYDG
+  - Qubits    : 9
+  - Bitstring : 100001101
+  - mRNA      : UCGCACUUCUAUGAUGGC
+  - Energy    : 199.1628
+  - Time      : 7.66s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : SHFYDG
+  - Qubits    : 18
+  - Bitstring : 000010101001010100
+  - mRNA      : UCGCACUUCUAUGAUGGC
+  - Energy    : 199.1628
+  - Time      : 0.82s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SHFYDG
+  - Qubits    : 9
+  - Bitstring : 100001101
+  - mRNA      : UCGCACUUCUAUGAUGGC
+  - Energy    : 199.1628
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UCGCACUUCUAUGAUGGC            199.1628          ✓   7.66s
+SA         UCGCACUUCUAUGAUGGC            199.1628          ✓   0.82s
+BRUTE      UCGCACUUCUAUGAUGGC            199.1628          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 46/50
+============================================================
+Sequence: FSKVPL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FSKVPL
+  - Qubits    : 12
+  - Bitstring : 100001010010
+  - mRNA      : UUUAGCAAAGUGCCGCUG
+  - Energy    : 160.8660
+  - Time      : 86.60s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : FSKVPL
+  - Qubits    : 24
+  - Bitstring : 011000001000100010001000
+  - mRNA      : UUUAGCAAAGUGCCGCUG
+  - Energy    : 160.8660
+  - Time      : 1.63s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FSKVPL
+  - Qubits    : 12
+  - Bitstring : 100001010010
+  - mRNA      : UUUAGCAAAGUGCCGCUG
+  - Energy    : 160.8660
+  - Time      : 0.09s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUUAGCAAAGUGCCGCUG            160.8660          ✓  86.60s
+SA         UUUAGCAAAGUGCCGCUG            160.8660          ✓   1.63s
+BRUTE      UUUAGCAAAGUGCCGCUG            160.8660          ✓   0.09s
+============================================================
+
+############################################################
+Sequence 47/50
+============================================================
+Sequence: KDQSAA
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KDQSAA
+  - Qubits    : 10
+  - Bitstring : 0110000110
+  - mRNA      : AAAGAUCAGAGCGCCGCG
+  - Energy    : 176.3244
+  - Time      : 22.97s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : KDQSAA
+  - Qubits    : 20
+  - Bitstring : 10010110000001000010
+  - mRNA      : AAAGAUCAGAGCGCCGCG
+  - Energy    : 176.3244
+  - Time      : 1.11s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KDQSAA
+  - Qubits    : 10
+  - Bitstring : 0110000110
+  - mRNA      : AAAGAUCAGAGCGCCGCG
+  - Energy    : 176.3244
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAAGAUCAGAGCGCCGCG            176.3244          ✓  22.97s
+SA         AAAGAUCAGAGCGCCGCG            176.3244          ✓   1.11s
+BRUTE      AAAGAUCAGAGCGCCGCG            176.3244          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 48/50
+============================================================
+Sequence: LGDSLY
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LGDSLY
+  - Qubits    : 13
+  - Bitstring : 1000110010101
+  - mRNA      : UUAGGCGAUAGUCUGUAU
+  - Energy    : 238.4352
+  - Time      : 177.71s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : LGDSLY
+  - Qubits    : 26
+  - Bitstring : 00001001000101000000100001
+  - mRNA      : UUAGGCGAUAGUCUGUAU
+  - Energy    : 238.4352
+  - Time      : 2.28s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LGDSLY
+  - Qubits    : 13
+  - Bitstring : 1000110010101
+  - mRNA      : UUAGGCGAUAGUCUGUAU
+  - Energy    : 238.4352
+  - Time      : 0.26s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUAGGCGAUAGUCUGUAU            238.4352          ✓ 177.71s
+SA         UUAGGCGAUAGUCUGUAU            238.4352          ✓   2.28s
+BRUTE      UUAGGCGAUAGUCUGUAU            238.4352          ✓   0.26s
+============================================================
+
+############################################################
+Sequence 49/50
+============================================================
+Sequence: GAASLN
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : GAASLN
+  - Qubits    : 13
+  - Bitstring : 0101101010100
+  - mRNA      : GGCGCCGCGUCUCUGAAC
+  - Energy    : 247.6800
+  - Time      : 174.91s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : GAASLN
+  - Qubits    : 26
+  - Bitstring : 01000100001000000100100010
+  - mRNA      : GGCGCCGCGUCUCUGAAC
+  - Energy    : 247.6800
+  - Time      : 2.12s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : GAASLN
+  - Qubits    : 13
+  - Bitstring : 0101100010100
+  - mRNA      : GGCGCCGCGAGUCUGAAC
+  - Energy    : 247.6800
+  - Time      : 0.17s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GGCGCCGCGUCUCUGAAC            247.6800          ✓ 174.91s
+SA         GGCGCCGCGUCUCUGAAC            247.6800          ✓   2.12s
+BRUTE      GGCGCCGCGAGUCUGAAC            247.6800          ✓   0.17s
+============================================================
+
+############################################################
+Sequence 50/50
+============================================================
+Sequence: DFG
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : DFG
+  - Qubits    : 4
+  - Bitstring : 0101
+  - mRNA      : GACUUUGGC
+  - Energy    : 22.6296
+  - Time      : 3.08s
+
+[SA]
+Starting Simulated Annealing optimization...
+
+  - Sequence  : DFG
+  - Qubits    : 8
+  - Bitstring : 10010100
+  - mRNA      : GACUUUGGC
+  - Energy    : 22.6296
+  - Time      : 0.09s
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : DFG
+  - Qubits    : 4
+  - Bitstring : 0101
+  - mRNA      : GACUUUGGC
+  - Energy    : 22.6296
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GACUUUGGC                      22.6296          ✓   3.08s
+SA         GACUUUGGC                      22.6296          ✓   0.09s
+BRUTE      GACUUUGGC                      22.6296          ✓   0.00s
+============================================================
+
+============================================================
+AGGREGATE RESULTS
+============================================================
+VQE      optimal: 50/50 | avg energy gap: -0.0000 | avg time: 72.44s
+SA       optimal: 49/50 | avg energy gap: +0.0122 | avg time: 1.40s
+BRUTE    optimal: 50/50 | avg energy gap: +0.0000 | avg time: 0.12s
+BRUTE    (ground truth)                            | avg time: 0.12s
+============================================================
+VQE, optimized RNA:
+ AUUGAUGAUAGCUUUACCGAAGGCGGCUAUAUUAGCGUGUUCUAUCAGACGCGCAUUGUUGUGCCGCUGAGCACGCCGCGUGAGAUGGAUAUUCUCGGCUUUGUGAGCGCGUGCAACGACUUUAGCGUGCGUCUGCUGCGUGAUACCACGCAUAUUGAACAGAAAGCGUUAGCGCAAGGCUUAGGUCAGAUGUUAGAAAGCAUGAUUGAUAACACCGUGCGUGAGACCGUUGGCGCCGCGACCAGUCGUGAUGCGCUGCCGAACACCGAAGCGAGCGGUCCGACGCAUAGCAAAGAGAUUCCAGCGCUGACCGCCGUUGAGACCGGCGCGACCAAUCCGCUGGUGCCGAGCGAUACCGUGCAGACGCGUCAUGUUGUGCAGCAUCGUAGUCGUAGCGAAUCGAGCAUUGAAUCGUUCUUUGCGCGUGGCGCGUGCGUGACCAUUAUGACCGUUGAUAAUCCAGCGAGCACCACCAACAAAGAUAAACUGUUUGCCGUGUGGAAAAUUACCUAUAAAGAUACCGUGCAGCUGCGUCGUAAACUCGAAUUCUUUACCUAUUCGCGCUUUGAUAUGGAACUGACCUUUGUUGUGACCGCGAACUUUACCGAGACCAACAACGGUCAUGCGCUGAAUCAAGUGUAUCAGAUUAUGUAUGUGCCGCCAGGCGCGCCAGUGCCAGAGAAAUGGGAUGACUAUACCUGGCAGACCAGCAGCAAUCCGAGCAUCUUCUAUACCUAUGGUACCGCGCCAGCGCGUAUUAGCGUGCCGUAUGUGGGCAUUAGCAACGCGUAUUCGCACUUCUAUGAUGGCUUUAGCAAAGUGCCGCUGAAAGAUCAGAGCGCCGCGUUAGGCGAUAGUCUGUAUGGCGCCGCGUCUCUGAACGACUUUGGC
+VQE, optimized DNA:
+ ATTGATGATAGCTTTACCGAAGGCGGCTATATTAGCGTGTTCTATCAGACGCGCATTGTTGTGCCGCTGAGCACGCCGCGTGAGATGGATATTCTCGGCTTTGTGAGCGCGTGCAACGACTTTAGCGTGCGTCTGCTGCGTGATACCACGCATATTGAACAGAAAGCGTTAGCGCAAGGCTTAGGTCAGATGTTAGAAAGCATGATTGATAACACCGTGCGTGAGACCGTTGGCGCCGCGACCAGTCGTGATGCGCTGCCGAACACCGAAGCGAGCGGTCCGACGCATAGCAAAGAGATTCCAGCGCTGACCGCCGTTGAGACCGGCGCGACCAATCCGCTGGTGCCGAGCGATACCGTGCAGACGCGTCATGTTGTGCAGCATCGTAGTCGTAGCGAATCGAGCATTGAATCGTTCTTTGCGCGTGGCGCGTGCGTGACCATTATGACCGTTGATAATCCAGCGAGCACCACCAACAAAGATAAACTGTTTGCCGTGTGGAAAATTACCTATAAAGATACCGTGCAGCTGCGTCGTAAACTCGAATTCTTTACCTATTCGCGCTTTGATATGGAACTGACCTTTGTTGTGACCGCGAACTTTACCGAGACCAACAACGGTCATGCGCTGAATCAAGTGTATCAGATTATGTATGTGCCGCCAGGCGCGCCAGTGCCAGAGAAATGGGATGACTATACCTGGCAGACCAGCAGCAATCCGAGCATCTTCTATACCTATGGTACCGCGCCAGCGCGTATTAGCGTGCCGTATGTGGGCATTAGCAACGCGTATTCGCACTTCTATGATGGCTTTAGCAAAGTGCCGCTGAAAGATCAGAGCGCCGCGTTAGGCGATAGTCTGTATGGCGCCGCGTCTCTGAACGACTTTGGC
+SA, optimized RNA:
+ AUUGAUGAUAGCUUUACCGAAGGCGGCUAUAUUAGCGUGUUCUAUCAGACGCGCAUUGUUGUGCCGCUGAGCACGCCGCGUGAGAUGGAUAUCUUAGGCUUUGUGAGCGCGUGCAACGACUUUAGCGUGCGUCUGCUGCGUGAUACCACGCAUAUUGAACAGAAAGCGUUAGCGCAAGGCUUAGGUCAGAUGUUAGAAAGCAUGAUUGAUAACACCGUGCGUGAGACCGUUGGCGCCGCGACCUCUCGUGAUGCGCUGCCGAACACCGAAGCGAGCGGUCCGACGCAUAGCAAAGAGAUUCCAGCGCUGACCGCCGUUGAGACCGGCGCGACCAAUCCGCUGGUGCCGAGCGAUACCGUGCAGACGCGUCAUGUUGUGCAGCAUCGUAGUCGUAGCGAAUCGAGCAUUGAAUCGUUCUUUGCGCGUGGCGCGUGCGUGACCAUUAUGACCGUUGAUAAUCCAGCGAGCACCACCAACAAAGAUAAACUGUUUGCCGUGUGGAAAAUUACCUAUAAAGAUACCGUGCAGCUGCGUCGUAAACUCGAAUUCUUUACCUAUUCGCGCUUUGAUAUGGAACUGACCUUUGUUGUGACCGCGAACUUUACCGAGACCAACAACGGUCAUGCGCUGAAUCAAGUGUAUCAGAUUAUGUAUGUGCCGCCAGGCGCGCCAGUGCCAGAGAAAUGGGAUGACUAUACCUGGCAGACCAGCAGCAAUCCGAGCAUCUUCUAUACCUAUGGUACCGCGCCAGCGCGUAUUAGCGUGCCGUAUGUGGGCAUUAGCAACGCGUAUUCGCACUUCUAUGAUGGCUUUAGCAAAGUGCCGCUGAAAGAUCAGAGCGCCGCGUUAGGCGAUAGUCUGUAUGGCGCCGCGUCUCUGAACGACUUUGGC
+SA, optimized DNA:
+ ATTGATGATAGCTTTACCGAAGGCGGCTATATTAGCGTGTTCTATCAGACGCGCATTGTTGTGCCGCTGAGCACGCCGCGTGAGATGGATATCTTAGGCTTTGTGAGCGCGTGCAACGACTTTAGCGTGCGTCTGCTGCGTGATACCACGCATATTGAACAGAAAGCGTTAGCGCAAGGCTTAGGTCAGATGTTAGAAAGCATGATTGATAACACCGTGCGTGAGACCGTTGGCGCCGCGACCTCTCGTGATGCGCTGCCGAACACCGAAGCGAGCGGTCCGACGCATAGCAAAGAGATTCCAGCGCTGACCGCCGTTGAGACCGGCGCGACCAATCCGCTGGTGCCGAGCGATACCGTGCAGACGCGTCATGTTGTGCAGCATCGTAGTCGTAGCGAATCGAGCATTGAATCGTTCTTTGCGCGTGGCGCGTGCGTGACCATTATGACCGTTGATAATCCAGCGAGCACCACCAACAAAGATAAACTGTTTGCCGTGTGGAAAATTACCTATAAAGATACCGTGCAGCTGCGTCGTAAACTCGAATTCTTTACCTATTCGCGCTTTGATATGGAACTGACCTTTGTTGTGACCGCGAACTTTACCGAGACCAACAACGGTCATGCGCTGAATCAAGTGTATCAGATTATGTATGTGCCGCCAGGCGCGCCAGTGCCAGAGAAATGGGATGACTATACCTGGCAGACCAGCAGCAATCCGAGCATCTTCTATACCTATGGTACCGCGCCAGCGCGTATTAGCGTGCCGTATGTGGGCATTAGCAACGCGTATTCGCACTTCTATGATGGCTTTAGCAAAGTGCCGCTGAAAGATCAGAGCGCCGCGTTAGGCGATAGTCTGTATGGCGCCGCGTCTCTGAACGACTTTGGC
+BRUTE, optimized RNA:
+ AUUGAUGAUAGCUUUACCGAAGGCGGCUAUAUUAGCGUGUUCUAUCAGACGCGCAUUGUUGUGCCGCUGAGCACGCCGCGUGAGAUGGAUAUUCUCGGCUUUGUGAGCGCGUGCAACGACUUUAGCGUGCGUCUGCUGCGUGAUACCACGCAUAUUGAACAGAAAGCGUUAGCGCAAGGCUUAGGUCAGAUGUUAGAAAGCAUGAUUGAUAACACCGUGCGUGAGACCGUUGGCGCCGCGACCUCUCGUGAUGCGCUGCCGAACACCGAAGCGAGCGGUCCGACGCAUAGCAAAGAGAUUCCAGCGCUGACCGCCGUUGAGACCGGCGCGACCAAUCCGCUGGUGCCGAGCGAUACCGUGCAGACGCGUCAUGUUGUGCAGCAUCGUAGUCGUAGCGAAUCGAGCAUUGAAUCCUUCUUUGCGCGUGGCGCGUGCGUGACCAUUAUGACCGUUGAUAAUCCAGCGAGCACCACCAACAAAGAUAAACUGUUUGCCGUGUGGAAAAUUACCUAUAAAGAUACCGUGCAGCUGCGUCGUAAACUCGAAUUCUUUACCUAUUCGCGCUUUGAUAUGGAACUGACCUUUGUUGUGACCGCGAACUUUACCGAGACCAACAACGGUCAUGCGCUGAAUCAAGUGUAUCAGAUUAUGUAUGUGCCGCCAGGCGCGCCAGUGCCAGAGAAAUGGGAUGACUAUACCUGGCAGACCAGCAGCAAUCCGAGCAUCUUCUAUACCUAUGGUACCGCGCCAGCGCGUAUUAGCGUGCCGUAUGUGGGCAUUAGCAACGCGUAUUCGCACUUCUAUGAUGGCUUUAGCAAAGUGCCGCUGAAAGAUCAGAGCGCCGCGUUAGGCGAUAGUCUGUAUGGCGCCGCGAGUCUGAACGACUUUGGC
+BRUTE, optimized DNA:
+ ATTGATGATAGCTTTACCGAAGGCGGCTATATTAGCGTGTTCTATCAGACGCGCATTGTTGTGCCGCTGAGCACGCCGCGTGAGATGGATATTCTCGGCTTTGTGAGCGCGTGCAACGACTTTAGCGTGCGTCTGCTGCGTGATACCACGCATATTGAACAGAAAGCGTTAGCGCAAGGCTTAGGTCAGATGTTAGAAAGCATGATTGATAACACCGTGCGTGAGACCGTTGGCGCCGCGACCTCTCGTGATGCGCTGCCGAACACCGAAGCGAGCGGTCCGACGCATAGCAAAGAGATTCCAGCGCTGACCGCCGTTGAGACCGGCGCGACCAATCCGCTGGTGCCGAGCGATACCGTGCAGACGCGTCATGTTGTGCAGCATCGTAGTCGTAGCGAATCGAGCATTGAATCCTTCTTTGCGCGTGGCGCGTGCGTGACCATTATGACCGTTGATAATCCAGCGAGCACCACCAACAAAGATAAACTGTTTGCCGTGTGGAAAATTACCTATAAAGATACCGTGCAGCTGCGTCGTAAACTCGAATTCTTTACCTATTCGCGCTTTGATATGGAACTGACCTTTGTTGTGACCGCGAACTTTACCGAGACCAACAACGGTCATGCGCTGAATCAAGTGTATCAGATTATGTATGTGCCGCCAGGCGCGCCAGTGCCAGAGAAATGGGATGACTATACCTGGCAGACCAGCAGCAATCCGAGCATCTTCTATACCTATGGTACCGCGCCAGCGCGTATTAGCGTGCCGTATGTGGGCATTAGCAACGCGTATTCGCACTTCTATGATGGCTTTAGCAAAGTGCCGCTGAAAGATCAGAGCGCCGCGTTAGGCGATAGTCTGTATGGCGCCGCGAGTCTGAACGACTTTGGC
