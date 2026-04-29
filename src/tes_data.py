@@ -17,8 +17,9 @@ def test(file_name, encode_type, chunk=7):
     print(data)
     min_len, max_len = 100, 0
 
-    time_est = 0
+    time_est, i = 0, 0
     for sequence in data:
+        i += 1
         if encode_type == 'dense':
             codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
         else:
@@ -26,7 +27,7 @@ def test(file_name, encode_type, chunk=7):
         qubit_len = codon_opt.qubit_len
         min_len = min(min_len, qubit_len)
         max_len = max(max_len, qubit_len)
-        print(f"{sequence}: {qubit_len}, {CodonOptimizer(sequence, config, DenseCodon, 'dense').qubit_len}")
+        print(f"{i}/{len(data)} {sequence}: {qubit_len}, {CodonOptimizer(sequence, config, DenseCodon, 'dense').qubit_len}")
         if chunk <= 6:
             time_est += time_qaoa[qubit_len-5]
     print(f"min: {min_len}, max: {max_len}")
