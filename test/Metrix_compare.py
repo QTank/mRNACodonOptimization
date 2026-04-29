@@ -272,8 +272,7 @@ def gc_content(dna_seq):
     return (g + c) / len(dna_seq) * 100
 
 
-def run_cai_compare(file_name):
-    solver_list = ['SA']
+def run_cai_compare(file_name, solver_list):
     for solver in solver_list:
         seq = data_process_util.extract_dna_by_method(file_name, solver + ", optimized DNA")
         result = calculate_cai(seq, organism='e_coli_316407')
@@ -291,7 +290,10 @@ if __name__ == "__main__":
     val = 0
     for file_name in txt_files:
         print(file_name)
-        r = run_cai_compare("../experiments/" + file_name)
+        if 'qaoa' in file_name:
+            r = run_cai_compare("../experiments/" + file_name, ['QAOA'])
+        else:
+            r = run_cai_compare("../experiments/" + file_name, ['VQE'])
         val += r['cai']
         print()
 
