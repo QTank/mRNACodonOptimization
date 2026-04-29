@@ -100,9 +100,9 @@ def codon_optimization_experiment():
     print(f"Total running time for Simulated Annealing: {time.time() - sa_start_time:.2f}s\n")   
 
     print("Optimizations completed. Summary of results:")
-    print(f"  - VQE Optimized mRNA Sequences: {"".join(vqe_results)}, time taken: {qaoa_start_time - vqe_start_time:.2f}s")
-    print(f"  - QAOA Optimized mRNA Sequences: {"".join(qaoa_results)}, time taken: {sa_start_time - qaoa_start_time:.2f}s")
-    print(f"  - Simulated Annealing Optimized mRNA Sequences: {"".join(sa_results)}, time taken: {time.time() - sa_start_time:.2f}s")
+    print(f"  - VQE Optimized mRNA Sequences: {''.join(vqe_results)}, time taken: {qaoa_start_time - vqe_start_time:.2f}s")
+    print(f"  - QAOA Optimized mRNA Sequences: {''.join(qaoa_results)}, time taken: {sa_start_time - qaoa_start_time:.2f}s")
+    print(f"  - Simulated Annealing Optimized mRNA Sequences: {''.join(sa_results)}, time taken: {time.time() - sa_start_time:.2f}s")
 
 
 if __name__ == '__main__':
