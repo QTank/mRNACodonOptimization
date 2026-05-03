@@ -14,7 +14,7 @@ time_qaoa = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4098, 8196]
 
 def test(file_name, encode_type, chunk=7):
     data = util.split_sequence_from_file(file_name, chunk)
-    print(data)
+    print(len(util.parse_sequence_from_file(file_name)), data)
     min_len, max_len = 100, 0
 
     time_est, i = 0, 0
