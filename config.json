@@ -7,7 +7,9 @@
     "output_path": "../data/",
     "chunk_size": 3
   },
-
+  "noise_model": {
+    "fake_backend": "FakeOslo"
+  },
   "weights": {
     "usage": 0.3,
     "target_gc": 0.9,

@@ -18,7 +18,8 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
         print("Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...\n")
         codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
         qubit_op = codon_opt.create_qubit_op()
-        sampler = qiskit_util.get_backend(inject_noise=True)
+        fake_backend = config['noise_mode']['fake_backend']
+        sampler = qiskit_util.get_backend(fake_backend=fake_backend, inject_noise=True)
         bitstring, energy = vqe_solver.get_min(qubit_op, config['vqe_settings'], sampler)
         final_mRNA_sequence = util.decode_bitstring(sequence, bitstring,
                                                     table_name=config['metadata']['table_name'])
@@ -27,7 +28,8 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
         print("Starting QAOA on a Quantum Simulator...\n")
         codon_opt = CodonOptimizer(sequence, config, OneHotCodon, "one-hot")
         qubit_op = codon_opt.create_qubit_op()
-        sampler = qiskit_util.get_backend(inject_noise=True)
+        fake_backend = config['noise_mode']['fake_backend']
+        sampler = qiskit_util.get_backend(fake_backend=fake_backend, inject_noise=True)
         bitstring = qaoa_solver.get_min(qubit_op, config['qaoa_settings'], sampler)
         energy = util.evaluate_energy(qubit_op, bitstring)
         final_mRNA_sequence = util.decode_one_hot_bitstring(sequence, bitstring,
