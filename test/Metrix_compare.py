@@ -285,15 +285,15 @@ def run_cai_compare(file_name, solver_list):
 
 if __name__ == "__main__":
     from pathlib import Path
-    path = Path("../experiments/")
+    path = Path("../figures/")
     txt_files = [f.name for f in path.glob("*.log")]
     val = 0
     for file_name in txt_files:
         print(file_name)
         if 'qaoa' in file_name:
-            r = run_cai_compare("../experiments/" + file_name, ['QAOA'])
+            r = run_cai_compare("../figures/" + file_name, ['QAOA'])
         else:
-            r = run_cai_compare("../experiments/" + file_name, ['VQE'])
+            r = run_cai_compare("../figures/" + file_name, ['VQE'])
         val += r['cai']
         print()
 
