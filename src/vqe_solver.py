@@ -2,6 +2,8 @@ from qiskit_algorithms.optimizers import COBYLA
 from qiskit_algorithms.minimum_eigensolvers import SamplingVQE
 from qiskit.primitives import Sampler
 from qiskit.circuit.library import EfficientSU2
+from qiskit_aer import AerSimulator
+from qiskit import transpile
 
 
 def get_min(qubit_op, vqe_config, sampler=None):
@@ -32,6 +34,13 @@ def get_min(qubit_op, vqe_config, sampler=None):
         callback=store_intermediate_result,
     )
     raw_result = vqe.compute_minimum_eigenvalue(qubit_op)
-    # We only need the final qubit and the lowest value
-    return raw_result.best_measurement['bitstring'], raw_result.best_measurement['value'].real
 
+    optimal_circuit = ansatz.assign_parameters(raw_result.optimal_parameters)
+    backend = AerSimulator()
+
+    # Transpile for backend
+    transpiled = transpile(optimal_circuit, backend=backend, optimization_level=2)
+
+    # Gate statistics
+    statistics = [transpiled.count_ops(), sum(transpiled.count_ops().values()), transpiled.depth()]
+    return raw_result.best_measurement['bitstring'], raw_result.best_measurement['value'].real, statistics
