@@ -1,0 +1,5377 @@
+
+############################################################
+Sequence 1/103
+============================================================
+Sequence: MDI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : MDI
+  - Qubits    : 3
+  - Bitstring : 101
+  - mRNA      : AUGGAUAUC
+  - Energy    : 176.2748
+  - Time      : 0.15s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : MDI
+  - Qubits    : 6
+  - Bitstring : 101010
+  - mRNA      : AUGGAUAUC
+  - Energy    : 176.2748
+  - Time      : 0.24s
+
+  - Gate counts  : OrderedDict({'rzz': 26, 'cx': 8, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'rz': 2, 'barrier': 1})
+  - Circuit depth: 32
+  - Total gates  :61
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : MDI
+  - Qubits    : 3
+  - Bitstring : 101
+  - mRNA      : AUGGAUAUC
+  - Energy    : 176.2748
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUGGAUAUC                     176.2748          ✓   0.15s
+QAOA       AUGGAUAUC                     176.2748          ✓   0.24s
+BRUTE      AUGGAUAUC                     176.2748          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 2/103
+============================================================
+Sequence: FKE
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FKE
+  - Qubits    : 3
+  - Bitstring : 000
+  - mRNA      : UUCAAAGAA
+  - Energy    : 18.5230
+  - Time      : 0.12s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : FKE
+  - Qubits    : 6
+  - Bitstring : 101010
+  - mRNA      : UUCAAAGAA
+  - Energy    : 18.5230
+  - Time      : 0.24s
+
+  - Gate counts  : OrderedDict({'rzz': 26, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :51
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FKE
+  - Qubits    : 3
+  - Bitstring : 000
+  - mRNA      : UUCAAAGAA
+  - Energy    : 18.5230
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUCAAAGAA                      18.5230          ✓   0.12s
+QAOA       UUCAAAGAA                      18.5230          ✓   0.24s
+BRUTE      UUCAAAGAA                      18.5230          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 3/103
+============================================================
+Sequence: LIL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LIL
+  - Qubits    : 8
+  - Bitstring : 01010010
+  - mRNA      : CUGAUUCUG
+  - Energy    : 18.7089
+  - Time      : 0.35s
+
+  - Gate counts  : OrderedDict({'rx': 24, 'cx': 16, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :49
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : LIL
+  - Qubits    : 15
+  - Bitstring : 001000001001000
+  - mRNA      : CUGAUUCUG
+  - Energy    : 18.7089
+  - Time      : 2.43s
+
+  - Gate counts  : OrderedDict({'cx': 292, 'rzz': 188, 'rz': 70, 'unitary': 20, 'u2': 15, 'u3': 15, 'rx': 15, 'measure': 15, 'barrier': 1})
+  - Circuit depth: 245
+  - Total gates  :631
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LIL
+  - Qubits    : 8
+  - Bitstring : 01010010
+  - mRNA      : CUGAUUCUG
+  - Energy    : 18.7089
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CUGAUUCUG                      18.7089          ✓   0.35s
+QAOA       CUGAUUCUG                      18.7089          ✓   2.43s
+BRUTE      CUGAUUCUG                      18.7089          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 4/103
+============================================================
+Sequence: KHT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KHT
+  - Qubits    : 4
+  - Bitstring : 0101
+  - mRNA      : AAACAUACC
+  - Energy    : 16.6727
+  - Time      : 0.19s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : KHT
+  - Qubits    : 8
+  - Bitstring : 10010100
+  - mRNA      : AAACAUACC
+  - Energy    : 16.6727
+  - Time      : 0.37s
+
+  - Gate counts  : OrderedDict({'rzz': 48, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :123
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KHT
+  - Qubits    : 4
+  - Bitstring : 0101
+  - mRNA      : AAACAUACC
+  - Energy    : 16.6727
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAACAUACC                      16.6727          ✓   0.19s
+QAOA       AAACAUACC                      16.6727          ✓   0.37s
+BRUTE      AAACAUACC                      16.6727          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 5/103
+============================================================
+Sequence: DEN
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : DEN
+  - Qubits    : 3
+  - Bitstring : 110
+  - mRNA      : GAUGAGAAC
+  - Energy    : 20.5310
+  - Time      : 0.16s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : DEN
+  - Qubits    : 6
+  - Bitstring : 010110
+  - mRNA      : GAUGAGAAC
+  - Energy    : 20.5310
+  - Time      : 0.24s
+
+  - Gate counts  : OrderedDict({'rzz': 26, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 19
+  - Total gates  :51
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : DEN
+  - Qubits    : 3
+  - Bitstring : 110
+  - mRNA      : GAUGAGAAC
+  - Energy    : 20.5310
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAUGAGAAC                      20.5310          ✓   0.16s
+QAOA       GAUGAGAAC                      20.5310          ✓   0.24s
+BRUTE      GAUGAGAAC                      20.5310          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 6/103
+============================================================
+Sequence: VLI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VLI
+  - Qubits    : 7
+  - Bitstring : 1001010
+  - mRNA      : GUGCUGAUU
+  - Energy    : 22.1513
+  - Time      : 0.29s
+
+  - Gate counts  : OrderedDict({'rx': 21, 'cx': 14, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 18
+  - Total gates  :43
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : VLI
+  - Qubits    : 13
+  - Bitstring : 0010001000001
+  - mRNA      : GUGCUGAUU
+  - Energy    : 22.1513
+  - Time      : 1.36s
+
+  - Gate counts  : OrderedDict({'cx': 182, 'rzz': 140, 'rz': 46, 'u2': 13, 'u3': 13, 'rx': 13, 'measure': 13, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 237
+  - Total gates  :431
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VLI
+  - Qubits    : 7
+  - Bitstring : 1001010
+  - mRNA      : GUGCUGAUU
+  - Energy    : 22.1513
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUGCUGAUU                      22.1513          ✓   0.29s
+QAOA       GUGCUGAUU                      22.1513          ✓   1.36s
+BRUTE      GUGCUGAUU                      22.1513          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 7/103
+============================================================
+Sequence: SPV
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SPV
+  - Qubits    : 7
+  - Bitstring : 0010010
+  - mRNA      : AGUCCAGUG
+  - Energy    : 40.8617
+  - Time      : 0.31s
+
+  - Gate counts  : OrderedDict({'rx': 21, 'cx': 14, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 18
+  - Total gates  :43
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : SPV
+  - Qubits    : 14
+  - Bitstring : 01000010000010
+  - mRNA      : AGUCCAGUG
+  - Energy    : 40.8617
+  - Time      : 2.53s
+
+  - Gate counts  : OrderedDict({'cx': 206, 'rzz': 182, 'rz': 54, 'u2': 14, 'u3': 14, 'rx': 14, 'measure': 14, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 220
+  - Total gates  :509
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SPV
+  - Qubits    : 7
+  - Bitstring : 0010010
+  - mRNA      : AGUCCAGUG
+  - Energy    : 40.8617
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGUCCAGUG                      40.8617          ✓   0.31s
+QAOA       AGUCCAGUG                      40.8617          ✓   2.53s
+BRUTE      AGUCCAGUG                      40.8617          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 8/103
+============================================================
+Sequence: SIL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SIL
+  - Qubits    : 8
+  - Bitstring : 00010010
+  - mRNA      : AGCAUUCUG
+  - Energy    : 23.9152
+  - Time      : 0.34s
+
+  - Gate counts  : OrderedDict({'rx': 24, 'cx': 16, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :49
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : SIL
+  - Qubits    : 15
+  - Bitstring : 000100001001000
+  - mRNA      : UCCAUUCUG
+  - Energy    : 29.3879
+  - Time      : 2.35s
+
+  - Gate counts  : OrderedDict({'cx': 292, 'rzz': 198, 'rz': 70, 'unitary': 20, 'u2': 15, 'u3': 15, 'rx': 15, 'measure': 15, 'barrier': 1})
+  - Circuit depth: 248
+  - Total gates  :641
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SIL
+  - Qubits    : 8
+  - Bitstring : 00010010
+  - mRNA      : AGCAUUCUG
+  - Energy    : 23.9152
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCAUUCUG                      23.9152          ✓   0.34s
+QAOA       UCCAUUCUG                      29.3879      +5.47   2.35s
+BRUTE      AGCAUUCUG                      23.9152          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 9/103
+============================================================
+Sequence: STL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : STL
+  - Qubits    : 8
+  - Bitstring : 00010010
+  - mRNA      : AGCACGCUG
+  - Energy    : 32.5439
+  - Time      : 0.37s
+
+  - Gate counts  : OrderedDict({'rx': 24, 'cx': 16, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :49
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : STL
+  - Qubits    : 16
+  - Bitstring : 1000000010001000
+  - mRNA      : AGCACGCUG
+  - Energy    : 32.5439
+  - Time      : 3.14s
+
+  - Gate counts  : OrderedDict({'cx': 316, 'rzz': 228, 'rz': 78, 'unitary': 20, 'u2': 16, 'u3': 16, 'rx': 16, 'measure': 16, 'barrier': 1})
+  - Circuit depth: 239
+  - Total gates  :707
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : STL
+  - Qubits    : 8
+  - Bitstring : 00010010
+  - mRNA      : AGCACGCUG
+  - Energy    : 32.5439
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCACGCUG                      32.5439          ✓   0.37s
+QAOA       AGCACGCUG                      32.5439          ✓   3.14s
+BRUTE      AGCACGCUG                      32.5439          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 10/103
+============================================================
+Sequence: SIL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SIL
+  - Qubits    : 8
+  - Bitstring : 00010010
+  - mRNA      : AGCAUUCUG
+  - Energy    : 23.9152
+  - Time      : 0.35s
+
+  - Gate counts  : OrderedDict({'rx': 24, 'cx': 16, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :49
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : SIL
+  - Qubits    : 15
+  - Bitstring : 000100001001000
+  - mRNA      : UCCAUUCUG
+  - Energy    : 29.3879
+  - Time      : 2.31s
+
+  - Gate counts  : OrderedDict({'cx': 292, 'rzz': 198, 'rz': 70, 'unitary': 20, 'u2': 15, 'u3': 15, 'rx': 15, 'measure': 15, 'barrier': 1})
+  - Circuit depth: 248
+  - Total gates  :641
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SIL
+  - Qubits    : 8
+  - Bitstring : 00010010
+  - mRNA      : AGCAUUCUG
+  - Energy    : 23.9152
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCAUUCUG                      23.9152          ✓   0.35s
+QAOA       UCCAUUCUG                      29.3879      +5.47   2.31s
+BRUTE      AGCAUUCUG                      23.9152          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 11/103
+============================================================
+Sequence: NHG
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NHG
+  - Qubits    : 4
+  - Bitstring : 1101
+  - mRNA      : AAUCAUGGC
+  - Energy    : 20.4945
+  - Time      : 0.16s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : NHG
+  - Qubits    : 8
+  - Bitstring : 01010100
+  - mRNA      : AAUCAUGGC
+  - Energy    : 20.4945
+  - Time      : 0.38s
+
+  - Gate counts  : OrderedDict({'rzz': 48, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :123
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NHG
+  - Qubits    : 4
+  - Bitstring : 1101
+  - mRNA      : AAUCAUGGC
+  - Energy    : 20.4945
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAUCAUGGC                      20.4945          ✓   0.16s
+QAOA       AAUCAUGGC                      20.4945          ✓   0.38s
+BRUTE      AAUCAUGGC                      20.4945          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 12/103
+============================================================
+Sequence: VAG
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VAG
+  - Qubits    : 6
+  - Bitstring : 110001
+  - mRNA      : GUUGCAGGC
+  - Energy    : 36.6622
+  - Time      : 0.32s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : VAG
+  - Qubits    : 12
+  - Bitstring : 000110000100
+  - mRNA      : GUUGCAGGC
+  - Energy    : 36.6622
+  - Time      : 1.00s
+
+  - Gate counts  : OrderedDict({'rzz': 132, 'cx': 96, 'rz': 30, 'u2': 12, 'u3': 12, 'rx': 12, 'measure': 12, 'barrier': 1})
+  - Circuit depth: 81
+  - Total gates  :307
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VAG
+  - Qubits    : 6
+  - Bitstring : 110001
+  - mRNA      : GUUGCAGGC
+  - Energy    : 36.6622
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUUGCAGGC                      36.6622          ✓   0.32s
+QAOA       GUUGCAGGC                      36.6622          ✓   1.00s
+BRUTE      GUUGCAGGC                      36.6622          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 13/103
+============================================================
+Sequence: STA
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : STA
+  - Qubits    : 7
+  - Bitstring : 0000110
+  - mRNA      : AGCACCGCG
+  - Energy    : 33.7174
+  - Time      : 0.28s
+
+  - Gate counts  : OrderedDict({'rx': 21, 'cx': 14, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 18
+  - Total gates  :43
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : STA
+  - Qubits    : 14
+  - Bitstring : 10000001000010
+  - mRNA      : AGCACCGCG
+  - Energy    : 33.7174
+  - Time      : 2.08s
+
+  - Gate counts  : OrderedDict({'cx': 206, 'rzz': 182, 'rz': 54, 'u2': 14, 'u3': 14, 'rx': 14, 'measure': 14, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 220
+  - Total gates  :509
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : STA
+  - Qubits    : 7
+  - Bitstring : 0000110
+  - mRNA      : AGCACCGCG
+  - Energy    : 33.7174
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCACCGCG                      33.7174          ✓   0.28s
+QAOA       AGCACCGCG                      33.7174          ✓   2.08s
+BRUTE      AGCACCGCG                      33.7174          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 14/103
+============================================================
+Sequence: EQL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : EQL
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : GAACAGCUG
+  - Energy    : 12.9490
+  - Time      : 0.23s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : EQL
+  - Qubits    : 10
+  - Bitstring : 1001001000
+  - mRNA      : GAACAGCUG
+  - Energy    : 12.9490
+  - Time      : 0.74s
+
+  - Gate counts  : OrderedDict({'cx': 142, 'rzz': 86, 'rz': 34, 'u2': 10, 'unitary': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 221
+  - Total gates  :313
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : EQL
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : GAACAGCUG
+  - Energy    : 12.9490
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAACAGCUG                      12.9490          ✓   0.23s
+QAOA       GAACAGCUG                      12.9490          ✓   0.74s
+BRUTE      GAACAGCUG                      12.9490          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 15/103
+============================================================
+Sequence: SKY
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SKY
+  - Qubits    : 5
+  - Bitstring : 00000
+  - mRNA      : AGCAAAUAC
+  - Energy    : 23.7025
+  - Time      : 0.21s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : SKY
+  - Qubits    : 10
+  - Bitstring : 1000001010
+  - mRNA      : AGCAAAUAC
+  - Energy    : 23.7025
+  - Time      : 0.82s
+
+  - Gate counts  : OrderedDict({'cx': 142, 'rzz': 78, 'rz': 34, 'u2': 10, 'u3': 10, 'unitary': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 214
+  - Total gates  :305
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SKY
+  - Qubits    : 5
+  - Bitstring : 00000
+  - mRNA      : AGCAAAUAC
+  - Energy    : 23.7025
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCAAAUAC                      23.7025          ✓   0.21s
+QAOA       AGCAAAUAC                      23.7025          ✓   0.82s
+BRUTE      AGCAAAUAC                      23.7025          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 16/103
+============================================================
+Sequence: IEN
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : IEN
+  - Qubits    : 4
+  - Bitstring : 0110
+  - mRNA      : AUCGAGAAC
+  - Energy    : 23.9125
+  - Time      : 0.19s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : IEN
+  - Qubits    : 7
+  - Bitstring : 0100110
+  - mRNA      : AUCGAGAAC
+  - Energy    : 23.9125
+  - Time      : 0.29s
+
+  - Gate counts  : OrderedDict({'rzz': 32, 'cx': 8, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'rz': 2, 'barrier': 1})
+  - Circuit depth: 36
+  - Total gates  :71
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IEN
+  - Qubits    : 4
+  - Bitstring : 0110
+  - mRNA      : AUCGAGAAC
+  - Energy    : 23.9125
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUCGAGAAC                      23.9125          ✓   0.19s
+QAOA       AUCGAGAAC                      23.9125          ✓   0.29s
+BRUTE      AUCGAGAAC                      23.9125          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 17/103
+============================================================
+Sequence: MNE
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : MNE
+  - Qubits    : 2
+  - Bitstring : 00
+  - mRNA      : AUGAACGAA
+  - Energy    : 10.4888
+  - Time      : 0.10s
+
+  - Gate counts  : OrderedDict({'rx': 4, 'cx': 2, 'measure': 2, 'barrier': 1})
+  - Circuit depth: 6
+  - Total gates  :9
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : MNE
+  - Qubits    : 5
+  - Bitstring : 11010
+  - mRNA      : AUGAACGAA
+  - Energy    : 10.4888
+  - Time      : 0.19s
+
+  - Gate counts  : OrderedDict({'rzz': 20, 'u2': 5, 'u3': 5, 'rx': 5, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :41
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : MNE
+  - Qubits    : 2
+  - Bitstring : 00
+  - mRNA      : AUGAACGAA
+  - Energy    : 10.4888
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUGAACGAA                      10.4888          ✓   0.10s
+QAOA       AUGAACGAA                      10.4888          ✓   0.19s
+BRUTE      AUGAACGAA                      10.4888          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 18/103
+============================================================
+Sequence: NTP
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NTP
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : AACACGCCG
+  - Energy    : 25.5859
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : NTP
+  - Qubits    : 10
+  - Bitstring : 1000100010
+  - mRNA      : AACACGCCG
+  - Energy    : 25.5859
+  - Time      : 0.63s
+
+  - Gate counts  : OrderedDict({'rzz': 82, 'cx': 64, 'rz': 20, 'u2': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 73
+  - Total gates  :207
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NTP
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : AACACGCCG
+  - Energy    : 25.5859
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AACACGCCG                      25.5859          ✓   0.22s
+QAOA       AACACGCCG                      25.5859          ✓   0.63s
+BRUTE      AACACGCCG                      25.5859          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 19/103
+============================================================
+Sequence: DDK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : DDK
+  - Qubits    : 3
+  - Bitstring : 110
+  - mRNA      : GAUGAUAAA
+  - Energy    : 16.0451
+  - Time      : 0.14s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : DDK
+  - Qubits    : 6
+  - Bitstring : 010110
+  - mRNA      : GAUGAUAAA
+  - Energy    : 16.0451
+  - Time      : 0.25s
+
+  - Gate counts  : OrderedDict({'rzz': 26, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 19
+  - Total gates  :51
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : DDK
+  - Qubits    : 3
+  - Bitstring : 110
+  - mRNA      : GAUGAUAAA
+  - Energy    : 16.0451
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAUGAUAAA                      16.0451          ✓   0.14s
+QAOA       GAUGAUAAA                      16.0451          ✓   0.25s
+BRUTE      GAUGAUAAA                      16.0451          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 20/103
+============================================================
+Sequence: KDD
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KDD
+  - Qubits    : 3
+  - Bitstring : 011
+  - mRNA      : AAAGAUGAU
+  - Energy    : 15.9807
+  - Time      : 0.16s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : KDD
+  - Qubits    : 6
+  - Bitstring : 100101
+  - mRNA      : AAAGAUGAU
+  - Energy    : 15.9807
+  - Time      : 0.23s
+
+  - Gate counts  : OrderedDict({'rzz': 26, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :51
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KDD
+  - Qubits    : 3
+  - Bitstring : 011
+  - mRNA      : AAAGAUGAU
+  - Energy    : 15.9807
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAAGAUGAU                      15.9807          ✓   0.16s
+QAOA       AAAGAUGAU                      15.9807          ✓   0.23s
+BRUTE      AAAGAUGAU                      15.9807          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 21/103
+============================================================
+Sequence: NND
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NND
+  - Qubits    : 3
+  - Bitstring : 001
+  - mRNA      : AACAACGAU
+  - Energy    : 16.9507
+  - Time      : 0.17s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : NND
+  - Qubits    : 6
+  - Bitstring : 101001
+  - mRNA      : AACAACGAU
+  - Energy    : 16.9507
+  - Time      : 0.25s
+
+  - Gate counts  : OrderedDict({'rzz': 26, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 22
+  - Total gates  :51
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NND
+  - Qubits    : 3
+  - Bitstring : 001
+  - mRNA      : AACAACGAU
+  - Energy    : 16.9507
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AACAACGAU                      16.9507          ✓   0.17s
+QAOA       AACAACGAU                      16.9507          ✓   0.25s
+BRUTE      AACAACGAU                      16.9507          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 22/103
+============================================================
+Sequence: MDV
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : MDV
+  - Qubits    : 3
+  - Bitstring : 110
+  - mRNA      : AUGGAUGUG
+  - Energy    : 175.3538
+  - Time      : 0.14s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : MDV
+  - Qubits    : 7
+  - Bitstring : 1010010
+  - mRNA      : AUGGAUGUG
+  - Energy    : 175.3538
+  - Time      : 0.34s
+
+  - Gate counts  : OrderedDict({'rzz': 42, 'cx': 32, 'rz': 10, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :113
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : MDV
+  - Qubits    : 3
+  - Bitstring : 110
+  - mRNA      : AUGGAUGUG
+  - Energy    : 175.3538
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUGGAUGUG                     175.3538          ✓   0.14s
+QAOA       AUGGAUGUG                     175.3538          ✓   0.34s
+BRUTE      AUGGAUGUG                     175.3538          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 23/103
+============================================================
+Sequence: DIP
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : DIP
+  - Qubits    : 5
+  - Bitstring : 11010
+  - mRNA      : GAUAUUCCG
+  - Energy    : 16.3270
+  - Time      : 0.27s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : DIP
+  - Qubits    : 9
+  - Bitstring : 010010010
+  - mRNA      : GAUAUUCCG
+  - Energy    : 16.3270
+  - Time      : 0.89s
+
+  - Gate counts  : OrderedDict({'rzz': 72, 'cx': 40, 'rz': 12, 'u2': 9, 'u3': 9, 'rx': 9, 'measure': 9, 'barrier': 1})
+  - Circuit depth: 70
+  - Total gates  :161
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : DIP
+  - Qubits    : 5
+  - Bitstring : 11010
+  - mRNA      : GAUAUUCCG
+  - Energy    : 16.3270
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAUAUUCCG                      16.3270          ✓   0.27s
+QAOA       GAUAUUCCG                      16.3270          ✓   0.89s
+BRUTE      GAUAUUCCG                      16.3270          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 24/103
+============================================================
+Sequence: YCA
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : YCA
+  - Qubits    : 4
+  - Bitstring : 0010
+  - mRNA      : UACUGCGCG
+  - Energy    : 24.6225
+  - Time      : 0.23s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : YCA
+  - Qubits    : 8
+  - Bitstring : 10100010
+  - mRNA      : UACUGCGCG
+  - Energy    : 24.6225
+  - Time      : 1.45s
+
+  - Gate counts  : OrderedDict({'rzz': 48, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :123
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : YCA
+  - Qubits    : 4
+  - Bitstring : 0010
+  - mRNA      : UACUGCGCG
+  - Energy    : 24.6225
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UACUGCGCG                      24.6225          ✓   0.23s
+QAOA       UACUGCGCG                      24.6225          ✓   1.45s
+BRUTE      UACUGCGCG                      24.6225          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 25/103
+============================================================
+Sequence: TLA
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TLA
+  - Qubits    : 7
+  - Bitstring : 0110010
+  - mRNA      : ACCUUAGCG
+  - Energy    : 34.5943
+  - Time      : 0.71s
+
+  - Gate counts  : OrderedDict({'rx': 21, 'cx': 14, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 18
+  - Total gates  :43
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TLA
+  - Qubits    : 14
+  - Bitstring : 01000000100010
+  - mRNA      : ACCUUAGCG
+  - Energy    : 34.5943
+  - Time      : 2.59s
+
+  - Gate counts  : OrderedDict({'cx': 206, 'rzz': 182, 'rz': 54, 'u2': 14, 'u3': 14, 'rx': 14, 'measure': 14, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 241
+  - Total gates  :509
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TLA
+  - Qubits    : 7
+  - Bitstring : 0110010
+  - mRNA      : ACCUUAGCG
+  - Energy    : 34.5943
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCUUAGCG                      34.5943          ✓   0.71s
+QAOA       ACCUUAGCG                      34.5943          ✓   2.59s
+BRUTE      ACCUUAGCG                      34.5943          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 26/103
+============================================================
+Sequence: TAN
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TAN
+  - Qubits    : 5
+  - Bitstring : 01100
+  - mRNA      : ACCGCGAAC
+  - Energy    : 23.4743
+  - Time      : 0.24s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TAN
+  - Qubits    : 10
+  - Bitstring : 0100001010
+  - mRNA      : ACCGCGAAC
+  - Energy    : 23.4743
+  - Time      : 0.75s
+
+  - Gate counts  : OrderedDict({'rzz': 82, 'cx': 64, 'rz': 20, 'u2': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 73
+  - Total gates  :207
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TAN
+  - Qubits    : 5
+  - Bitstring : 01100
+  - mRNA      : ACCGCGAAC
+  - Energy    : 23.4743
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCGCGAAC                      23.4743          ✓   0.24s
+QAOA       ACCGCGAAC                      23.4743          ✓   0.75s
+BRUTE      ACCGCGAAC                      23.4743          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 27/103
+============================================================
+Sequence: KIY
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KIY
+  - Qubits    : 4
+  - Bitstring : 1010
+  - mRNA      : AAGAUCUAC
+  - Energy    : 30.9116
+  - Time      : 0.19s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : KIY
+  - Qubits    : 7
+  - Bitstring : 0101010
+  - mRNA      : AAGAUCUAC
+  - Energy    : 30.9116
+  - Time      : 0.30s
+
+  - Gate counts  : OrderedDict({'rzz': 36, 'cx': 8, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'rz': 2, 'barrier': 1})
+  - Circuit depth: 38
+  - Total gates  :75
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KIY
+  - Qubits    : 4
+  - Bitstring : 1010
+  - mRNA      : AAGAUCUAC
+  - Energy    : 30.9116
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAGAUCUAC                      30.9116          ✓   0.19s
+QAOA       AAGAUCUAC                      30.9116          ✓   0.30s
+BRUTE      AAGAUCUAC                      30.9116          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 28/103
+============================================================
+Sequence: GSD
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : GSD
+  - Qubits    : 6
+  - Bitstring : 110001
+  - mRNA      : GGUAGCGAU
+  - Energy    : 26.0820
+  - Time      : 0.26s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : GSD
+  - Qubits    : 12
+  - Bitstring : 000110000001
+  - mRNA      : GGUAGCGAU
+  - Energy    : 26.0820
+  - Time      : 1.13s
+
+  - Gate counts  : OrderedDict({'cx': 174, 'rzz': 132, 'rz': 44, 'u2': 12, 'u3': 12, 'rx': 12, 'measure': 12, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 221
+  - Total gates  :409
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : GSD
+  - Qubits    : 6
+  - Bitstring : 110001
+  - mRNA      : GGUAGCGAU
+  - Energy    : 26.0820
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GGUAGCGAU                      26.0820          ✓   0.26s
+QAOA       GGUAGCGAU                      26.0820          ✓   1.13s
+BRUTE      GGUAGCGAU                      26.0820          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 29/103
+============================================================
+Sequence: SIE
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SIE
+  - Qubits    : 6
+  - Bitstring : 000010
+  - mRNA      : AGCAUCGAA
+  - Energy    : 22.6425
+  - Time      : 0.25s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : SIE
+  - Qubits    : 11
+  - Bitstring : 10000001010
+  - mRNA      : AGCAUCGAA
+  - Energy    : 22.6425
+  - Time      : 0.99s
+
+  - Gate counts  : OrderedDict({'cx': 150, 'rzz': 110, 'rz': 36, 'u2': 11, 'u3': 11, 'rx': 11, 'measure': 11, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 218
+  - Total gates  :351
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SIE
+  - Qubits    : 6
+  - Bitstring : 000010
+  - mRNA      : AGCAUCGAA
+  - Energy    : 22.6425
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCAUCGAA                      22.6425          ✓   0.25s
+QAOA       AGCAUCGAA                      22.6425          ✓   0.99s
+BRUTE      AGCAUCGAA                      22.6425          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 30/103
+============================================================
+Sequence: FHA
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FHA
+  - Qubits    : 4
+  - Bitstring : 1110
+  - mRNA      : UUUCAUGCG
+  - Energy    : 19.3729
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : FHA
+  - Qubits    : 8
+  - Bitstring : 01010010
+  - mRNA      : UUUCAUGCG
+  - Energy    : 19.3729
+  - Time      : 0.37s
+
+  - Gate counts  : OrderedDict({'rzz': 48, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :123
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FHA
+  - Qubits    : 4
+  - Bitstring : 1110
+  - mRNA      : UUUCAUGCG
+  - Energy    : 19.3729
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUUCAUGCG                      19.3729          ✓   0.20s
+QAOA       UUUCAUGCG                      19.3729          ✓   0.37s
+BRUTE      UUUCAUGCG                      19.3729          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 31/103
+============================================================
+Sequence: SFL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SFL
+  - Qubits    : 7
+  - Bitstring : 0001010
+  - mRNA      : AGCUUUCUG
+  - Energy    : 22.3139
+  - Time      : 0.31s
+
+  - Gate counts  : OrderedDict({'rx': 21, 'cx': 14, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 18
+  - Total gates  :43
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : SFL
+  - Qubits    : 14
+  - Bitstring : 10000001001000
+  - mRNA      : AGCUUUCUG
+  - Energy    : 22.3139
+  - Time      : 2.45s
+
+  - Gate counts  : OrderedDict({'cx': 284, 'rzz': 170, 'rz': 68, 'unitary': 20, 'u2': 14, 'u3': 14, 'rx': 14, 'measure': 14, 'barrier': 1})
+  - Circuit depth: 246
+  - Total gates  :599
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SFL
+  - Qubits    : 7
+  - Bitstring : 0001010
+  - mRNA      : AGCUUUCUG
+  - Energy    : 22.3139
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCUUUCUG                      22.3139          ✓   0.31s
+QAOA       AGCUUUCUG                      22.3139          ✓   2.45s
+BRUTE      AGCUUUCUG                      22.3139          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 32/103
+============================================================
+Sequence: QKI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : QKI
+  - Qubits    : 4
+  - Bitstring : 1110
+  - mRNA      : CAGAAGAUU
+  - Energy    : 24.7948
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : QKI
+  - Qubits    : 7
+  - Bitstring : 0101001
+  - mRNA      : CAGAAGAUU
+  - Energy    : 24.7948
+  - Time      : 0.28s
+
+  - Gate counts  : OrderedDict({'rzz': 34, 'u2': 7, 'rx': 7, 'measure': 7, 'cx': 6, 'u3': 6, 'unitary': 1, 'rz': 1, 'barrier': 1})
+  - Circuit depth: 32
+  - Total gates  :70
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : QKI
+  - Qubits    : 4
+  - Bitstring : 1110
+  - mRNA      : CAGAAGAUU
+  - Energy    : 24.7948
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CAGAAGAUU                      24.7948          ✓   0.20s
+QAOA       CAGAAGAUU                      24.7948          ✓   0.28s
+BRUTE      CAGAAGAUU                      24.7948          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 33/103
+============================================================
+Sequence: KDD
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KDD
+  - Qubits    : 3
+  - Bitstring : 011
+  - mRNA      : AAAGAUGAU
+  - Energy    : 15.9807
+  - Time      : 0.14s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : KDD
+  - Qubits    : 6
+  - Bitstring : 100101
+  - mRNA      : AAAGAUGAU
+  - Energy    : 15.9807
+  - Time      : 0.24s
+
+  - Gate counts  : OrderedDict({'rzz': 26, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :51
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KDD
+  - Qubits    : 3
+  - Bitstring : 011
+  - mRNA      : AAAGAUGAU
+  - Energy    : 15.9807
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAAGAUGAU                      15.9807          ✓   0.14s
+QAOA       AAAGAUGAU                      15.9807          ✓   0.24s
+BRUTE      AAAGAUGAU                      15.9807          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 34/103
+============================================================
+Sequence: FQT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FQT
+  - Qubits    : 4
+  - Bitstring : 1101
+  - mRNA      : UUUCAGACC
+  - Energy    : 15.6092
+  - Time      : 0.19s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : FQT
+  - Qubits    : 8
+  - Bitstring : 01010100
+  - mRNA      : UUUCAGACC
+  - Energy    : 15.6092
+  - Time      : 0.40s
+
+  - Gate counts  : OrderedDict({'rzz': 48, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :123
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FQT
+  - Qubits    : 4
+  - Bitstring : 1101
+  - mRNA      : UUUCAGACC
+  - Energy    : 15.6092
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUUCAGACC                      15.6092          ✓   0.19s
+QAOA       UUUCAGACC                      15.6092          ✓   0.40s
+BRUTE      UUUCAGACC                      15.6092          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 35/103
+============================================================
+Sequence: VNF
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VNF
+  - Qubits    : 4
+  - Bitstring : 1001
+  - mRNA      : GUGAACUUU
+  - Energy    : 21.0304
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : VNF
+  - Qubits    : 8
+  - Bitstring : 00101001
+  - mRNA      : GUGAACUUU
+  - Energy    : 21.0304
+  - Time      : 0.37s
+
+  - Gate counts  : OrderedDict({'rzz': 48, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 72
+  - Total gates  :123
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VNF
+  - Qubits    : 4
+  - Bitstring : 1001
+  - mRNA      : GUGAACUUU
+  - Energy    : 21.0304
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUGAACUUU                      21.0304          ✓   0.20s
+QAOA       GUGAACUUU                      21.0304          ✓   0.37s
+BRUTE      GUGAACUUU                      21.0304          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 36/103
+============================================================
+Sequence: NNA
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NNA
+  - Qubits    : 4
+  - Bitstring : 0010
+  - mRNA      : AACAACGCG
+  - Energy    : 20.1943
+  - Time      : 0.19s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : NNA
+  - Qubits    : 8
+  - Bitstring : 10100010
+  - mRNA      : AACAACGCG
+  - Energy    : 20.1943
+  - Time      : 0.36s
+
+  - Gate counts  : OrderedDict({'rzz': 48, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 67
+  - Total gates  :123
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NNA
+  - Qubits    : 4
+  - Bitstring : 0010
+  - mRNA      : AACAACGCG
+  - Energy    : 20.1943
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AACAACGCG                      20.1943          ✓   0.19s
+QAOA       AACAACGCG                      20.1943          ✓   0.36s
+BRUTE      AACAACGCG                      20.1943          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 37/103
+============================================================
+Sequence: NQT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NQT
+  - Qubits    : 4
+  - Bitstring : 1101
+  - mRNA      : AAUCAGACC
+  - Energy    : 18.5805
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : NQT
+  - Qubits    : 8
+  - Bitstring : 01010100
+  - mRNA      : AAUCAGACC
+  - Energy    : 18.5805
+  - Time      : 0.40s
+
+  - Gate counts  : OrderedDict({'rzz': 48, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :123
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NQT
+  - Qubits    : 4
+  - Bitstring : 1101
+  - mRNA      : AAUCAGACC
+  - Energy    : 18.5805
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAUCAGACC                      18.5805          ✓   0.20s
+QAOA       AAUCAGACC                      18.5805          ✓   0.40s
+BRUTE      AAUCAGACC                      18.5805          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 38/103
+============================================================
+Sequence: KEL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KEL
+  - Qubits    : 5
+  - Bitstring : 00010
+  - mRNA      : AAAGAACUG
+  - Energy    : 13.6727
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : KEL
+  - Qubits    : 10
+  - Bitstring : 1010001000
+  - mRNA      : AAAGAACUG
+  - Energy    : 13.6727
+  - Time      : 0.75s
+
+  - Gate counts  : OrderedDict({'cx': 142, 'rzz': 76, 'rz': 34, 'u2': 10, 'unitary': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 218
+  - Total gates  :303
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KEL
+  - Qubits    : 5
+  - Bitstring : 00010
+  - mRNA      : AAAGAACUG
+  - Energy    : 13.6727
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAAGAACUG                      13.6727          ✓   0.22s
+QAOA       AAAGAACUG                      13.6727          ✓   0.75s
+BRUTE      AAAGAACUG                      13.6727          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 39/103
+============================================================
+Sequence: INE
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : INE
+  - Qubits    : 4
+  - Bitstring : 0100
+  - mRNA      : AUCAACGAA
+  - Energy    : 18.8892
+  - Time      : 0.19s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : INE
+  - Qubits    : 7
+  - Bitstring : 0101010
+  - mRNA      : AUCAACGAA
+  - Energy    : 18.8892
+  - Time      : 0.29s
+
+  - Gate counts  : OrderedDict({'rzz': 34, 'cx': 8, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'rz': 2, 'barrier': 1})
+  - Circuit depth: 36
+  - Total gates  :73
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : INE
+  - Qubits    : 4
+  - Bitstring : 0100
+  - mRNA      : AUCAACGAA
+  - Energy    : 18.8892
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUCAACGAA                      18.8892          ✓   0.19s
+QAOA       AUCAACGAA                      18.8892          ✓   0.29s
+BRUTE      AUCAACGAA                      18.8892          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 40/103
+============================================================
+Sequence: WVK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : WVK
+  - Qubits    : 3
+  - Bitstring : 100
+  - mRNA      : UGGGUGAAA
+  - Energy    : 254.7735
+  - Time      : 0.15s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : WVK
+  - Qubits    : 7
+  - Bitstring : 1001010
+  - mRNA      : UGGGUGAAA
+  - Energy    : 254.7735
+  - Time      : 0.33s
+
+  - Gate counts  : OrderedDict({'rzz': 40, 'cx': 32, 'rz': 10, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 64
+  - Total gates  :111
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : WVK
+  - Qubits    : 3
+  - Bitstring : 100
+  - mRNA      : UGGGUGAAA
+  - Energy    : 254.7735
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UGGGUGAAA                     254.7735          ✓   0.15s
+QAOA       UGGGUGAAA                     254.7735          ✓   0.33s
+BRUTE      UGGGUGAAA                     254.7735          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 41/103
+============================================================
+Sequence: TMT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TMT
+  - Qubits    : 4
+  - Bitstring : 0101
+  - mRNA      : ACCAUGACC
+  - Energy    : 15.3286
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TMT
+  - Qubits    : 9
+  - Bitstring : 010010100
+  - mRNA      : ACCAUGACC
+  - Energy    : 15.3286
+  - Time      : 0.52s
+
+  - Gate counts  : OrderedDict({'rzz': 72, 'cx': 64, 'rz': 20, 'u2': 9, 'u3': 9, 'rx': 9, 'measure': 9, 'barrier': 1})
+  - Circuit depth: 72
+  - Total gates  :193
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TMT
+  - Qubits    : 4
+  - Bitstring : 0101
+  - mRNA      : ACCAUGACC
+  - Energy    : 15.3286
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCAUGACC                      15.3286          ✓   0.22s
+QAOA       ACCAUGACC                      15.3286          ✓   0.52s
+BRUTE      ACCAUGACC                      15.3286          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 42/103
+============================================================
+Sequence: NGK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NGK
+  - Qubits    : 4
+  - Bitstring : 0010
+  - mRNA      : AACGGCAAA
+  - Energy    : 16.4485
+  - Time      : 0.19s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : NGK
+  - Qubits    : 8
+  - Bitstring : 10010010
+  - mRNA      : AACGGCAAA
+  - Energy    : 16.4485
+  - Time      : 0.40s
+
+  - Gate counts  : OrderedDict({'rzz': 50, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 68
+  - Total gates  :125
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NGK
+  - Qubits    : 4
+  - Bitstring : 0010
+  - mRNA      : AACGGCAAA
+  - Energy    : 16.4485
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AACGGCAAA                      16.4485          ✓   0.19s
+QAOA       AACGGCAAA                      16.4485          ✓   0.40s
+BRUTE      AACGGCAAA                      16.4485          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 43/103
+============================================================
+Sequence: INS
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : INS
+  - Qubits    : 6
+  - Bitstring : 100000
+  - mRNA      : AUUAACAGC
+  - Energy    : 25.6299
+  - Time      : 0.25s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : INS
+  - Qubits    : 11
+  - Bitstring : 00110100000
+  - mRNA      : AUUAACAGC
+  - Energy    : 25.6299
+  - Time      : 0.93s
+
+  - Gate counts  : OrderedDict({'cx': 150, 'rzz': 86, 'rz': 36, 'u2': 11, 'u3': 11, 'rx': 11, 'measure': 11, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 213
+  - Total gates  :327
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : INS
+  - Qubits    : 6
+  - Bitstring : 100000
+  - mRNA      : AUUAACAGC
+  - Energy    : 25.6299
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUUAACAGC                      25.6299          ✓   0.25s
+QAOA       AUUAACAGC                      25.6299          ✓   0.93s
+BRUTE      AUUAACAGC                      25.6299          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 44/103
+============================================================
+Sequence: LLT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LLT
+  - Qubits    : 8
+  - Bitstring : 01001001
+  - mRNA      : CUGCUGACC
+  - Energy    : 22.2052
+  - Time      : 0.37s
+
+  - Gate counts  : OrderedDict({'rx': 24, 'cx': 16, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :49
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : LLT
+  - Qubits    : 16
+  - Bitstring : 0010000010000100
+  - mRNA      : CUGCUGACC
+  - Energy    : 22.2052
+  - Time      : 2.81s
+
+  - Gate counts  : OrderedDict({'cx': 316, 'rzz': 232, 'rz': 78, 'unitary': 20, 'u2': 16, 'u3': 16, 'rx': 16, 'measure': 16, 'barrier': 1})
+  - Circuit depth: 258
+  - Total gates  :711
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LLT
+  - Qubits    : 8
+  - Bitstring : 01001001
+  - mRNA      : CUGCUGACC
+  - Energy    : 22.2052
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CUGCUGACC                      22.2052          ✓   0.37s
+QAOA       CUGCUGACC                      22.2052          ✓   2.81s
+BRUTE      CUGCUGACC                      22.2052          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 45/103
+============================================================
+Sequence: SPL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SPL
+  - Qubits    : 8
+  - Bitstring : 00110010
+  - mRNA      : AGUCCGCUG
+  - Energy    : 31.0493
+  - Time      : 0.37s
+
+  - Gate counts  : OrderedDict({'rx': 24, 'cx': 16, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :49
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : SPL
+  - Qubits    : 16
+  - Bitstring : 0100000010001000
+  - mRNA      : AGUCCGCUG
+  - Energy    : 31.0493
+  - Time      : 3.08s
+
+  - Gate counts  : OrderedDict({'cx': 316, 'rzz': 228, 'rz': 78, 'unitary': 20, 'u2': 16, 'u3': 16, 'rx': 16, 'measure': 16, 'barrier': 1})
+  - Circuit depth: 239
+  - Total gates  :707
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SPL
+  - Qubits    : 8
+  - Bitstring : 00110010
+  - mRNA      : AGUCCGCUG
+  - Energy    : 31.0493
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGUCCGCUG                      31.0493          ✓   0.37s
+QAOA       AGUCCGCUG                      31.0493          ✓   3.08s
+BRUTE      AGUCCGCUG                      31.0493          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 46/103
+============================================================
+Sequence: SIN
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SIN
+  - Qubits    : 6
+  - Bitstring : 000100
+  - mRNA      : AGCAUUAAC
+  - Energy    : 25.0559
+  - Time      : 0.24s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : SIN
+  - Qubits    : 11
+  - Bitstring : 10000000110
+  - mRNA      : AGCAUUAAC
+  - Energy    : 25.0559
+  - Time      : 0.92s
+
+  - Gate counts  : OrderedDict({'cx': 150, 'rzz': 98, 'rz': 36, 'u2': 11, 'u3': 11, 'rx': 11, 'measure': 11, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 226
+  - Total gates  :339
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SIN
+  - Qubits    : 6
+  - Bitstring : 000100
+  - mRNA      : AGCAUUAAC
+  - Energy    : 25.0559
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCAUUAAC                      25.0559          ✓   0.24s
+QAOA       AGCAUUAAC                      25.0559          ✓   0.92s
+BRUTE      AGCAUUAAC                      25.0559          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 47/103
+============================================================
+Sequence: TRM
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TRM
+  - Qubits    : 5
+  - Bitstring : 10101
+  - mRNA      : ACGCGUAUG
+  - Energy    : 20.9940
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TRM
+  - Qubits    : 11
+  - Bitstring : 00100000011
+  - mRNA      : ACGCGUAUG
+  - Energy    : 20.9940
+  - Time      : 1.03s
+
+  - Gate counts  : OrderedDict({'cx': 174, 'rzz': 110, 'rz': 44, 'u2': 11, 'u3': 11, 'rx': 11, 'measure': 11, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 219
+  - Total gates  :383
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TRM
+  - Qubits    : 5
+  - Bitstring : 10101
+  - mRNA      : ACGCGUAUG
+  - Energy    : 20.9940
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACGCGUAUG                      20.9940          ✓   0.22s
+QAOA       ACGCGUAUG                      20.9940          ✓   1.03s
+BRUTE      ACGCGUAUG                      20.9940          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 48/103
+============================================================
+Sequence: TVI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TVI
+  - Qubits    : 6
+  - Bitstring : 011010
+  - mRNA      : ACCGUGAUU
+  - Energy    : 23.1729
+  - Time      : 0.24s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TVI
+  - Qubits    : 11
+  - Bitstring : 01000010001
+  - mRNA      : ACCGUGAUU
+  - Energy    : 23.1729
+  - Time      : 0.97s
+
+  - Gate counts  : OrderedDict({'rzz': 94, 'cx': 72, 'rz': 22, 'u2': 11, 'u3': 11, 'rx': 11, 'measure': 11, 'barrier': 1})
+  - Circuit depth: 75
+  - Total gates  :233
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TVI
+  - Qubits    : 6
+  - Bitstring : 011010
+  - mRNA      : ACCGUGAUU
+  - Energy    : 23.1729
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCGUGAUU                      23.1729          ✓   0.24s
+QAOA       ACCGUGAUU                      23.1729          ✓   0.97s
+BRUTE      ACCGUGAUU                      23.1729          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 49/103
+============================================================
+Sequence: SAV
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SAV
+  - Qubits    : 7
+  - Bitstring : 0000010
+  - mRNA      : AGCGCAGUG
+  - Energy    : 36.6626
+  - Time      : 0.42s
+
+  - Gate counts  : OrderedDict({'rx': 21, 'cx': 14, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 18
+  - Total gates  :43
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : SAV
+  - Qubits    : 14
+  - Bitstring : 10000010000010
+  - mRNA      : AGCGCAGUG
+  - Energy    : 36.6626
+  - Time      : 2.55s
+
+  - Gate counts  : OrderedDict({'cx': 206, 'rzz': 182, 'rz': 54, 'u2': 14, 'u3': 14, 'rx': 14, 'measure': 14, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 220
+  - Total gates  :509
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SAV
+  - Qubits    : 7
+  - Bitstring : 0000010
+  - mRNA      : AGCGCAGUG
+  - Energy    : 36.6626
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCGCAGUG                      36.6626          ✓   0.42s
+QAOA       AGCGCAGUG                      36.6626          ✓   2.55s
+BRUTE      AGCGCAGUG                      36.6626          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 50/103
+============================================================
+Sequence: HFK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : HFK
+  - Qubits    : 3
+  - Bitstring : 000
+  - mRNA      : CACUUCAAA
+  - Energy    : 19.8480
+  - Time      : 0.23s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : HFK
+  - Qubits    : 6
+  - Bitstring : 101010
+  - mRNA      : CACUUCAAA
+  - Energy    : 19.8480
+  - Time      : 0.25s
+
+  - Gate counts  : OrderedDict({'rzz': 26, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 21
+  - Total gates  :51
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : HFK
+  - Qubits    : 3
+  - Bitstring : 000
+  - mRNA      : CACUUCAAA
+  - Energy    : 19.8480
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CACUUCAAA                      19.8480          ✓   0.23s
+QAOA       CACUUCAAA                      19.8480          ✓   0.25s
+BRUTE      CACUUCAAA                      19.8480          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 51/103
+============================================================
+Sequence: AMW
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : AMW
+  - Qubits    : 2
+  - Bitstring : 10
+  - mRNA      : GCGAUGUGG
+  - Energy    : 11.3923
+  - Time      : 0.10s
+
+  - Gate counts  : OrderedDict({'rx': 4, 'cx': 2, 'measure': 2, 'barrier': 1})
+  - Circuit depth: 6
+  - Total gates  :9
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : AMW
+  - Qubits    : 6
+  - Bitstring : 001011
+  - mRNA      : GCGAUGUGG
+  - Energy    : 11.3923
+  - Time      : 0.29s
+
+  - Gate counts  : OrderedDict({'cx': 32, 'rzz': 30, 'rz': 10, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 60
+  - Total gates  :97
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : AMW
+  - Qubits    : 2
+  - Bitstring : 10
+  - mRNA      : GCGAUGUGG
+  - Energy    : 11.3923
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GCGAUGUGG                      11.3923          ✓   0.10s
+QAOA       GCGAUGUGG                      11.3923          ✓   0.29s
+BRUTE      GCGAUGUGG                      11.3923          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 52/103
+============================================================
+Sequence: KYP
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KYP
+  - Qubits    : 4
+  - Bitstring : 0110
+  - mRNA      : AAAUAUCCG
+  - Energy    : 15.2728
+  - Time      : 0.19s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : KYP
+  - Qubits    : 8
+  - Bitstring : 10010010
+  - mRNA      : AAAUAUCCG
+  - Energy    : 15.2728
+  - Time      : 0.41s
+
+  - Gate counts  : OrderedDict({'rzz': 48, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 69
+  - Total gates  :123
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KYP
+  - Qubits    : 4
+  - Bitstring : 0110
+  - mRNA      : AAAUAUCCG
+  - Energy    : 15.2728
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAAUAUCCG                      15.2728          ✓   0.19s
+QAOA       AAAUAUCCG                      15.2728          ✓   0.41s
+BRUTE      AAAUAUCCG                      15.2728          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 53/103
+============================================================
+Sequence: FSK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FSK
+  - Qubits    : 5
+  - Bitstring : 00000
+  - mRNA      : UUCAGCAAA
+  - Energy    : 24.2264
+  - Time      : 0.23s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : FSK
+  - Qubits    : 10
+  - Bitstring : 1010000010
+  - mRNA      : UUCAGCAAA
+  - Energy    : 24.2264
+  - Time      : 0.81s
+
+  - Gate counts  : OrderedDict({'cx': 142, 'rzz': 84, 'rz': 34, 'u2': 10, 'u3': 10, 'unitary': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 224
+  - Total gates  :311
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FSK
+  - Qubits    : 5
+  - Bitstring : 00000
+  - mRNA      : UUCAGCAAA
+  - Energy    : 24.2264
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUCAGCAAA                      24.2264          ✓   0.23s
+QAOA       UUCAGCAAA                      24.2264          ✓   0.81s
+BRUTE      UUCAGCAAA                      24.2264          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 54/103
+============================================================
+Sequence: HLT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : HLT
+  - Qubits    : 6
+  - Bitstring : 101001
+  - mRNA      : CAUCUGACC
+  - Energy    : 19.1617
+  - Time      : 0.25s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : HLT
+  - Qubits    : 12
+  - Bitstring : 010010000100
+  - mRNA      : CAUCUGACC
+  - Energy    : 19.1617
+  - Time      : 1.40s
+
+  - Gate counts  : OrderedDict({'cx': 174, 'rzz': 132, 'rz': 44, 'u2': 12, 'u3': 12, 'rx': 12, 'measure': 12, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 237
+  - Total gates  :409
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : HLT
+  - Qubits    : 6
+  - Bitstring : 101001
+  - mRNA      : CAUCUGACC
+  - Energy    : 19.1617
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CAUCUGACC                      19.1617          ✓   0.25s
+QAOA       CAUCUGACC                      19.1617          ✓   1.40s
+BRUTE      CAUCUGACC                      19.1617          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 55/103
+============================================================
+Sequence: YTD
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : YTD
+  - Qubits    : 4
+  - Bitstring : 1011
+  - mRNA      : UAUACCGAU
+  - Energy    : 18.9430
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : YTD
+  - Qubits    : 8
+  - Bitstring : 01010001
+  - mRNA      : UAUACCGAU
+  - Energy    : 18.9430
+  - Time      : 0.40s
+
+  - Gate counts  : OrderedDict({'rzz': 52, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :127
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : YTD
+  - Qubits    : 4
+  - Bitstring : 1011
+  - mRNA      : UAUACCGAU
+  - Energy    : 18.9430
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UAUACCGAU                      18.9430          ✓   0.20s
+QAOA       UAUACCGAU                      18.9430          ✓   0.40s
+BRUTE      UAUACCGAU                      18.9430          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 56/103
+============================================================
+Sequence: KFY
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KFY
+  - Qubits    : 3
+  - Bitstring : 000
+  - mRNA      : AAAUUCUAC
+  - Energy    : 23.3203
+  - Time      : 0.16s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : KFY
+  - Qubits    : 6
+  - Bitstring : 101010
+  - mRNA      : AAAUUCUAC
+  - Energy    : 23.3203
+  - Time      : 0.24s
+
+  - Gate counts  : OrderedDict({'rzz': 24, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :49
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KFY
+  - Qubits    : 3
+  - Bitstring : 000
+  - mRNA      : AAAUUCUAC
+  - Energy    : 23.3203
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAAUUCUAC                      23.3203          ✓   0.16s
+QAOA       AAAUUCUAC                      23.3203          ✓   0.24s
+BRUTE      AAAUUCUAC                      23.3203          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 57/103
+============================================================
+Sequence: ISK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : ISK
+  - Qubits    : 6
+  - Bitstring : 010000
+  - mRNA      : AUCAGCAAA
+  - Energy    : 24.4151
+  - Time      : 0.24s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : ISK
+  - Qubits    : 11
+  - Bitstring : 01010000010
+  - mRNA      : AUCAGCAAA
+  - Energy    : 24.4151
+  - Time      : 1.06s
+
+  - Gate counts  : OrderedDict({'cx': 150, 'rzz': 100, 'rz': 36, 'u2': 11, 'u3': 11, 'rx': 11, 'measure': 11, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 224
+  - Total gates  :341
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : ISK
+  - Qubits    : 6
+  - Bitstring : 010000
+  - mRNA      : AUCAGCAAA
+  - Energy    : 24.4151
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUCAGCAAA                      24.4151          ✓   0.24s
+QAOA       AUCAGCAAA                      24.4151          ✓   1.06s
+BRUTE      AUCAGCAAA                      24.4151          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 58/103
+============================================================
+Sequence: NIV
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NIV
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : AACAUUGUG
+  - Energy    : 22.3252
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : NIV
+  - Qubits    : 9
+  - Bitstring : 100010010
+  - mRNA      : AACAUUGUG
+  - Energy    : 22.3252
+  - Time      : 0.51s
+
+  - Gate counts  : OrderedDict({'rzz': 64, 'cx': 40, 'rz': 12, 'u2': 9, 'u3': 9, 'rx': 9, 'measure': 9, 'barrier': 1})
+  - Circuit depth: 69
+  - Total gates  :153
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NIV
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : AACAUUGUG
+  - Energy    : 22.3252
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AACAUUGUG                      22.3252          ✓   0.22s
+QAOA       AACAUUGUG                      22.3252          ✓   0.51s
+BRUTE      AACAUUGUG                      22.3252          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 59/103
+============================================================
+Sequence: TSV
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TSV
+  - Qubits    : 7
+  - Bitstring : 0100010
+  - mRNA      : ACCAGCGUG
+  - Energy    : 30.8572
+  - Time      : 0.31s
+
+  - Gate counts  : OrderedDict({'rx': 21, 'cx': 14, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 18
+  - Total gates  :43
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TSV
+  - Qubits    : 14
+  - Bitstring : 01001000000010
+  - mRNA      : ACCAGCGUG
+  - Energy    : 30.8572
+  - Time      : 2.43s
+
+  - Gate counts  : OrderedDict({'cx': 206, 'rzz': 182, 'rz': 54, 'u2': 14, 'u3': 14, 'rx': 14, 'measure': 14, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 225
+  - Total gates  :509
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TSV
+  - Qubits    : 7
+  - Bitstring : 0100010
+  - mRNA      : ACCAGCGUG
+  - Energy    : 30.8572
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCAGCGUG                      30.8572          ✓   0.31s
+QAOA       ACCAGCGUG                      30.8572          ✓   2.43s
+BRUTE      ACCAGCGUG                      30.8572          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 60/103
+============================================================
+Sequence: DMM
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : DMM
+  - Qubits    : 1
+  - Bitstring : 1
+  - mRNA      : GAUAUGAUG
+  - Energy    : 6.1661
+  - Time      : 0.08s
+
+  - Gate counts  : OrderedDict({'u3': 1, 'barrier': 1, 'measure': 1})
+  - Circuit depth: 2
+  - Total gates  :3
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : DMM
+  - Qubits    : 4
+  - Bitstring : 0111
+  - mRNA      : GAUAUGAUG
+  - Energy    : 6.1661
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rzz': 12, 'u2': 4, 'u3': 4, 'rx': 4, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 13
+  - Total gates  :29
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : DMM
+  - Qubits    : 1
+  - Bitstring : 1
+  - mRNA      : GAUAUGAUG
+  - Energy    : 6.1661
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAUAUGAUG                       6.1661          ✓   0.08s
+QAOA       GAUAUGAUG                       6.1661          ✓   0.20s
+BRUTE      GAUAUGAUG                       6.1661          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 61/103
+============================================================
+Sequence: VGT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VGT
+  - Qubits    : 6
+  - Bitstring : 111101
+  - mRNA      : GUUGGUACC
+  - Energy    : 29.4192
+  - Time      : 0.26s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : VGT
+  - Qubits    : 12
+  - Bitstring : 000100010100
+  - mRNA      : GUUGGUACC
+  - Energy    : 29.4192
+  - Time      : 1.35s
+
+  - Gate counts  : OrderedDict({'rzz': 132, 'cx': 96, 'rz': 30, 'u2': 12, 'u3': 12, 'rx': 12, 'measure': 12, 'barrier': 1})
+  - Circuit depth: 81
+  - Total gates  :307
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VGT
+  - Qubits    : 6
+  - Bitstring : 111101
+  - mRNA      : GUUGGUACC
+  - Energy    : 29.4192
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUUGGUACC                      29.4192          ✓   0.26s
+QAOA       GUUGGUACC                      29.4192          ✓   1.35s
+BRUTE      GUUGGUACC                      29.4192          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 62/103
+============================================================
+Sequence: END
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : END
+  - Qubits    : 3
+  - Bitstring : 101
+  - mRNA      : GAGAACGAU
+  - Energy    : 20.3555
+  - Time      : 0.16s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : END
+  - Qubits    : 6
+  - Bitstring : 011001
+  - mRNA      : GAGAACGAU
+  - Energy    : 20.3555
+  - Time      : 0.30s
+
+  - Gate counts  : OrderedDict({'rzz': 30, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 23
+  - Total gates  :55
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : END
+  - Qubits    : 3
+  - Bitstring : 101
+  - mRNA      : GAGAACGAU
+  - Energy    : 20.3555
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAGAACGAU                      20.3555          ✓   0.16s
+QAOA       GAGAACGAU                      20.3555          ✓   0.30s
+BRUTE      GAGAACGAU                      20.3555          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 63/103
+============================================================
+Sequence: LQY
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LQY
+  - Qubits    : 5
+  - Bitstring : 01011
+  - mRNA      : CUGCAGUAU
+  - Energy    : 14.1160
+  - Time      : 0.26s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : LQY
+  - Qubits    : 10
+  - Bitstring : 0010000101
+  - mRNA      : CUGCAGUAU
+  - Energy    : 14.1160
+  - Time      : 0.83s
+
+  - Gate counts  : OrderedDict({'cx': 142, 'rzz': 76, 'rz': 34, 'u2': 10, 'u3': 10, 'unitary': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 222
+  - Total gates  :303
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LQY
+  - Qubits    : 5
+  - Bitstring : 01011
+  - mRNA      : CUGCAGUAU
+  - Energy    : 14.1160
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CUGCAGUAU                      14.1160          ✓   0.26s
+QAOA       CUGCAGUAU                      14.1160          ✓   0.83s
+BRUTE      CUGCAGUAU                      14.1160          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 64/103
+============================================================
+Sequence: VHI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VHI
+  - Qubits    : 5
+  - Bitstring : 10110
+  - mRNA      : GUGCAUAUU
+  - Energy    : 22.4932
+  - Time      : 0.28s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : VHI
+  - Qubits    : 9
+  - Bitstring : 001001001
+  - mRNA      : GUGCAUAUU
+  - Energy    : 22.4932
+  - Time      : 0.51s
+
+  - Gate counts  : OrderedDict({'rzz': 56, 'cx': 40, 'rz': 12, 'u2': 9, 'u3': 9, 'rx': 9, 'measure': 9, 'barrier': 1})
+  - Circuit depth: 62
+  - Total gates  :145
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VHI
+  - Qubits    : 5
+  - Bitstring : 10110
+  - mRNA      : GUGCAUAUU
+  - Energy    : 22.4932
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUGCAUAUU                      22.4932          ✓   0.28s
+QAOA       GUGCAUAUU                      22.4932          ✓   0.51s
+BRUTE      GUGCAUAUU                      22.4932          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 65/103
+============================================================
+Sequence: NEL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NEL
+  - Qubits    : 5
+  - Bitstring : 00010
+  - mRNA      : AACGAACUG
+  - Energy    : 15.0315
+  - Time      : 0.21s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : NEL
+  - Qubits    : 10
+  - Bitstring : 1010001000
+  - mRNA      : AACGAACUG
+  - Energy    : 15.0315
+  - Time      : 0.81s
+
+  - Gate counts  : OrderedDict({'cx': 142, 'rzz': 76, 'rz': 34, 'u2': 10, 'unitary': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 218
+  - Total gates  :303
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NEL
+  - Qubits    : 5
+  - Bitstring : 00010
+  - mRNA      : AACGAACUG
+  - Energy    : 15.0315
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AACGAACUG                      15.0315          ✓   0.21s
+QAOA       AACGAACUG                      15.0315          ✓   0.81s
+BRUTE      AACGAACUG                      15.0315          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 66/103
+============================================================
+Sequence: FGG
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FGG
+  - Qubits    : 5
+  - Bitstring : 11101
+  - mRNA      : UUUGGUGGC
+  - Energy    : 23.6675
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : FGG
+  - Qubits    : 10
+  - Bitstring : 0100010100
+  - mRNA      : UUUGGUGGC
+  - Energy    : 23.6675
+  - Time      : 0.68s
+
+  - Gate counts  : OrderedDict({'rzz': 82, 'cx': 64, 'rz': 20, 'u2': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 73
+  - Total gates  :207
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FGG
+  - Qubits    : 5
+  - Bitstring : 11101
+  - mRNA      : UUUGGUGGC
+  - Energy    : 23.6675
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUUGGUGGC                      23.6675          ✓   0.22s
+QAOA       UUUGGUGGC                      23.6675          ✓   0.68s
+BRUTE      UUUGGUGGC                      23.6675          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 67/103
+============================================================
+Sequence: FSI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FSI
+  - Qubits    : 6
+  - Bitstring : 100001
+  - mRNA      : UUUAGCAUC
+  - Energy    : 26.3730
+  - Time      : 0.26s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : FSI
+  - Qubits    : 11
+  - Bitstring : 01100000010
+  - mRNA      : UUUAGCAUC
+  - Energy    : 26.3730
+  - Time      : 0.98s
+
+  - Gate counts  : OrderedDict({'cx': 150, 'rzz': 100, 'rz': 36, 'u2': 11, 'u3': 11, 'rx': 11, 'measure': 11, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 226
+  - Total gates  :341
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FSI
+  - Qubits    : 6
+  - Bitstring : 100001
+  - mRNA      : UUUAGCAUC
+  - Energy    : 26.3730
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUUAGCAUC                      26.3730          ✓   0.26s
+QAOA       UUUAGCAUC                      26.3730          ✓   0.98s
+BRUTE      UUUAGCAUC                      26.3730          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 68/103
+============================================================
+Sequence: IDI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : IDI
+  - Qubits    : 5
+  - Bitstring : 01101
+  - mRNA      : AUCGAUAUC
+  - Energy    : 22.3662
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : IDI
+  - Qubits    : 8
+  - Bitstring : 01001010
+  - mRNA      : AUCGAUAUC
+  - Energy    : 22.3662
+  - Time      : 0.42s
+
+  - Gate counts  : OrderedDict({'rzz': 40, 'cx': 16, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'rz': 4, 'barrier': 1})
+  - Circuit depth: 36
+  - Total gates  :93
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IDI
+  - Qubits    : 5
+  - Bitstring : 01101
+  - mRNA      : AUCGAUAUC
+  - Energy    : 22.3662
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUCGAUAUC                      22.3662          ✓   0.22s
+QAOA       AUCGAUAUC                      22.3662          ✓   0.42s
+BRUTE      AUCGAUAUC                      22.3662          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 69/103
+============================================================
+Sequence: PYE
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : PYE
+  - Qubits    : 4
+  - Bitstring : 1010
+  - mRNA      : CCGUAUGAA
+  - Energy    : 13.9380
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : PYE
+  - Qubits    : 8
+  - Bitstring : 00100110
+  - mRNA      : CCGUAUGAA
+  - Energy    : 13.9380
+  - Time      : 0.44s
+
+  - Gate counts  : OrderedDict({'rzz': 56, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 72
+  - Total gates  :131
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : PYE
+  - Qubits    : 4
+  - Bitstring : 1010
+  - mRNA      : CCGUAUGAA
+  - Energy    : 13.9380
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CCGUAUGAA                      13.9380          ✓   0.20s
+QAOA       CCGUAUGAA                      13.9380          ✓   0.44s
+BRUTE      CCGUAUGAA                      13.9380          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 70/103
+============================================================
+Sequence: GNS
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : GNS
+  - Qubits    : 6
+  - Bitstring : 011000
+  - mRNA      : GGCAAUAGC
+  - Energy    : 27.2711
+  - Time      : 0.25s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : GNS
+  - Qubits    : 12
+  - Bitstring : 010001100000
+  - mRNA      : GGCAAUAGC
+  - Energy    : 27.2711
+  - Time      : 1.28s
+
+  - Gate counts  : OrderedDict({'cx': 174, 'rzz': 132, 'rz': 44, 'u2': 12, 'u3': 12, 'rx': 12, 'measure': 12, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 222
+  - Total gates  :409
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : GNS
+  - Qubits    : 6
+  - Bitstring : 011000
+  - mRNA      : GGCAAUAGC
+  - Energy    : 27.2711
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GGCAAUAGC                      27.2711          ✓   0.25s
+QAOA       GGCAAUAGC                      27.2711          ✓   1.28s
+BRUTE      GGCAAUAGC                      27.2711          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 71/103
+============================================================
+Sequence: SMV
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : SMV
+  - Qubits    : 5
+  - Bitstring : 00010
+  - mRNA      : AGCAUGGUG
+  - Energy    : 182.7949
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : SMV
+  - Qubits    : 11
+  - Bitstring : 10000010010
+  - mRNA      : AGCAUGGUG
+  - Energy    : 182.7949
+  - Time      : 1.08s
+
+  - Gate counts  : OrderedDict({'cx': 174, 'rzz': 110, 'rz': 44, 'u2': 11, 'u3': 11, 'rx': 11, 'measure': 11, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 214
+  - Total gates  :383
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : SMV
+  - Qubits    : 5
+  - Bitstring : 00010
+  - mRNA      : AGCAUGGUG
+  - Energy    : 182.7949
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AGCAUGGUG                     182.7949          ✓   0.22s
+QAOA       AGCAUGGUG                     182.7949          ✓   1.08s
+BRUTE      AGCAUGGUG                     182.7949          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 72/103
+============================================================
+Sequence: IIL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : IIL
+  - Qubits    : 7
+  - Bitstring : 0110010
+  - mRNA      : AUCAUUCUG
+  - Energy    : 22.0512
+  - Time      : 0.31s
+
+  - Gate counts  : OrderedDict({'rx': 21, 'cx': 14, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 18
+  - Total gates  :43
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : IIL
+  - Qubits    : 12
+  - Bitstring : 010001001000
+  - mRNA      : AUCAUUCUG
+  - Energy    : 22.0512
+  - Time      : 1.23s
+
+  - Gate counts  : OrderedDict({'cx': 158, 'rzz': 106, 'rz': 38, 'u2': 12, 'u3': 12, 'rx': 12, 'measure': 12, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 227
+  - Total gates  :361
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IIL
+  - Qubits    : 7
+  - Bitstring : 0110010
+  - mRNA      : AUCAUUCUG
+  - Energy    : 22.0512
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUCAUUCUG                      22.0512          ✓   0.31s
+QAOA       AUCAUUCUG                      22.0512          ✓   1.23s
+BRUTE      AUCAUUCUG                      22.0512          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 73/103
+============================================================
+Sequence: PDD
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : PDD
+  - Qubits    : 4
+  - Bitstring : 0011
+  - mRNA      : CCAGAUGAU
+  - Energy    : 23.1874
+  - Time      : 0.17s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : PDD
+  - Qubits    : 8
+  - Bitstring : 10000101
+  - mRNA      : CCAGAUGAU
+  - Energy    : 23.1874
+  - Time      : 0.41s
+
+  - Gate counts  : OrderedDict({'rzz': 56, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 64
+  - Total gates  :131
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : PDD
+  - Qubits    : 4
+  - Bitstring : 0011
+  - mRNA      : CCAGAUGAU
+  - Energy    : 23.1874
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CCAGAUGAU                      23.1874          ✓   0.17s
+QAOA       CCAGAUGAU                      23.1874          ✓   0.41s
+BRUTE      CCAGAUGAU                      23.1874          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 74/103
+============================================================
+Sequence: IEG
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : IEG
+  - Qubits    : 5
+  - Bitstring : 10001
+  - mRNA      : AUUGAAGGC
+  - Energy    : 17.7907
+  - Time      : 0.23s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : IEG
+  - Qubits    : 9
+  - Bitstring : 001100100
+  - mRNA      : AUUGAAGGC
+  - Energy    : 17.7907
+  - Time      : 0.51s
+
+  - Gate counts  : OrderedDict({'rzz': 56, 'cx': 40, 'rz': 12, 'u2': 9, 'u3': 9, 'rx': 9, 'measure': 9, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :145
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IEG
+  - Qubits    : 5
+  - Bitstring : 10001
+  - mRNA      : AUUGAAGGC
+  - Energy    : 17.7907
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUUGAAGGC                      17.7907          ✓   0.23s
+QAOA       AUUGAAGGC                      17.7907          ✓   0.51s
+BRUTE      AUUGAAGGC                      17.7907          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 75/103
+============================================================
+Sequence: IYN
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : IYN
+  - Qubits    : 4
+  - Bitstring : 0100
+  - mRNA      : AUCUACAAC
+  - Energy    : 23.6299
+  - Time      : 0.21s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : IYN
+  - Qubits    : 7
+  - Bitstring : 0101010
+  - mRNA      : AUCUACAAC
+  - Energy    : 23.6299
+  - Time      : 0.29s
+
+  - Gate counts  : OrderedDict({'rzz': 32, 'cx': 8, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'rz': 2, 'barrier': 1})
+  - Circuit depth: 34
+  - Total gates  :71
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IYN
+  - Qubits    : 4
+  - Bitstring : 0100
+  - mRNA      : AUCUACAAC
+  - Energy    : 23.6299
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUCUACAAC                      23.6299          ✓   0.21s
+QAOA       AUCUACAAC                      23.6299          ✓   0.29s
+BRUTE      AUCUACAAC                      23.6299          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 76/103
+============================================================
+Sequence: IEK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : IEK
+  - Qubits    : 4
+  - Bitstring : 0110
+  - mRNA      : AUCGAGAAA
+  - Energy    : 22.9726
+  - Time      : 0.19s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : IEK
+  - Qubits    : 7
+  - Bitstring : 0100110
+  - mRNA      : AUCGAGAAA
+  - Energy    : 22.9726
+  - Time      : 0.32s
+
+  - Gate counts  : OrderedDict({'rzz': 32, 'cx': 8, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'rz': 2, 'barrier': 1})
+  - Circuit depth: 36
+  - Total gates  :71
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IEK
+  - Qubits    : 4
+  - Bitstring : 0110
+  - mRNA      : AUCGAGAAA
+  - Energy    : 22.9726
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUCGAGAAA                      22.9726          ✓   0.19s
+QAOA       AUCGAGAAA                      22.9726          ✓   0.32s
+BRUTE      AUCGAGAAA                      22.9726          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 77/103
+============================================================
+Sequence: NIT
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : NIT
+  - Qubits    : 5
+  - Bitstring : 01001
+  - mRNA      : AACAUUACC
+  - Energy    : 20.9533
+  - Time      : 0.23s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : NIT
+  - Qubits    : 9
+  - Bitstring : 100010100
+  - mRNA      : AACAUUACC
+  - Energy    : 20.9533
+  - Time      : 0.49s
+
+  - Gate counts  : OrderedDict({'rzz': 64, 'cx': 40, 'rz': 12, 'u2': 9, 'u3': 9, 'rx': 9, 'measure': 9, 'barrier': 1})
+  - Circuit depth: 81
+  - Total gates  :153
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : NIT
+  - Qubits    : 5
+  - Bitstring : 01001
+  - mRNA      : AACAUUACC
+  - Energy    : 20.9533
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AACAUUACC                      20.9533          ✓   0.23s
+QAOA       AACAUUACC                      20.9533          ✓   0.49s
+BRUTE      AACAUUACC                      20.9533          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 78/103
+============================================================
+Sequence: DEK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : DEK
+  - Qubits    : 3
+  - Bitstring : 110
+  - mRNA      : GAUGAGAAA
+  - Energy    : 19.5912
+  - Time      : 0.16s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : DEK
+  - Qubits    : 6
+  - Bitstring : 010110
+  - mRNA      : GAUGAGAAA
+  - Energy    : 19.5912
+  - Time      : 0.27s
+
+  - Gate counts  : OrderedDict({'rzz': 26, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 19
+  - Total gates  :51
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : DEK
+  - Qubits    : 3
+  - Bitstring : 110
+  - mRNA      : GAUGAGAAA
+  - Energy    : 19.5912
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAUGAGAAA                      19.5912          ✓   0.16s
+QAOA       GAUGAGAAA                      19.5912          ✓   0.27s
+BRUTE      GAUGAGAAA                      19.5912          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 79/103
+============================================================
+Sequence: FKK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FKK
+  - Qubits    : 3
+  - Bitstring : 010
+  - mRNA      : UUCAAGAAA
+  - Energy    : 28.8623
+  - Time      : 0.14s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : FKK
+  - Qubits    : 6
+  - Bitstring : 100110
+  - mRNA      : UUCAAGAAA
+  - Energy    : 28.8623
+  - Time      : 0.31s
+
+  - Gate counts  : OrderedDict({'rzz': 24, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 22
+  - Total gates  :49
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FKK
+  - Qubits    : 3
+  - Bitstring : 010
+  - mRNA      : UUCAAGAAA
+  - Energy    : 28.8623
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUCAAGAAA                      28.8623          ✓   0.14s
+QAOA       UUCAAGAAA                      28.8623          ✓   0.31s
+BRUTE      UUCAAGAAA                      28.8623          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 80/103
+============================================================
+Sequence: WCG
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : WCG
+  - Qubits    : 3
+  - Bitstring : 011
+  - mRNA      : UGGUGCGGU
+  - Energy    : 17.5559
+  - Time      : 0.16s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : WCG
+  - Qubits    : 7
+  - Bitstring : 1100001
+  - mRNA      : UGGUGCGGU
+  - Energy    : 17.5559
+  - Time      : 0.37s
+
+  - Gate counts  : OrderedDict({'rzz': 42, 'cx': 32, 'rz': 10, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :113
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : WCG
+  - Qubits    : 3
+  - Bitstring : 011
+  - mRNA      : UGGUGCGGU
+  - Energy    : 17.5559
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UGGUGCGGU                      17.5559          ✓   0.16s
+QAOA       UGGUGCGGU                      17.5559          ✓   0.37s
+BRUTE      UGGUGCGGU                      17.5559          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 81/103
+============================================================
+Sequence: MLS
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : MLS
+  - Qubits    : 6
+  - Bitstring : 010000
+  - mRNA      : AUGCUGAGC
+  - Energy    : 17.6256
+  - Time      : 0.27s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : MLS
+  - Qubits    : 13
+  - Bitstring : 1001000100000
+  - mRNA      : AUGCUGAGC
+  - Energy    : 17.6256
+  - Time      : 2.08s
+
+  - Gate counts  : OrderedDict({'cx': 284, 'rzz': 156, 'rz': 68, 'unitary': 20, 'u2': 13, 'u3': 13, 'rx': 13, 'measure': 13, 'barrier': 1})
+  - Circuit depth: 242
+  - Total gates  :581
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : MLS
+  - Qubits    : 6
+  - Bitstring : 010000
+  - mRNA      : AUGCUGAGC
+  - Energy    : 17.6256
+  - Time      : 0.02s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUGCUGAGC                      17.6256          ✓   0.27s
+QAOA       AUGCUGAGC                      17.6256          ✓   2.08s
+BRUTE      AUGCUGAGC                      17.6256          ✓   0.02s
+============================================================
+
+############################################################
+Sequence 82/103
+============================================================
+Sequence: TKS
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TKS
+  - Qubits    : 6
+  - Bitstring : 010011
+  - mRNA      : ACCAAAUCC
+  - Energy    : 26.7369
+  - Time      : 0.25s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TKS
+  - Qubits    : 12
+  - Bitstring : 010010000100
+  - mRNA      : ACCAAAUCC
+  - Energy    : 26.7369
+  - Time      : 1.24s
+
+  - Gate counts  : OrderedDict({'cx': 174, 'rzz': 132, 'rz': 44, 'u2': 12, 'u3': 12, 'rx': 12, 'measure': 12, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 228
+  - Total gates  :409
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TKS
+  - Qubits    : 6
+  - Bitstring : 010011
+  - mRNA      : ACCAAAUCC
+  - Energy    : 26.7369
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCAAAUCC                      26.7369          ✓   0.25s
+QAOA       ACCAAAUCC                      26.7369          ✓   1.24s
+BRUTE      ACCAAAUCC                      26.7369          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 83/103
+============================================================
+Sequence: IDL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : IDL
+  - Qubits    : 6
+  - Bitstring : 011010
+  - mRNA      : AUCGAUCUG
+  - Energy    : 18.2947
+  - Time      : 0.26s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : IDL
+  - Qubits    : 11
+  - Bitstring : 01001001000
+  - mRNA      : AUCGAUCUG
+  - Energy    : 18.2947
+  - Time      : 0.99s
+
+  - Gate counts  : OrderedDict({'cx': 150, 'rzz': 84, 'rz': 36, 'u2': 11, 'u3': 11, 'rx': 11, 'measure': 11, 'unitary': 10, 'barrier': 1})
+  - Circuit depth: 218
+  - Total gates  :325
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : IDL
+  - Qubits    : 6
+  - Bitstring : 011010
+  - mRNA      : AUCGAUCUG
+  - Energy    : 18.2947
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUCGAUCUG                      18.2947          ✓   0.26s
+QAOA       AUCGAUCUG                      18.2947          ✓   0.99s
+BRUTE      AUCGAUCUG                      18.2947          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 84/103
+============================================================
+Sequence: YMP
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : YMP
+  - Qubits    : 3
+  - Bitstring : 110
+  - mRNA      : UAUAUGCCG
+  - Energy    : 10.8413
+  - Time      : 0.16s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : YMP
+  - Qubits    : 7
+  - Bitstring : 0110010
+  - mRNA      : UAUAUGCCG
+  - Energy    : 10.8413
+  - Time      : 0.34s
+
+  - Gate counts  : OrderedDict({'rzz': 34, 'cx': 32, 'rz': 10, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 63
+  - Total gates  :105
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : YMP
+  - Qubits    : 3
+  - Bitstring : 110
+  - mRNA      : UAUAUGCCG
+  - Energy    : 10.8413
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UAUAUGCCG                      10.8413          ✓   0.16s
+QAOA       UAUAUGCCG                      10.8413          ✓   0.34s
+BRUTE      UAUAUGCCG                      10.8413          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 85/103
+============================================================
+Sequence: KFK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KFK
+  - Qubits    : 3
+  - Bitstring : 000
+  - mRNA      : AAAUUCAAA
+  - Energy    : 22.8178
+  - Time      : 0.16s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : KFK
+  - Qubits    : 6
+  - Bitstring : 101010
+  - mRNA      : AAAUUCAAA
+  - Energy    : 22.8178
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rzz': 24, 'u2': 6, 'u3': 6, 'rx': 6, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 22
+  - Total gates  :49
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KFK
+  - Qubits    : 3
+  - Bitstring : 000
+  - mRNA      : AAAUUCAAA
+  - Energy    : 22.8178
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAAUUCAAA                      22.8178          ✓   0.16s
+QAOA       AAAUUCAAA                      22.8178          ✓   0.22s
+BRUTE      AAAUUCAAA                      22.8178          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 86/103
+============================================================
+Sequence: VEM
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VEM
+  - Qubits    : 3
+  - Bitstring : 111
+  - mRNA      : GUUGAGAUG
+  - Energy    : 24.0759
+  - Time      : 0.16s
+
+  - Gate counts  : OrderedDict({'rx': 9, 'cx': 6, 'measure': 3, 'barrier': 1})
+  - Circuit depth: 10
+  - Total gates  :19
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : VEM
+  - Qubits    : 7
+  - Bitstring : 0001011
+  - mRNA      : GUUGAGAUG
+  - Energy    : 24.0759
+  - Time      : 0.34s
+
+  - Gate counts  : OrderedDict({'rzz': 42, 'cx': 32, 'rz': 10, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'barrier': 1})
+  - Circuit depth: 62
+  - Total gates  :113
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VEM
+  - Qubits    : 3
+  - Bitstring : 111
+  - mRNA      : GUUGAGAUG
+  - Energy    : 24.0759
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUUGAGAUG                      24.0759          ✓   0.16s
+QAOA       GUUGAGAUG                      24.0759          ✓   0.34s
+BRUTE      GUUGAGAUG                      24.0759          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 87/103
+============================================================
+Sequence: TEP
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TEP
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : ACCGAACCG
+  - Energy    : 18.1112
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TEP
+  - Qubits    : 10
+  - Bitstring : 0100100010
+  - mRNA      : ACCGAACCG
+  - Energy    : 18.1112
+  - Time      : 0.62s
+
+  - Gate counts  : OrderedDict({'rzz': 90, 'cx': 64, 'rz': 20, 'u2': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 75
+  - Total gates  :215
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TEP
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : ACCGAACCG
+  - Energy    : 18.1112
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCGAACCG                      18.1112          ✓   0.22s
+QAOA       ACCGAACCG                      18.1112          ✓   0.62s
+BRUTE      ACCGAACCG                      18.1112          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 88/103
+============================================================
+Sequence: YNL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : YNL
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : UACAAUCUG
+  - Energy    : 22.8168
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : YNL
+  - Qubits    : 10
+  - Bitstring : 1001001000
+  - mRNA      : UACAAUCUG
+  - Energy    : 22.8168
+  - Time      : 0.82s
+
+  - Gate counts  : OrderedDict({'cx': 142, 'rzz': 76, 'rz': 34, 'u2': 10, 'unitary': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 227
+  - Total gates  :303
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : YNL
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : UACAAUCUG
+  - Energy    : 22.8168
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UACAAUCUG                      22.8168          ✓   0.22s
+QAOA       UACAAUCUG                      22.8168          ✓   0.82s
+BRUTE      UACAAUCUG                      22.8168          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 89/103
+============================================================
+Sequence: VPI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VPI
+  - Qubits    : 6
+  - Bitstring : 101010
+  - mRNA      : GUGCCGAUU
+  - Energy    : 21.2255
+  - Time      : 0.24s
+
+  - Gate counts  : OrderedDict({'rx': 18, 'cx': 12, 'measure': 6, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :37
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : VPI
+  - Qubits    : 11
+  - Bitstring : 00100010001
+  - mRNA      : GUGCCGAUU
+  - Energy    : 21.2255
+  - Time      : 0.78s
+
+  - Gate counts  : OrderedDict({'rzz': 94, 'cx': 72, 'rz': 22, 'u2': 11, 'u3': 11, 'rx': 11, 'measure': 11, 'barrier': 1})
+  - Circuit depth: 75
+  - Total gates  :233
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VPI
+  - Qubits    : 6
+  - Bitstring : 101010
+  - mRNA      : GUGCCGAUU
+  - Energy    : 21.2255
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUGCCGAUU                      21.2255          ✓   0.24s
+QAOA       GUGCCGAUU                      21.2255          ✓   0.78s
+BRUTE      GUGCCGAUU                      21.2255          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 90/103
+============================================================
+Sequence: LEN
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LEN
+  - Qubits    : 5
+  - Bitstring : 10010
+  - mRNA      : UUAGAGAAC
+  - Energy    : 35.3262
+  - Time      : 0.26s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : LEN
+  - Qubits    : 10
+  - Bitstring : 0000100110
+  - mRNA      : UUAGAGAAC
+  - Energy    : 35.3262
+  - Time      : 0.77s
+
+  - Gate counts  : OrderedDict({'cx': 142, 'rzz': 76, 'rz': 34, 'u2': 10, 'u3': 10, 'unitary': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 224
+  - Total gates  :303
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LEN
+  - Qubits    : 5
+  - Bitstring : 10010
+  - mRNA      : UUAGAGAAC
+  - Energy    : 35.3262
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUAGAGAAC                      35.3262          ✓   0.26s
+QAOA       UUAGAGAAC                      35.3262          ✓   0.77s
+BRUTE      UUAGAGAAC                      35.3262          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 91/103
+============================================================
+Sequence: LGL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : LGL
+  - Qubits    : 8
+  - Bitstring : 10011010
+  - mRNA      : UUAGGUCUG
+  - Energy    : 34.5402
+  - Time      : 0.37s
+
+  - Gate counts  : OrderedDict({'rx': 24, 'cx': 16, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 20
+  - Total gates  :49
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : LGL
+  - Qubits    : 16
+  - Bitstring : 0001000001001000
+  - mRNA      : CUUGGUCUG
+  - Energy    : 36.4635
+  - Time      : 2.72s
+
+  - Gate counts  : OrderedDict({'cx': 316, 'rzz': 218, 'rz': 78, 'unitary': 20, 'u2': 16, 'u3': 16, 'rx': 16, 'measure': 16, 'barrier': 1})
+  - Circuit depth: 242
+  - Total gates  :697
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : LGL
+  - Qubits    : 8
+  - Bitstring : 10011010
+  - mRNA      : UUAGGUCUG
+  - Energy    : 34.5402
+  - Time      : 0.03s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUAGGUCUG                      34.5402          ✓   0.37s
+QAOA       CUUGGUCUG                      36.4635      +1.92   2.72s
+BRUTE      UUAGGUCUG                      34.5402          ✓   0.03s
+============================================================
+
+############################################################
+Sequence 92/103
+============================================================
+Sequence: TNI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TNI
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : ACCAACAUU
+  - Energy    : 20.9360
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TNI
+  - Qubits    : 9
+  - Bitstring : 010010001
+  - mRNA      : ACCAACAUU
+  - Energy    : 20.9360
+  - Time      : 0.50s
+
+  - Gate counts  : OrderedDict({'rzz': 56, 'cx': 40, 'rz': 12, 'u2': 9, 'u3': 9, 'rx': 9, 'measure': 9, 'barrier': 1})
+  - Circuit depth: 62
+  - Total gates  :145
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TNI
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : ACCAACAUU
+  - Energy    : 20.9360
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCAACAUU                      20.9360          ✓   0.22s
+QAOA       ACCAACAUU                      20.9360          ✓   0.50s
+BRUTE      ACCAACAUU                      20.9360          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 93/103
+============================================================
+Sequence: FGY
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FGY
+  - Qubits    : 4
+  - Bitstring : 1011
+  - mRNA      : UUUGGCUAU
+  - Energy    : 20.7811
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : FGY
+  - Qubits    : 8
+  - Bitstring : 01010001
+  - mRNA      : UUUGGCUAU
+  - Energy    : 20.7811
+  - Time      : 0.40s
+
+  - Gate counts  : OrderedDict({'rzz': 50, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 72
+  - Total gates  :125
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FGY
+  - Qubits    : 4
+  - Bitstring : 1011
+  - mRNA      : UUUGGCUAU
+  - Energy    : 20.7811
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUUGGCUAU                      20.7811          ✓   0.20s
+QAOA       UUUGGCUAU                      20.7811          ✓   0.40s
+BRUTE      UUUGGCUAU                      20.7811          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 94/103
+============================================================
+Sequence: YAD
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : YAD
+  - Qubits    : 4
+  - Bitstring : 1011
+  - mRNA      : UAUGCCGAU
+  - Energy    : 21.8964
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : YAD
+  - Qubits    : 8
+  - Bitstring : 01010001
+  - mRNA      : UAUGCCGAU
+  - Energy    : 21.8964
+  - Time      : 0.39s
+
+  - Gate counts  : OrderedDict({'rzz': 52, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 66
+  - Total gates  :127
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : YAD
+  - Qubits    : 4
+  - Bitstring : 1011
+  - mRNA      : UAUGCCGAU
+  - Energy    : 21.8964
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UAUGCCGAU                      21.8964          ✓   0.20s
+QAOA       UAUGCCGAU                      21.8964          ✓   0.39s
+BRUTE      UAUGCCGAU                      21.8964          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 95/103
+============================================================
+Sequence: FSK
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FSK
+  - Qubits    : 5
+  - Bitstring : 00000
+  - mRNA      : UUCAGCAAA
+  - Energy    : 24.2264
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : FSK
+  - Qubits    : 10
+  - Bitstring : 1010000010
+  - mRNA      : UUCAGCAAA
+  - Energy    : 24.2264
+  - Time      : 0.80s
+
+  - Gate counts  : OrderedDict({'cx': 142, 'rzz': 84, 'rz': 34, 'u2': 10, 'u3': 10, 'unitary': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 224
+  - Total gates  :311
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FSK
+  - Qubits    : 5
+  - Bitstring : 00000
+  - mRNA      : UUCAGCAAA
+  - Energy    : 24.2264
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUCAGCAAA                      24.2264          ✓   0.22s
+QAOA       UUCAGCAAA                      24.2264          ✓   0.80s
+BRUTE      UUCAGCAAA                      24.2264          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 96/103
+============================================================
+Sequence: MCN
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : MCN
+  - Qubits    : 2
+  - Bitstring : 00
+  - mRNA      : AUGUGCAAC
+  - Energy    : 10.0446
+  - Time      : 0.12s
+
+  - Gate counts  : OrderedDict({'rx': 4, 'cx': 2, 'measure': 2, 'barrier': 1})
+  - Circuit depth: 6
+  - Total gates  :9
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : MCN
+  - Qubits    : 5
+  - Bitstring : 11010
+  - mRNA      : AUGUGCAAC
+  - Energy    : 10.0446
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rzz': 18, 'u2': 5, 'u3': 5, 'rx': 5, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 16
+  - Total gates  :39
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : MCN
+  - Qubits    : 2
+  - Bitstring : 00
+  - mRNA      : AUGUGCAAC
+  - Energy    : 10.0446
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AUGUGCAAC                      10.0446          ✓   0.12s
+QAOA       AUGUGCAAC                      10.0446          ✓   0.20s
+BRUTE      AUGUGCAAC                      10.0446          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 97/103
+============================================================
+Sequence: ETI
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : ETI
+  - Qubits    : 5
+  - Bitstring : 10110
+  - mRNA      : GAGACCAUU
+  - Energy    : 23.0746
+  - Time      : 0.21s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : ETI
+  - Qubits    : 9
+  - Bitstring : 010100001
+  - mRNA      : GAGACCAUU
+  - Energy    : 23.0746
+  - Time      : 0.54s
+
+  - Gate counts  : OrderedDict({'rzz': 64, 'cx': 40, 'rz': 12, 'u2': 9, 'u3': 9, 'rx': 9, 'measure': 9, 'barrier': 1})
+  - Circuit depth: 69
+  - Total gates  :153
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : ETI
+  - Qubits    : 5
+  - Bitstring : 10110
+  - mRNA      : GAGACCAUU
+  - Energy    : 23.0746
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAGACCAUU                      23.0746          ✓   0.21s
+QAOA       GAGACCAUU                      23.0746          ✓   0.54s
+BRUTE      GAGACCAUU                      23.0746          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 98/103
+============================================================
+Sequence: TVE
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : TVE
+  - Qubits    : 5
+  - Bitstring : 01110
+  - mRNA      : ACCGUUGAA
+  - Energy    : 23.7813
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : TVE
+  - Qubits    : 10
+  - Bitstring : 0100000110
+  - mRNA      : ACCGUUGAA
+  - Energy    : 23.7813
+  - Time      : 0.61s
+
+  - Gate counts  : OrderedDict({'rzz': 90, 'cx': 64, 'rz': 20, 'u2': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 73
+  - Total gates  :215
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : TVE
+  - Qubits    : 5
+  - Bitstring : 01110
+  - mRNA      : ACCGUUGAA
+  - Energy    : 23.7813
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        ACCGUUGAA                      23.7813          ✓   0.22s
+QAOA       ACCGUUGAA                      23.7813          ✓   0.61s
+BRUTE      ACCGUUGAA                      23.7813          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 99/103
+============================================================
+Sequence: KFL
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : KFL
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : AAAUUUCUG
+  - Energy    : 18.0115
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : KFL
+  - Qubits    : 10
+  - Bitstring : 1001001000
+  - mRNA      : AAAUUUCUG
+  - Energy    : 18.0115
+  - Time      : 0.76s
+
+  - Gate counts  : OrderedDict({'cx': 142, 'rzz': 76, 'rz': 34, 'u2': 10, 'unitary': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 227
+  - Total gates  :303
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : KFL
+  - Qubits    : 5
+  - Bitstring : 01010
+  - mRNA      : AAAUUUCUG
+  - Energy    : 18.0115
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        AAAUUUCUG                      18.0115          ✓   0.22s
+QAOA       AAAUUUCUG                      18.0115          ✓   0.76s
+BRUTE      AAAUUUCUG                      18.0115          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 100/103
+============================================================
+Sequence: HTA
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : HTA
+  - Qubits    : 5
+  - Bitstring : 10110
+  - mRNA      : CAUACCGCG
+  - Energy    : 23.7361
+  - Time      : 0.22s
+
+  - Gate counts  : OrderedDict({'rx': 15, 'cx': 10, 'measure': 5, 'barrier': 1})
+  - Circuit depth: 14
+  - Total gates  :31
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : HTA
+  - Qubits    : 10
+  - Bitstring : 0101000010
+  - mRNA      : CAUACCGCG
+  - Energy    : 23.7361
+  - Time      : 0.80s
+
+  - Gate counts  : OrderedDict({'rzz': 90, 'cx': 64, 'rz': 20, 'u2': 10, 'u3': 10, 'rx': 10, 'measure': 10, 'barrier': 1})
+  - Circuit depth: 75
+  - Total gates  :215
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : HTA
+  - Qubits    : 5
+  - Bitstring : 10110
+  - mRNA      : CAUACCGCG
+  - Energy    : 23.7361
+  - Time      : 0.01s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        CAUACCGCG                      23.7361          ✓   0.22s
+QAOA       CAUACCGCG                      23.7361          ✓   0.80s
+BRUTE      CAUACCGCG                      23.7361          ✓   0.01s
+============================================================
+
+############################################################
+Sequence 101/103
+============================================================
+Sequence: FID
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : FID
+  - Qubits    : 4
+  - Bitstring : 0011
+  - mRNA      : UUCAUCGAU
+  - Energy    : 21.5836
+  - Time      : 0.21s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : FID
+  - Qubits    : 7
+  - Bitstring : 1001001
+  - mRNA      : UUCAUCGAU
+  - Energy    : 21.5836
+  - Time      : 0.29s
+
+  - Gate counts  : OrderedDict({'rzz': 38, 'cx': 8, 'u2': 7, 'u3': 7, 'rx': 7, 'measure': 7, 'rz': 2, 'barrier': 1})
+  - Circuit depth: 38
+  - Total gates  :77
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : FID
+  - Qubits    : 4
+  - Bitstring : 0011
+  - mRNA      : UUCAUCGAU
+  - Energy    : 21.5836
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        UUCAUCGAU                      21.5836          ✓   0.21s
+QAOA       UUCAUCGAU                      21.5836          ✓   0.29s
+BRUTE      UUCAUCGAU                      21.5836          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 102/103
+============================================================
+Sequence: VNE
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : VNE
+  - Qubits    : 4
+  - Bitstring : 1000
+  - mRNA      : GUGAACGAA
+  - Energy    : 17.5100
+  - Time      : 0.20s
+
+  - Gate counts  : OrderedDict({'rx': 12, 'cx': 8, 'measure': 4, 'barrier': 1})
+  - Circuit depth: 12
+  - Total gates  :25
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : VNE
+  - Qubits    : 8
+  - Bitstring : 00101010
+  - mRNA      : GUGAACGAA
+  - Energy    : 17.5100
+  - Time      : 0.41s
+
+  - Gate counts  : OrderedDict({'rzz': 56, 'cx': 32, 'rz': 10, 'u2': 8, 'u3': 8, 'rx': 8, 'measure': 8, 'barrier': 1})
+  - Circuit depth: 64
+  - Total gates  :131
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : VNE
+  - Qubits    : 4
+  - Bitstring : 1000
+  - mRNA      : GUGAACGAA
+  - Energy    : 17.5100
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GUGAACGAA                      17.5100          ✓   0.20s
+QAOA       GUGAACGAA                      17.5100          ✓   0.41s
+BRUTE      GUGAACGAA                      17.5100          ✓   0.00s
+============================================================
+
+############################################################
+Sequence 103/103
+============================================================
+Sequence: E
+============================================================
+[VQE]
+Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...
+
+  - Sequence  : E
+  - Qubits    : 1
+  - Bitstring : 0
+  - mRNA      : GAA
+  - Energy    : 0.5787
+  - Time      : 0.08s
+
+  - Gate counts  : OrderedDict({'u3': 1, 'barrier': 1, 'measure': 1})
+  - Circuit depth: 2
+  - Total gates  :3
+
+[QAOA]
+Starting QAOA on a Quantum Simulator...
+
+  - Sequence  : E
+  - Qubits    : 2
+  - Bitstring : 10
+  - mRNA      : GAA
+  - Energy    : 0.5787
+  - Time      : 0.15s
+
+  - Gate counts  : OrderedDict({'u2': 2, 'rzz': 2, 'u3': 2, 'rx': 2, 'measure': 2, 'barrier': 1})
+  - Circuit depth: 6
+  - Total gates  :11
+
+[BRUTE]
+Starting Brute Force optimization...
+
+  - Sequence  : E
+  - Qubits    : 1
+  - Bitstring : 0
+  - mRNA      : GAA
+  - Energy    : 0.5787
+  - Time      : 0.00s
+
+============================================================
+SUMMARY
+Solver     mRNA                            Energy        Gap     Time
+----------------------------------------------------------------------
+VQE        GAA                             0.5787          ✓   0.08s
+QAOA       GAA                             0.5787          ✓   0.15s
+BRUTE      GAA                             0.5787          ✓   0.00s
+============================================================
+
+============================================================
+AGGREGATE RESULTS
+============================================================
+VQE      optimal: 103/103 | avg energy gap: -0.0000 | avg time: 0.23s
+QAOA     optimal: 100/103 | avg energy gap: +0.1249 | avg time: 0.85s
+BRUTE    optimal: 103/103 | avg energy gap: +0.0000 | avg time: 0.01s
+BRUTE    (ground truth)                            | avg time: 0.01s
+============================================================
+VQE, optimized RNA:
+ AUGGAUAUCUUCAAAGAACUGAUUCUGAAACAUACCGAUGAGAACGUGCUGAUUAGUCCAGUGAGCAUUCUGAGCACGCUGAGCAUUCUGAAUCAUGGCGUUGCAGGCAGCACCGCGGAACAGCUGAGCAAAUACAUCGAGAACAUGAACGAAAACACGCCGGAUGAUAAAAAAGAUGAUAACAACGAUAUGGAUGUGGAUAUUCCGUACUGCGCGACCUUAGCGACCGCGAACAAGAUCUACGGUAGCGAUAGCAUCGAAUUUCAUGCGAGCUUUCUGCAGAAGAUUAAAGAUGAUUUUCAGACCGUGAACUUUAACAACGCGAAUCAGACCAAAGAACUGAUCAACGAAUGGGUGAAAACCAUGACCAACGGCAAAAUUAACAGCCUGCUGACCAGUCCGCUGAGCAUUAACACGCGUAUGACCGUGAUUAGCGCAGUGCACUUCAAAGCGAUGUGGAAAUAUCCGUUCAGCAAACAUCUGACCUAUACCGAUAAAUUCUACAUCAGCAAAAACAUUGUGACCAGCGUGGAUAUGAUGGUUGGUACCGAGAACGAUCUGCAGUAUGUGCAUAUUAACGAACUGUUUGGUGGCUUUAGCAUCAUCGAUAUCCCGUAUGAAGGCAAUAGCAGCAUGGUGAUCAUUCUGCCAGAUGAUAUUGAAGGCAUCUACAACAUCGAGAAAAACAUUACCGAUGAGAAAUUCAAGAAAUGGUGCGGUAUGCUGAGCACCAAAUCCAUCGAUCUGUAUAUGCCGAAAUUCAAAGUUGAGAUGACCGAACCGUACAAUCUGGUGCCGAUUUUAGAGAACUUAGGUCUGACCAACAUUUUUGGCUAUUAUGCCGAUUUCAGCAAAAUGUGCAACGAGACCAUUACCGUUGAAAAAUUUCUGCAUACCGCGUUCAUCGAUGUGAACGAAGAA
+VQE, optimized DNA:
+ ATGGATATCTTCAAAGAACTGATTCTGAAACATACCGATGAGAACGTGCTGATTAGTCCAGTGAGCATTCTGAGCACGCTGAGCATTCTGAATCATGGCGTTGCAGGCAGCACCGCGGAACAGCTGAGCAAATACATCGAGAACATGAACGAAAACACGCCGGATGATAAAAAAGATGATAACAACGATATGGATGTGGATATTCCGTACTGCGCGACCTTAGCGACCGCGAACAAGATCTACGGTAGCGATAGCATCGAATTTCATGCGAGCTTTCTGCAGAAGATTAAAGATGATTTTCAGACCGTGAACTTTAACAACGCGAATCAGACCAAAGAACTGATCAACGAATGGGTGAAAACCATGACCAACGGCAAAATTAACAGCCTGCTGACCAGTCCGCTGAGCATTAACACGCGTATGACCGTGATTAGCGCAGTGCACTTCAAAGCGATGTGGAAATATCCGTTCAGCAAACATCTGACCTATACCGATAAATTCTACATCAGCAAAAACATTGTGACCAGCGTGGATATGATGGTTGGTACCGAGAACGATCTGCAGTATGTGCATATTAACGAACTGTTTGGTGGCTTTAGCATCATCGATATCCCGTATGAAGGCAATAGCAGCATGGTGATCATTCTGCCAGATGATATTGAAGGCATCTACAACATCGAGAAAAACATTACCGATGAGAAATTCAAGAAATGGTGCGGTATGCTGAGCACCAAATCCATCGATCTGTATATGCCGAAATTCAAAGTTGAGATGACCGAACCGTACAATCTGGTGCCGATTTTAGAGAACTTAGGTCTGACCAACATTTTTGGCTATTATGCCGATTTCAGCAAAATGTGCAACGAGACCATTACCGTTGAAAAATTTCTGCATACCGCGTTCATCGATGTGAACGAAGAA
+QAOA, optimized RNA:
+ AUGGAUAUCUUCAAAGAACUGAUUCUGAAACAUACCGAUGAGAACGUGCUGAUUAGUCCAGUGUCCAUUCUGAGCACGCUGUCCAUUCUGAAUCAUGGCGUUGCAGGCAGCACCGCGGAACAGCUGAGCAAAUACAUCGAGAACAUGAACGAAAACACGCCGGAUGAUAAAAAAGAUGAUAACAACGAUAUGGAUGUGGAUAUUCCGUACUGCGCGACCUUAGCGACCGCGAACAAGAUCUACGGUAGCGAUAGCAUCGAAUUUCAUGCGAGCUUUCUGCAGAAGAUUAAAGAUGAUUUUCAGACCGUGAACUUUAACAACGCGAAUCAGACCAAAGAACUGAUCAACGAAUGGGUGAAAACCAUGACCAACGGCAAAAUUAACAGCCUGCUGACCAGUCCGCUGAGCAUUAACACGCGUAUGACCGUGAUUAGCGCAGUGCACUUCAAAGCGAUGUGGAAAUAUCCGUUCAGCAAACAUCUGACCUAUACCGAUAAAUUCUACAUCAGCAAAAACAUUGUGACCAGCGUGGAUAUGAUGGUUGGUACCGAGAACGAUCUGCAGUAUGUGCAUAUUAACGAACUGUUUGGUGGCUUUAGCAUCAUCGAUAUCCCGUAUGAAGGCAAUAGCAGCAUGGUGAUCAUUCUGCCAGAUGAUAUUGAAGGCAUCUACAACAUCGAGAAAAACAUUACCGAUGAGAAAUUCAAGAAAUGGUGCGGUAUGCUGAGCACCAAAUCCAUCGAUCUGUAUAUGCCGAAAUUCAAAGUUGAGAUGACCGAACCGUACAAUCUGGUGCCGAUUUUAGAGAACCUUGGUCUGACCAACAUUUUUGGCUAUUAUGCCGAUUUCAGCAAAAUGUGCAACGAGACCAUUACCGUUGAAAAAUUUCUGCAUACCGCGUUCAUCGAUGUGAACGAAGAA
+QAOA, optimized DNA:
+ ATGGATATCTTCAAAGAACTGATTCTGAAACATACCGATGAGAACGTGCTGATTAGTCCAGTGTCCATTCTGAGCACGCTGTCCATTCTGAATCATGGCGTTGCAGGCAGCACCGCGGAACAGCTGAGCAAATACATCGAGAACATGAACGAAAACACGCCGGATGATAAAAAAGATGATAACAACGATATGGATGTGGATATTCCGTACTGCGCGACCTTAGCGACCGCGAACAAGATCTACGGTAGCGATAGCATCGAATTTCATGCGAGCTTTCTGCAGAAGATTAAAGATGATTTTCAGACCGTGAACTTTAACAACGCGAATCAGACCAAAGAACTGATCAACGAATGGGTGAAAACCATGACCAACGGCAAAATTAACAGCCTGCTGACCAGTCCGCTGAGCATTAACACGCGTATGACCGTGATTAGCGCAGTGCACTTCAAAGCGATGTGGAAATATCCGTTCAGCAAACATCTGACCTATACCGATAAATTCTACATCAGCAAAAACATTGTGACCAGCGTGGATATGATGGTTGGTACCGAGAACGATCTGCAGTATGTGCATATTAACGAACTGTTTGGTGGCTTTAGCATCATCGATATCCCGTATGAAGGCAATAGCAGCATGGTGATCATTCTGCCAGATGATATTGAAGGCATCTACAACATCGAGAAAAACATTACCGATGAGAAATTCAAGAAATGGTGCGGTATGCTGAGCACCAAATCCATCGATCTGTATATGCCGAAATTCAAAGTTGAGATGACCGAACCGTACAATCTGGTGCCGATTTTAGAGAACCTTGGTCTGACCAACATTTTTGGCTATTATGCCGATTTCAGCAAAATGTGCAACGAGACCATTACCGTTGAAAAATTTCTGCATACCGCGTTCATCGATGTGAACGAAGAA
+BRUTE, optimized RNA:
+ AUGGAUAUCUUCAAAGAACUGAUUCUGAAACAUACCGAUGAGAACGUGCUGAUUAGUCCAGUGAGCAUUCUGAGCACGCUGAGCAUUCUGAAUCAUGGCGUUGCAGGCAGCACCGCGGAACAGCUGAGCAAAUACAUCGAGAACAUGAACGAAAACACGCCGGAUGAUAAAAAAGAUGAUAACAACGAUAUGGAUGUGGAUAUUCCGUACUGCGCGACCUUAGCGACCGCGAACAAGAUCUACGGUAGCGAUAGCAUCGAAUUUCAUGCGAGCUUUCUGCAGAAGAUUAAAGAUGAUUUUCAGACCGUGAACUUUAACAACGCGAAUCAGACCAAAGAACUGAUCAACGAAUGGGUGAAAACCAUGACCAACGGCAAAAUUAACAGCCUGCUGACCAGUCCGCUGAGCAUUAACACGCGUAUGACCGUGAUUAGCGCAGUGCACUUCAAAGCGAUGUGGAAAUAUCCGUUCAGCAAACAUCUGACCUAUACCGAUAAAUUCUACAUCAGCAAAAACAUUGUGACCAGCGUGGAUAUGAUGGUUGGUACCGAGAACGAUCUGCAGUAUGUGCAUAUUAACGAACUGUUUGGUGGCUUUAGCAUCAUCGAUAUCCCGUAUGAAGGCAAUAGCAGCAUGGUGAUCAUUCUGCCAGAUGAUAUUGAAGGCAUCUACAACAUCGAGAAAAACAUUACCGAUGAGAAAUUCAAGAAAUGGUGCGGUAUGCUGAGCACCAAAUCCAUCGAUCUGUAUAUGCCGAAAUUCAAAGUUGAGAUGACCGAACCGUACAAUCUGGUGCCGAUUUUAGAGAACUUAGGUCUGACCAACAUUUUUGGCUAUUAUGCCGAUUUCAGCAAAAUGUGCAACGAGACCAUUACCGUUGAAAAAUUUCUGCAUACCGCGUUCAUCGAUGUGAACGAAGAA
+BRUTE, optimized DNA:
+ ATGGATATCTTCAAAGAACTGATTCTGAAACATACCGATGAGAACGTGCTGATTAGTCCAGTGAGCATTCTGAGCACGCTGAGCATTCTGAATCATGGCGTTGCAGGCAGCACCGCGGAACAGCTGAGCAAATACATCGAGAACATGAACGAAAACACGCCGGATGATAAAAAAGATGATAACAACGATATGGATGTGGATATTCCGTACTGCGCGACCTTAGCGACCGCGAACAAGATCTACGGTAGCGATAGCATCGAATTTCATGCGAGCTTTCTGCAGAAGATTAAAGATGATTTTCAGACCGTGAACTTTAACAACGCGAATCAGACCAAAGAACTGATCAACGAATGGGTGAAAACCATGACCAACGGCAAAATTAACAGCCTGCTGACCAGTCCGCTGAGCATTAACACGCGTATGACCGTGATTAGCGCAGTGCACTTCAAAGCGATGTGGAAATATCCGTTCAGCAAACATCTGACCTATACCGATAAATTCTACATCAGCAAAAACATTGTGACCAGCGTGGATATGATGGTTGGTACCGAGAACGATCTGCAGTATGTGCATATTAACGAACTGTTTGGTGGCTTTAGCATCATCGATATCCCGTATGAAGGCAATAGCAGCATGGTGATCATTCTGCCAGATGATATTGAAGGCATCTACAACATCGAGAAAAACATTACCGATGAGAAATTCAAGAAATGGTGCGGTATGCTGAGCACCAAATCCATCGATCTGTATATGCCGAAATTCAAAGTTGAGATGACCGAACCGTACAATCTGGTGCCGATTTTAGAGAACTTAGGTCTGACCAACATTTTTGGCTATTATGCCGATTTCAGCAAAATGTGCAACGAGACCATTACCGTTGAAAAATTTCTGCATACCGCGTTCATCGATGTGAACGAAGAA
