@@ -3,6 +3,8 @@ from qiskit_algorithms.optimizers import COBYLA
 from qiskit.primitives import Sampler
 from qiskit.circuit.library import EfficientSU2
 import numpy as np
+from qiskit_aer import AerSimulator
+from qiskit import transpile
 
 
 def get_min(qubit_op, qaoa_config, sampler=None):
@@ -20,6 +22,15 @@ def get_min(qubit_op, qaoa_config, sampler=None):
     qaoa.ansatz = ansatz
     result = qaoa.compute_minimum_eigenvalue(qubit_op)
 
+    optimal_circuit = qaoa.ansatz.assign_parameters(result.optimal_parameters)
+    backend = AerSimulator()
+
+    # Transpile for backend
+    transpiled = transpile(optimal_circuit, backend=backend, optimization_level=2)
+
+    # Gate statistics
+    statistics = [transpiled.count_ops(), sum(transpiled.count_ops().values()), transpiled.depth()]
+
     if hasattr(result, 'best_measurement'):
         best_bitstring = result.best_measurement['bitstring']
     else:
@@ -32,4 +43,4 @@ def get_min(qubit_op, qaoa_config, sampler=None):
             print("No solution found in result")
             return None
 
-    return best_bitstring
+    return best_bitstring, statistics
