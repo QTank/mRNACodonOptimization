@@ -9,7 +9,7 @@ import sa_solver
 import brute_force
 import numpy as np
 import qiskit_util
-import sequence_process_util
+
 
 def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
     start_time = time.time()
@@ -18,9 +18,10 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
         print("Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...\n")
         codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
         qubit_op = codon_opt.create_qubit_op()
-        fake_backend = config['noise_mode']['fake_backend']
-        sampler = qiskit_util.get_backend(fake_backend=fake_backend, inject_noise=True)
-        bitstring, energy = vqe_solver.get_min(qubit_op, config['vqe_settings'], sampler)
+        fake_backend = config['noise_model']['fake_backend']
+        inject_noise = False
+        sampler = qiskit_util.get_backend(backend_name=fake_backend, inject_noise=inject_noise)
+        bitstring, energy, statistics = vqe_solver.get_min(qubit_op, config['vqe_settings'], sampler)
         final_mRNA_sequence = util.decode_bitstring(sequence, bitstring,
                                                     table_name=config['metadata']['table_name'])
 
@@ -28,9 +29,9 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
         print("Starting QAOA on a Quantum Simulator...\n")
         codon_opt = CodonOptimizer(sequence, config, OneHotCodon, "one-hot")
         qubit_op = codon_opt.create_qubit_op()
-        fake_backend = config['noise_mode']['fake_backend']
-        sampler = qiskit_util.get_backend(fake_backend=fake_backend, inject_noise=True)
-        bitstring = qaoa_solver.get_min(qubit_op, config['qaoa_settings'], sampler)
+        fake_backend = config['noise_model']['fake_backend']
+        sampler = qiskit_util.get_backend(backend_name=fake_backend, inject_noise=False)
+        bitstring, statistics = qaoa_solver.get_min(qubit_op, config['qaoa_settings'], sampler)
         energy = util.evaluate_energy(qubit_op, bitstring)
         final_mRNA_sequence = util.decode_one_hot_bitstring(sequence, bitstring,
                                                             table_name=config['metadata']['table_name'])
@@ -78,6 +79,11 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
     print(f"  - mRNA      : {final_mRNA_sequence}")
     print(f"  - Energy    : {energy:.4f}")
     print(f"  - Time      : {elapsed:.2f}s\n")
+
+    if type_opt in ['vqe', 'qaoa']:
+        print(f"  - Gate counts  : {statistics[0]}")
+        print(f"  - Circuit depth: {statistics[2]}")
+        print(f"  - Total gates  :{statistics[1]}\n")
 
     if False:
         final_string_index = 0
@@ -129,7 +135,7 @@ def codon_optimization_experiment(data_file_name, fix_length=True):
     data = util.parse_sequence_from_file(data_file_name)
     sequences = util.split_sequence(data, chunk_size)
     all_results = []
-    solver_list = ['vqe', 'brute']
+    solver_list = ['vqe', 'qaoa', 'brute']
     final_rna_strings = {solver: "" for solver in solver_list}
 
     for i, seq in enumerate(sequences):
@@ -164,4 +170,6 @@ def codon_optimization_experiment(data_file_name, fix_length=True):
 
 
 if __name__ == '__main__':
-    codon_optimization_experiment("../data/03-influenza_ha_vaccine.fasta", True)
+    import sys
+    if False: file_name = sys.argv[1]
+    codon_optimization_experiment(f"../data/02-sars2_n_vaccine.fasta", True)
