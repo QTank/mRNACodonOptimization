@@ -1,0 +1,285 @@
+08-mers_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 262
+  Max Total Gates   : 925
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    130        130      1.00     32.50       
+QAOA   124        130      0.95     166.40      
+
+01-sars2_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 263
+  Max Total Gates   : 937
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    385        385      1.00     88.55       
+QAOA   371        385      0.96     423.50      
+
+09-nipah_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 255
+  Max Total Gates   : 925
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    166        166      1.00     36.52       
+QAOA   159        166      0.96     172.64      
+
+07-ebola_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 8
+  Max Circuit Depth : 20
+  Max Total Gates   : 49
+
+QAOA
+  Max  Qubits        : 16
+  Max Circuit Depth : 245
+  Max Total Gates   : 719
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    167        167      1.00     40.08       
+QAOA   159        167      0.95     205.41      
+
+05-DENV1_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 8
+  Max Circuit Depth : 20
+  Max Total Gates   : 49
+
+QAOA
+  Max  Qubits        : 16
+  Max Circuit Depth : 255
+  Max Total Gates   : 719
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    158        158      1.00     41.08       
+QAOA   148        158      0.94     180.12      
+
+14-Norovirus_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 262
+  Max Total Gates   : 925
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    109        109      1.00     29.43       
+QAOA   106        109      0.97     126.44      
+
+04-Zika_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 265
+  Max Total Gates   : 937
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    152        152      1.00     36.48       
+QAOA   149        152      0.98     170.24      
+
+12-lassa_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 262
+  Max Total Gates   : 925
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    146        146      1.00     35.04       
+QAOA   137        146      0.94     173.74      
+
+11-marburg_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 8
+  Max Circuit Depth : 20
+  Max Total Gates   : 49
+
+QAOA
+  Max  Qubits        : 16
+  Max Circuit Depth : 245
+  Max Total Gates   : 719
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    184        184      1.00     44.16       
+QAOA   178        184      0.97     200.56      
+
+02-sars2_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 254
+  Max Total Gates   : 937
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    100        100      1.00     25.00       
+QAOA   92         100      0.92     141.00      
+
+06-rabies_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 265
+  Max Total Gates   : 937
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    162        162      1.00     38.88       
+QAOA   151        162      0.93     208.98      
+
+03-influenza_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 255
+  Max Total Gates   : 937
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    169        169      1.00     38.87       
+QAOA   164        169      0.97     196.04      
+
+15-HBV_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 258
+  Max Total Gates   : 925
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    130        130      1.00     35.10       
+QAOA   120        130      0.92     200.20      
+
+10-hendra_vqe_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 8
+  Max Circuit Depth : 20
+  Max Total Gates   : 49
+
+QAOA
+  Max  Qubits        : 16
+  Max Circuit Depth : 258
+  Max Total Gates   : 711
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    103        103      1.00     23.69       
+QAOA   100        103      0.97     87.55       
+
+13-Poliovirus_qaoa_without_noise.log
+
+Mean Values
+--------------------------------------------------
+VQE
+  Max  Qubits        : 9
+  Max Circuit Depth : 22
+  Max Total Gates   : 55
+
+QAOA
+  Max  Qubits        : 18
+  Max Circuit Depth : 255
+  Max Total Gates   : 937
+
+Algo   Optimal    Total    Rate     Avg Time(s) 
+----------------------------------------
+VQE    99         99       1.00     23.76       
+QAOA   96         99       0.97     113.85      
+
