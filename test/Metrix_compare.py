@@ -272,11 +272,11 @@ def gc_content(dna_seq):
     return (g + c) / len(dna_seq) * 100
 
 
-def run_cai_compare(file_name, solver_list):
-    for solver in solver_list:
-        seq = data_process_util.extract_dna_by_method(file_name, solver + ", optimized DNA")
-        result = calculate_cai(seq, organism='e_coli_316407')
-        print(f"CAI({solver}): {result['cai']:.4f}, GC Content: {gc_content(seq):.2f}")
+def run_cai_compare(file_name, solver):
+    seq = data_process_util.extract_dna_by_method(file_name, solver)
+    result = calculate_cai(seq, organism='e_coli_316407')
+    print(f"CAI({solver}): {result['cai']:.4f}, GC Content: {gc_content(seq):.2f}")
+
     return result
 
 # ---------------------------------------------------------------------------
@@ -285,15 +285,16 @@ def run_cai_compare(file_name, solver_list):
 
 if __name__ == "__main__":
     from pathlib import Path
-    path = Path("../figures/")
+    path = Path("../experiments/")
     txt_files = [f.name for f in path.glob("*.log")]
     val = 0
     for file_name in txt_files:
         print(file_name)
-        if 'qaoa' in file_name:
-            r = run_cai_compare("../figures/" + file_name, ['QAOA'])
-        else:
-            r = run_cai_compare("../figures/" + file_name, ['VQE'])
+        for solver in ['SA', "VQE"]:
+            if solver in file_name:
+                r = run_cai_compare("../experiments/" + file_name, solver)
+            else:
+                r = run_cai_compare("../experiments/" + file_name, solver)
         val += r['cai']
         print()
 

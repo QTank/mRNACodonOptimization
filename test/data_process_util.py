@@ -31,12 +31,15 @@ def extract_dna_by_method(name, method_name):
     - SA, optimized DNA
     - BRUTE, optimized DNA
     """
-    text = util.parse_sequence_from_file(name)
-    pattern = rf"{method_name}:\s*([ATCG\n ]+)"
-    match = re.search(pattern, text)
-
-    if match:
-        dna = match.group(1)
-        return dna.replace("\n", "").replace(" ", "")
+    with open(name, 'r') as f:
+        text = f.read()
+    if method_name in ['VQE', 'QAOA', 'SA']:
+        opt_dna = re.search(rf'{method_name},\s+optimized\s+DNA:\s*\n\s*([ATCG]+)', text)
+        if opt_dna:
+            opt_seq = opt_dna.group(1)
+            print(f"{method_name} Success! Length: {len(opt_seq)} bp")
+            return opt_seq
+        else:
+            print("No match found")
     return None
 
