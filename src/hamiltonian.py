@@ -1,5 +1,5 @@
 import numpy as np
-import python_codon_tables as pct
+import codon_table as pct
 import util
 
 import vqe_solver, qaoa_solver, sa_solver, brute_force

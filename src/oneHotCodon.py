@@ -1,4 +1,4 @@
-import python_codon_tables as pct
+import codon_table as pct
 import numpy as np
 import util
 

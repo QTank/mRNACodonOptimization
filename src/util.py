@@ -1,6 +1,6 @@
 import numpy as np
 from typing import Set
-import python_codon_tables as pct
+import codon_table as pct
 from qiskit.quantum_info import SparsePauliOp
 
 Z = SparsePauliOp.from_list([("Z", 1.0)])

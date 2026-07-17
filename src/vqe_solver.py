@@ -1,6 +1,6 @@
 from qiskit_algorithms.optimizers import COBYLA
 from qiskit_algorithms.minimum_eigensolvers import SamplingVQE
-from qiskit.primitives import Sampler
+from qiskit.primitives import StatevectorSampler as Sampler
 from qiskit.circuit.library import EfficientSU2
 from qiskit_aer import AerSimulator
 from qiskit import transpile
@@ -16,6 +16,9 @@ def get_min(qubit_op, vqe_config, sampler=None):
         entanglement=vqe_config['ansatz'].get('entanglement', 'circular'),
         reps=vqe_config['ansatz'].get('reps', 2)
     )
+    from qiskit_ibm_runtime.fake_provider import FakeSherbrooke, FakeManilaV2, FakeSydneyV2, FakeOslo
+
+    ansatz = transpile(ansatz, backend=FakeOslo, optimization_level=2)
 
     counts = []
     values = []
@@ -38,8 +41,7 @@ def get_min(qubit_op, vqe_config, sampler=None):
     optimal_circuit = ansatz.assign_parameters(raw_result.optimal_parameters)
     backend = AerSimulator()
 
-    # Transpile for backend
-    transpiled = transpile(optimal_circuit, backend=backend, optimization_level=2)
+    transpiled = transpile(optimal_circuit, backend=FakeOslo, optimization_level=2)
 
     # Gate statistics
     statistics = [transpiled.count_ops(), sum(transpiled.count_ops().values()), transpiled.depth()]

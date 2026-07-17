@@ -1,8 +1,9 @@
 import warnings
 from qiskit_aer.noise import NoiseModel
-from qiskit_ibm_runtime.fake_provider import FakeSherbrooke, FakeManila, FakeSydney, FakeOslo, FakeTokyo
-from qiskit_aer.primitives import Sampler
+from qiskit_ibm_runtime.fake_provider import FakeSherbrooke, FakeManilaV2, FakeSydneyV2, FakeOslo
+from qiskit_aer.primitives import SamplerV2 as Sampler
 from qiskit import transpile
+from qiskit_aer import AerSimulator
 
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=DeprecationWarning)
@@ -13,11 +14,10 @@ from hamiltonian import CodonOptimizer
 import util
 
 _FAKE_BACKENDS = {
-    "FakeManila": FakeManila,
-    "FakeSydney": FakeSydney,
+    "FakeManila": FakeManilaV2,
+    "FakeSydney": FakeSydneyV2,
     "FakeSherbrooke": FakeSherbrooke,
-    "FakeOslo": FakeOslo,
-    "FakeTokyo": FakeTokyo
+    "FakeOslo": FakeOslo
 }
 
 
@@ -29,14 +29,9 @@ def get_backend(backend_name='FakeOslo', inject_noise=False):
 
     if inject_noise:
         noise_model = NoiseModel.from_backend(fake_backend)
-        sampler = Sampler(
-            backend_options={
-                "noise_model": noise_model
-            },
-            run_options={
-                "shots": 1024
-            }
-        )
+        aer_backend = AerSimulator(noise_model=noise_model)
+        sampler = Sampler.from_backend(aer_backend)
+        sampler.options.default_shots = 1024
     else:
         sampler = Sampler()
     return sampler

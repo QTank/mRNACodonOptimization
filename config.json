@@ -12,8 +12,8 @@
     "fake_backend": "FakeOslo"
   },
   "weights": {
-    "usage": 0.3,
-    "target_gc": 0.9,
+    "usage": 1.2,
+    "target_gc": 3.6,
     "repeated_nucleotides": 1.0,
     "redundant_encoding": 13000
   },

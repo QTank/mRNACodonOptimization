@@ -19,7 +19,7 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
         codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
         qubit_op = codon_opt.create_qubit_op()
         fake_backend = config['noise_model']['fake_backend']
-        inject_noise = False
+        inject_noise = True
         sampler = qiskit_util.get_backend(backend_name=fake_backend, inject_noise=inject_noise)
         bitstring, energy, statistics = vqe_solver.get_min(qubit_op, config['vqe_settings'], sampler)
         final_mRNA_sequence = util.decode_bitstring(sequence, bitstring,
@@ -30,7 +30,7 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
         codon_opt = CodonOptimizer(sequence, config, OneHotCodon, "one-hot")
         qubit_op = codon_opt.create_qubit_op()
         fake_backend = config['noise_model']['fake_backend']
-        sampler = qiskit_util.get_backend(backend_name=fake_backend, inject_noise=False)
+        sampler = qiskit_util.get_backend(backend_name=fake_backend, inject_noise=True)
         bitstring, statistics = qaoa_solver.get_min(qubit_op, config['qaoa_settings'], sampler)
         energy = util.evaluate_energy(qubit_op, bitstring)
         final_mRNA_sequence = util.decode_one_hot_bitstring(sequence, bitstring,
@@ -135,7 +135,7 @@ def codon_optimization_experiment(data_file_name, fix_length=True):
     data = util.parse_sequence_from_file(data_file_name)
     sequences = util.split_sequence(data, chunk_size)
     all_results = []
-    solver_list = ['vqe', 'qaoa', 'brute']
+    solver_list = ['qaoa', 'sa', 'vqe', 'brute']
     final_rna_strings = {solver: "" for solver in solver_list}
 
     for i, seq in enumerate(sequences):
