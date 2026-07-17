@@ -135,7 +135,7 @@ def codon_optimization_experiment(data_file_name, fix_length=True):
     data = util.parse_sequence_from_file(data_file_name)
     sequences = util.split_sequence(data, chunk_size)
     all_results = []
-    solver_list = ['qaoa', 'sa', 'vqe', 'brute']
+    solver_list = ['vqe', 'qaoa', 'sa']
     final_rna_strings = {solver: "" for solver in solver_list}
 
     for i, seq in enumerate(sequences):
