@@ -18,8 +18,6 @@ def get_min(qubit_op, vqe_config, sampler=None):
         entanglement=vqe_config['ansatz'].get('entanglement', 'circular'),
         reps=vqe_config['ansatz'].get('reps', 2)
     ).decompose(reps=3)
-    from qiskit_ibm_runtime.fake_provider import FakeSherbrooke, FakeManilaV2, FakeSydneyV2, FakeOslo
-
 
     counts = []
     values = []
