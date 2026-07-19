@@ -172,4 +172,4 @@ def codon_optimization_experiment(data_file_name, fix_length=True):
 if __name__ == '__main__':
     import sys
     if False: file_name = sys.argv[1]
-    codon_optimization_experiment(f"../data/02-sars2_n_vaccine.fasta", True)
+    codon_optimization_experiment(f"../data/01-sars2_spike_vaccine.fasta", True)
