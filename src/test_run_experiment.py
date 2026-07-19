@@ -6,7 +6,7 @@ import util
 import time, json
 from hamiltonian import CodonOptimizer
 import sa_solver
-import brute_force
+import classical_brute
 import numpy as np
 import qiskit_util
 
@@ -58,13 +58,13 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
         if encoding_type == "dense":
             codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
             qubit_op = codon_opt.create_qubit_op()
-            bitstring, energy = brute_force.brute_force_search(qubit_op, codon_opt.qubit_len)
+            bitstring, energy = classical_brute.iteration_search(qubit_op, codon_opt.qubit_len)
             final_mRNA_sequence = util.decode_bitstring(sequence, bitstring,
                                                         table_name=config['metadata']['table_name'])
         else:
             codon_opt = CodonOptimizer(sequence, config, OneHotCodon, "one-hot")
             qubit_op = codon_opt.create_qubit_op()
-            bitstring, energy = brute_force.brute_force_search(qubit_op, codon_opt.qubit_len)
+            bitstring, energy = classical_brute.iteration_search(qubit_op, codon_opt.qubit_len)
             final_mRNA_sequence = util.decode_one_hot_bitstring(sequence, bitstring,
                                                                 table_name=config['metadata']['table_name'])
 
@@ -135,7 +135,7 @@ def codon_optimization_experiment(data_file_name, fix_length=True):
     data = util.parse_sequence_from_file(data_file_name)
     sequences = util.split_sequence(data, chunk_size)
     all_results = []
-    solver_list = ['vqe', 'qaoa', 'sa']
+    solver_list = ['vqe', 'qaoa', 'brute']
     final_rna_strings = {solver: "" for solver in solver_list}
 
     for i, seq in enumerate(sequences):

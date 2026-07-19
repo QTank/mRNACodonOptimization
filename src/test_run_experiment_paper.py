@@ -6,7 +6,7 @@ import util
 import time, json
 from hamiltonian import CodonOptimizer
 import sa_solver
-import brute_force
+import classical_brute
 import qiskit_util
 from datetime import datetime
 import numpy as np
@@ -56,13 +56,13 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
         if encoding_type == "dense":
             codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
             qubit_op = codon_opt.create_qubit_op()
-            bitstring, energy = brute_force.brute_force_search(qubit_op, codon_opt.qubit_len)
+            bitstring, energy = classical_brute.iteration_search(qubit_op, codon_opt.qubit_len)
             final_mRNA_sequence = util.decode_bitstring(sequence, bitstring,
                                                         table_name=config['metadata']['table_name'])
         else:
             codon_opt = CodonOptimizer(sequence, config, OneHotCodon, "one-hot")
             qubit_op = codon_opt.create_qubit_op()
-            bitstring, energy = brute_force.brute_force_search(qubit_op, codon_opt.qubit_len)
+            bitstring, energy = classical_brute.iteration_search(qubit_op, codon_opt.qubit_len)
             final_mRNA_sequence = util.decode_one_hot_bitstring(sequence, bitstring,
                                                                 table_name=config['metadata']['table_name'])
 

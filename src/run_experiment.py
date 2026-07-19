@@ -8,7 +8,7 @@ import time, json
 
 from hamiltonian import CodonOptimizer
 import sa_solver
-import brute_force
+import classical_brute
 
 def run_optimization(sequence, config, type_opt="dense"):
     start_time = time.time()

@@ -7,7 +7,7 @@ import util
 import vqe_solver
 import qaoa_solver
 import sa_solver
-import brute_force
+import classical_brute
 import qiskit_util
 
 from denseCodon import DenseCodon

@@ -30,8 +30,7 @@ def get_backend(backend_name='FakeOslo', inject_noise=False):
 
     if inject_noise:
         noise_model = NoiseModel.from_backend(fake_backend)
-        print(AerSimulator().available_devices())
-        aer_backend = AerSimulator(noise_model=noise_model, device='GPU')
+        aer_backend = AerSimulator(noise_model=noise_model)
         sampler = Sampler.from_backend(aer_backend)
         sampler.options.default_shots = 1024
     else:

@@ -2,7 +2,7 @@ import numpy as np
 import codon_table as pct
 import util
 
-import vqe_solver, qaoa_solver, sa_solver, brute_force
+import vqe_solver, qaoa_solver, sa_solver, classical_brute
 
 class CodonOptimizer:
     """

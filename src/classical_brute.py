@@ -38,7 +38,7 @@ def evaluate_energy_int(masks, coeffs, bitint):
 
 
 # ---------- BRUTE FORCE ----------
-def brute_force_search(qubit_op, qubit_len):
+def iteration_search(qubit_op, qubit_len):
     masks, coeffs = prepare_operator_bitmask(qubit_op)
     min_energy = float("inf")
     best_int = 0

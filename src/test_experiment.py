@@ -6,7 +6,7 @@ import util
 import time, json
 from hamiltonian import CodonOptimizer
 import sa_solver
-import brute_force
+import classical_brute
 import qiskit_util
 
 
@@ -48,7 +48,7 @@ def _solve(sequence, config, type_opt, encoding_type):
 
         case "brute":
             print("Starting Brute Force optimization...\n")
-            bitstring, energy = brute_force.brute_force_search(qubit_op, codon_opt.qubit_len)
+            bitstring, energy = classical_brute.iteration_search(qubit_op, codon_opt.qubit_len)
 
         case _:
             raise ValueError(f"Unknown type_opt: {type_opt}")
