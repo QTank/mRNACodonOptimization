@@ -1,6 +1,6 @@
 import warnings
 from qiskit_aer.noise import NoiseModel
-from qiskit_ibm_runtime.fake_provider import FakeSherbrooke, FakeManilaV2, FakeSydneyV2, FakeOslo
+from qiskit_ibm_runtime.fake_provider import FakeSherbrooke, FakeManilaV2, FakeSydneyV2, FakeOslo, FakeWashingtonV2
 from qiskit_aer.primitives import SamplerV2 as Sampler
 from qiskit import transpile
 from qiskit_aer import AerSimulator
@@ -17,7 +17,8 @@ _FAKE_BACKENDS = {
     "FakeManila": FakeManilaV2,
     "FakeSydney": FakeSydneyV2,
     "FakeSherbrooke": FakeSherbrooke,
-    "FakeOslo": FakeOslo
+    "FakeOslo": FakeOslo,
+    "FakeWashington": FakeWashingtonV2,
 }
 
 
@@ -34,7 +35,7 @@ def get_backend(backend_name='FakeOslo', inject_noise=False):
         sampler.options.default_shots = 1024
     else:
         sampler = Sampler()
-    return sampler
+    return sampler, fake_backend
 
 
 def analyze_circuit(circuit, backend_name):

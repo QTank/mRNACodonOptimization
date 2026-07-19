@@ -7,7 +7,6 @@ from qiskit_aer import AerSimulator
 from qiskit import transpile
 
 
-
 class QAOACustomAnsatz(QAOA):
     """QAOA subclass that allows a fixed, user-supplied ansatz instead of
     the auto-generated QAOAAnsatz."""
@@ -15,7 +14,7 @@ class QAOACustomAnsatz(QAOA):
         # Skip QAOA's forced rebuild; keep whatever ansatz was assigned.
         pass
 
-def get_min(qubit_op, qaoa_config, sampler=None):
+def get_min(qubit_op, qaoa_config, sampler=None, fake_backend=None):
     if sampler is None:
         sampler = Sampler()
 
@@ -33,11 +32,13 @@ def get_min(qubit_op, qaoa_config, sampler=None):
     result = qaoa.compute_minimum_eigenvalue(qubit_op)
 
     optimal_circuit = qaoa.ansatz.assign_parameters(result.optimal_parameters)
-    backend = AerSimulator()
-
     # Transpile for backend
-    transpiled = transpile(optimal_circuit, backend=backend, optimization_level=2)
-
+    if fake_backend is not None and qubit_op.num_qubits > fake_backend.configuration().n_qubits:
+        print(f"Warning: {qubit_op.num_qubits} qubits exceeds backend capacity "
+              f"({fake_backend.configuration().n_qubits}); transpiling without backend constraints.")
+        transpiled = transpile(optimal_circuit, optimization_level=2)
+    else:
+        transpiled = transpile(optimal_circuit, backend=fake_backend, optimization_level=2)
     # Gate statistics
     statistics = [transpiled.count_ops(), sum(transpiled.count_ops().values()), transpiled.depth()]
 

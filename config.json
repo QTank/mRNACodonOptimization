@@ -9,7 +9,7 @@
   },
   "noise_model": {
     "inject_noise": "False",
-    "fake_backend": "FakeOslo"
+    "fake_backend": "FakeSherbrooke"
   },
   "weights": {
     "usage": 1.2,

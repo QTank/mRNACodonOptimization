@@ -18,10 +18,10 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
         print("Starting VQE (Variational Quantum Eigensolver) on a Quantum Simulator...\n")
         codon_opt = CodonOptimizer(sequence, config, DenseCodon, "dense")
         qubit_op = codon_opt.create_qubit_op()
-        fake_backend = config['noise_model']['fake_backend']
+        fake_backend_name = config['noise_model']['fake_backend']
         inject_noise = True
-        sampler = qiskit_util.get_backend(backend_name=fake_backend, inject_noise=inject_noise)
-        bitstring, energy, statistics = vqe_solver.get_min(qubit_op, config['vqe_settings'], sampler)
+        sampler, fake_backend = qiskit_util.get_backend(backend_name=fake_backend_name, inject_noise=inject_noise)
+        bitstring, energy, statistics = vqe_solver.get_min(qubit_op, config['vqe_settings'], sampler, fake_backend)
         final_mRNA_sequence = util.decode_bitstring(sequence, bitstring,
                                                     table_name=config['metadata']['table_name'])
 
@@ -29,9 +29,9 @@ def run_optimization(sequence, config, type_opt="vqe", encoding_type="one-hot"):
         print("Starting QAOA on a Quantum Simulator...\n")
         codon_opt = CodonOptimizer(sequence, config, OneHotCodon, "one-hot")
         qubit_op = codon_opt.create_qubit_op()
-        fake_backend = config['noise_model']['fake_backend']
-        sampler = qiskit_util.get_backend(backend_name=fake_backend, inject_noise=True)
-        bitstring, statistics = qaoa_solver.get_min(qubit_op, config['qaoa_settings'], sampler)
+        fake_backend_name = config['noise_model']['fake_backend']
+        sampler, fake_backend = qiskit_util.get_backend(backend_name=fake_backend_name, inject_noise=True)
+        bitstring, statistics = qaoa_solver.get_min(qubit_op, config['qaoa_settings'], sampler, fake_backend)
         energy = util.evaluate_energy(qubit_op, bitstring)
         final_mRNA_sequence = util.decode_one_hot_bitstring(sequence, bitstring,
                                                             table_name=config['metadata']['table_name'])
