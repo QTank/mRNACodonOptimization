@@ -14,10 +14,10 @@ def get_min(qubit_op, vqe_config, sampler=None, fake_backend=None):
 
     ansatz = EfficientSU2(
         num_qubits=qubit_op.num_qubits,
-        su2_gates=['rx'],
+        su2_gates=['ry'],
         entanglement=vqe_config['ansatz'].get('entanglement', 'circular'),
         reps=vqe_config['ansatz'].get('reps', 2)
-    ).decompose(reps=3)
+    ).decompose(reps=2)
 
     counts = []
     values = []
@@ -32,15 +32,15 @@ def get_min(qubit_op, vqe_config, sampler=None, fake_backend=None):
         sampler,
         ansatz=ansatz,
         optimizer=optimizer,
-        aggregation=vqe_config.get('alpha', 0.1),
+        aggregation=0.05,
         callback=store_intermediate_result,
     )
     raw_result = vqe.compute_minimum_eigenvalue(qubit_op)
 
     optimal_circuit = ansatz.assign_parameters(raw_result.optimal_parameters)
 
-    transpiled = transpile(optimal_circuit, backend=fake_backend, optimization_level=2)
-
+    transpiled = transpile(optimal_circuit, backend=fake_backend, optimization_level=1)
+    print(f"parameters len: {len(raw_result.optimal_parameters)}")
     # Gate statistics
     statistics = [transpiled.count_ops(), sum(transpiled.count_ops().values()), transpiled.depth()]
     return raw_result.best_measurement['bitstring'], raw_result.best_measurement['value'].real, statistics
