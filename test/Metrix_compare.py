@@ -1,6 +1,6 @@
 import math
 from collections import defaultdict
-import python_codon_tables as pct
+import codon_table as pct
 
 import data_process_util
 
@@ -105,12 +105,6 @@ def calculate_cai(
     warnings_list = []
 
     # Validate organism
-    available = pct.available_codon_tables_names
-    if organism not in available:
-        raise ValueError(
-            f"Unknown organism '{organism}'.\nAvailable: {available}"
-        )
-
     # Build codon->AA map from the library (replaces hardcoded CODON_TABLE)
     codon_to_aa = _build_codon_to_aa(organism)
 
@@ -285,16 +279,14 @@ def run_cai_compare(file_name, solver):
 
 if __name__ == "__main__":
     from pathlib import Path
-    path = Path("../experiments/")
+    path = Path("../experiments/vqe_sa_8/vqe_sa_8_gc")
     txt_files = [f.name for f in path.glob("*.log")]
     val = 0
     for file_name in txt_files:
         print(file_name)
         for solver in ['SA', "VQE"]:
-            if solver in file_name:
-                r = run_cai_compare("../experiments/" + file_name, solver)
-            else:
-                r = run_cai_compare("../experiments/" + file_name, solver)
+            if '.log' in file_name:
+                r = run_cai_compare("../experiments/vqe_sa_8/vqe_sa_8_gc/" + file_name, solver)
         val += r['cai']
         print()
 
