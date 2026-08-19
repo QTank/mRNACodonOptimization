@@ -2,8 +2,6 @@ import numpy as np
 import codon_table as pct
 import util
 
-import vqe_solver, qaoa_solver, sa_solver, classical_brute
-
 class CodonOptimizer:
     """
     Unified class for Codon Optimization using Qubit Operators.
@@ -20,7 +18,7 @@ class CodonOptimizer:
 
         self.table_name = meta.get('table_name', 'e_coli_316407')
         self.target_gc = meta.get('gc_content', 0.5)
-
+        self.gc_slide_window_len = meta.get("gc_sw_len", 6)
         self.w_usage = weights.get('usage', 0.3)
         self.w_gc = weights.get('target_gc', 0.9)
         self.w_rep = weights.get('repeated_nucleotides', 1.0)
@@ -100,12 +98,40 @@ class CodonOptimizer:
 
         return self.penalty * sum(redundant_list)
 
+    def create_gc_term_slide_window(self):
+        gc_ops = []
+        for codon in self.codon_list:
+            acc = 0
+            for seq, (op, _) in codon.indicator_dict.items():
+                gc = util.get_gc_count(seq)
+                if gc:
+                    acc += op * gc
+            gc_ops.append(acc)
+
+        n_codons = len(self.codon_list)
+        win_len = min(self.gc_slide_window_len, n_codons)
+
+        identity = util.build_full_identity(self.qubit_len)
+        # A window spans 3 * win_len nucleotides
+        target = identity * self.target_gc * 3 * win_len
+
+        h_gc = 0
+        n_windows = n_codons - win_len + 1
+        for j in range(n_windows):
+            win_sum = 0
+            for i in range(j, j + win_len):
+                win_sum += gc_ops[i]
+            h_gc += (win_sum - target) ** 2
+
+        return h_gc * self.w_gc / n_windows
+
+
     def create_qubit_op(self):
         """Aggregates all terms into the final Hamiltonian."""
         # Penalty for invalid/redundant bitstrings (One-hot constraints)
         h_total = (
                 self.create_usage_term() +
-                self.create_gc_term() +
+                self.create_gc_term_slide_window() +
                 self.create_repetition_term() +
                 self.create_redundant_encoding()
         )
