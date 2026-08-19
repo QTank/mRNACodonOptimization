@@ -22,7 +22,7 @@ _FAKE_BACKENDS = {
 }
 
 
-def get_backend(backend_name='FakeOslo', inject_noise=False):
+def get_backend(backend_name='FakeSherbrooke', inject_noise=False):
     if backend_name not in _FAKE_BACKENDS:
         raise ValueError("Please input the correct backend name.")
 
