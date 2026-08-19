@@ -20,7 +20,7 @@ def get_min(qubit_op, qaoa_config, sampler=None, fake_backend=None):
     ansatz = QAOAAnsatz(
         cost_operator=qubit_op,
         reps=reps
-    ).decompose(reps=2)
+    ).decompose(reps=reps)
 
 
     qaoa = QAOACustomAnsatz(sampler=sampler, optimizer=optimizer, reps=qaoa_config.get('reps', 2))
